@@ -21,21 +21,21 @@
        style="display: block; margin: 0 auto; border-radius: 888px; max-width: 100%; height: auto;" />
 </p>   
 
-![Chronicles](./screenshots/Chronicles.jpg) 
-![Linguistic Chat](./screenshots/Chat.jpg) 
+![Chronicles](./screenshots/Chronicles.JPG) 
+![Linguistic Chat](./screenshots/Chat.JPG) 
 
 
-![Meditations](./screenshots/Meditations.jpg) 
-![Meditations Chat](./screenshots/Meditations_Chat.jpg) 
+![Meditations](./screenshots/Meditations.JPG) 
+![Meditations Chat](./screenshots/Meditations_Chat.JPG) 
 
-![Forge](./screenshots/System_Forge_V1.jpg) 
-![System_Forge_V2](./screenshots/System_Forge_V2.jpg) 
+![Forge](./screenshots/System_Forge_V1.JPG) 
+![System_Forge_V2](./screenshots/System_Forge_V2.JPG) 
 
-![System_Connection](./screenshots/System_Connection.jpg) 
-![System_Control](./screenshots/System_Control.jpg) 
+![System_Connection](./screenshots/System_Connection.JPG) 
+![System_Control](./screenshots/System_Control.JPG) 
 
-![System Themes](./screenshots/System_Themes.jpg) 
-![System Profile](./screenshots/System_Profile.jpg) 
+![System Themes](./screenshots/System_Themes.JPG) 
+![System Profile](./screenshots/System_Profile.JPG) 
 
 ---
 
