@@ -1,0 +1,428 @@
+/* =============================================
+   THEME: Sci-Fi Glassmorphism
+   Translucent panels, neon glows, holographic depth
+   ============================================= */
+
+[data-theme="scifi"] {
+  /* Core Surfaces */
+  --parchment-light: rgba(15, 25, 50, 0.6);
+  --parchment: rgba(10, 18, 40, 0.75);
+  --parchment-dark: rgba(6, 12, 30, 0.85);
+  --parchment-edge: rgba(0, 200, 255, 0.25);
+  --parchment-shadow: rgba(0, 150, 220, 0.15);
+  --parchment-burn: #00e5ff;
+
+  /* Ink & Text */
+  --ink-black: #e0f0ff;
+  --ink-dark: #c0d8f0;
+  --ink-brown: #80b0d8;
+  --ink-faded: #5890b8;
+  --ink-light: #3870a0;
+
+  /* Accent Colors */
+  --wax-seal: #0a4a7a;
+  --wax-seal-highlight: #00b8ff;
+  --gold: #00d4ff;
+  --gold-bright: #40e8ff;
+  --gold-dim: #0090c0;
+  --sapphire: #00264d;
+  --emerald: #00ffa0;
+  --amethyst: #b040ff;
+
+  /* Layer Colors */
+  --sanskrit-color: #ffcc00;
+  --chinese-color: #ff4040;
+  --japanese-color: #e0f0ff;
+  --anuhazi-color: #40c0ff;
+  --quantum-color: #c040ff;
+
+  /* Typography */
+  --font-heading: 'Inter', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  --font-ui: 'Inter', -apple-system, sans-serif;
+}
+
+/* --- Body Background --- */
+[data-theme="scifi"] body {
+  background:
+    radial-gradient(ellipse at 20% 30%, rgba(0, 100, 200, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 70%, rgba(100, 0, 200, 0.1) 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 50%, rgba(0, 50, 120, 0.08) 0%, transparent 70%),
+    linear-gradient(180deg, #030810 0%, #060d1a 30%, #0a1428 50%, #060d1a 70%, #030810 100%);
+  background-attachment: fixed;
+}
+
+/* Animated grid overlay instead of parchment texture */
+[data-theme="scifi"] body::before {
+  background-image:
+    linear-gradient(rgba(0, 200, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 200, 255, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 1;
+  animation: gridPulse 8s ease-in-out infinite;
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+/* --- Navigation Bar --- */
+[data-theme="scifi"] #main-nav {
+  background: rgba(6, 15, 35, 0.85);
+  backdrop-filter: blur(20px) saturate(1.5);
+  -webkit-backdrop-filter: blur(20px) saturate(1.5);
+  border-bottom: 1px solid rgba(0, 200, 255, 0.2);
+  box-shadow: 0 4px 30px rgba(0, 100, 200, 0.1);
+}
+
+[data-theme="scifi"] #main-nav::after {
+  background: linear-gradient(90deg, transparent, rgba(0, 200, 255, 0.6), rgba(180, 60, 255, 0.4), transparent);
+  height: 1px;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.5);
+}
+
+[data-theme="scifi"] .nav-title {
+  color: #00d4ff;
+  text-shadow: 0 0 20px rgba(0, 212, 255, 0.5), 0 0 40px rgba(0, 150, 255, 0.2);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+[data-theme="scifi"] .nav-link {
+  color: #80b0d8;
+  font-weight: 500;
+  font-family: 'Inter', sans-serif;
+  letter-spacing: 0.12em;
+  border-bottom: 1px solid transparent;
+}
+
+[data-theme="scifi"] .nav-link:hover,
+[data-theme="scifi"] .nav-link.active {
+  color: #00e5ff;
+  border-bottom-color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+}
+
+/* --- Parchment Card (Glass Panel) --- */
+[data-theme="scifi"] .parchment-card {
+  background: rgba(8, 20, 45, 0.6);
+  backdrop-filter: blur(16px) saturate(1.4);
+  -webkit-backdrop-filter: blur(16px) saturate(1.4);
+  border: 1px solid rgba(0, 200, 255, 0.15);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(0, 200, 255, 0.1),
+    0 0 20px rgba(0, 100, 200, 0.05);
+}
+
+[data-theme="scifi"] .parchment-card::before {
+  border: 1px solid rgba(0, 200, 255, 0.08);
+}
+
+[data-theme="scifi"] .parchment-card:hover {
+  box-shadow:
+    0 12px 40px rgba(0, 0, 0, 0.4),
+    inset 0 1px 0 rgba(0, 200, 255, 0.15),
+    0 0 30px rgba(0, 150, 255, 0.1);
+  border-color: rgba(0, 200, 255, 0.3);
+}
+
+/* --- Scroll Container --- */
+[data-theme="scifi"] .scroll-container::before,
+[data-theme="scifi"] .scroll-container::after {
+  background: linear-gradient(180deg,
+    rgba(0, 100, 200, 0.2) 0%,
+    rgba(0, 200, 255, 0.1) 50%,
+    rgba(0, 100, 200, 0.2) 100%
+  );
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.15);
+  height: 2px;
+  border-radius: 0;
+}
+
+[data-theme="scifi"] .scroll-edge-left,
+[data-theme="scifi"] .scroll-edge-right {
+  background: none;
+  border-left: 1px solid rgba(0, 200, 255, 0.08);
+  width: 1px;
+}
+
+[data-theme="scifi"] .scroll-edge-right {
+  border-left: none;
+  border-right: 1px solid rgba(0, 200, 255, 0.08);
+}
+
+/* --- Wax Seal (Holographic Orb) --- */
+[data-theme="scifi"] .wax-seal {
+  background: radial-gradient(circle at 35% 35%,
+    rgba(0, 230, 255, 0.4) 0%,
+    rgba(0, 100, 200, 0.3) 50%,
+    rgba(0, 50, 120, 0.5) 100%
+  );
+  border: 1px solid rgba(0, 200, 255, 0.3);
+  box-shadow:
+    0 0 15px rgba(0, 200, 255, 0.3),
+    inset 0 0 10px rgba(0, 200, 255, 0.1);
+  color: #00e5ff;
+}
+
+[data-theme="scifi"] .wax-seal::after {
+  border: 1px solid rgba(0, 200, 255, 0.15);
+}
+
+[data-theme="scifi"] .wax-seal--gold {
+  background: radial-gradient(circle at 35% 35%,
+    rgba(0, 230, 255, 0.5) 0%,
+    rgba(0, 150, 220, 0.4) 50%,
+    rgba(0, 80, 160, 0.6) 100%
+  );
+  color: #e0f0ff;
+}
+
+/* --- Dividers --- */
+[data-theme="scifi"] .divider::before,
+[data-theme="scifi"] .divider::after {
+  background: linear-gradient(90deg, transparent, rgba(0, 200, 255, 0.3), rgba(180, 60, 255, 0.15), transparent);
+}
+
+[data-theme="scifi"] .divider-symbol {
+  color: #00d4ff;
+  text-shadow: 0 0 10px rgba(0, 200, 255, 0.5);
+}
+
+/* --- Ornate Header --- */
+[data-theme="scifi"] .ornate-header h1 {
+  color: #e0f0ff;
+  text-shadow: 0 0 20px rgba(0, 200, 255, 0.3);
+}
+
+/* --- Chat Messages --- */
+[data-theme="scifi"] .message--human {
+  background: rgba(0, 80, 160, 0.2);
+  border: 1px solid rgba(0, 200, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="scifi"] .message--ai {
+  background: rgba(100, 0, 200, 0.1);
+  border: 1px solid rgba(180, 60, 255, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(140, 40, 255, 0.05);
+}
+
+[data-theme="scifi"] .message--human .message-role { color: #00b8ff; }
+[data-theme="scifi"] .message--ai .message-role { color: #b040ff; }
+
+/* --- Chat Input --- */
+[data-theme="scifi"] .chat-input-container {
+  background: rgba(6, 12, 30, 0.8);
+  border-top: 1px solid rgba(0, 200, 255, 0.15);
+  backdrop-filter: blur(10px);
+}
+
+[data-theme="scifi"] .chat-input {
+  background: rgba(10, 25, 55, 0.6);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  color: #c0d8f0;
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="scifi"] .chat-input:focus {
+  border-color: rgba(0, 200, 255, 0.5);
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.2);
+}
+
+[data-theme="scifi"] .chat-input::placeholder {
+  color: #3870a0;
+}
+
+/* --- Buttons --- */
+[data-theme="scifi"] .btn {
+  background: rgba(0, 100, 200, 0.15);
+  border: 1px solid rgba(0, 200, 255, 0.25);
+  color: #c0d8f0;
+  backdrop-filter: blur(8px);
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+[data-theme="scifi"] .btn:hover {
+  background: rgba(0, 150, 220, 0.25);
+  border-color: rgba(0, 200, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 200, 255, 0.15);
+  color: #e0f0ff;
+}
+
+[data-theme="scifi"] .btn--primary {
+  background: linear-gradient(135deg, rgba(0, 180, 255, 0.3) 0%, rgba(0, 120, 200, 0.4) 100%);
+  border-color: rgba(0, 200, 255, 0.4);
+  color: #e0f0ff;
+  box-shadow: 0 0 15px rgba(0, 200, 255, 0.15);
+}
+
+[data-theme="scifi"] .btn--primary:hover {
+  background: linear-gradient(135deg, rgba(0, 200, 255, 0.4) 0%, rgba(0, 150, 220, 0.5) 100%);
+  box-shadow: 0 0 25px rgba(0, 200, 255, 0.25);
+}
+
+[data-theme="scifi"] .btn--seal {
+  background: linear-gradient(135deg, rgba(180, 60, 255, 0.3) 0%, rgba(100, 0, 200, 0.4) 100%);
+  border-color: rgba(180, 60, 255, 0.3);
+  color: #e0d0ff;
+}
+
+[data-theme="scifi"] .btn--seal:hover {
+  background: linear-gradient(135deg, rgba(200, 80, 255, 0.4) 0%, rgba(140, 40, 255, 0.5) 100%);
+}
+
+/* --- Scrollbar --- */
+[data-theme="scifi"] .chat-messages::-webkit-scrollbar-track {
+  background: rgba(10, 20, 40, 0.5);
+}
+
+[data-theme="scifi"] .chat-messages::-webkit-scrollbar-thumb {
+  background: rgba(0, 200, 255, 0.25);
+  border: 1px solid rgba(0, 200, 255, 0.1);
+}
+
+/* --- Chat Header --- */
+[data-theme="scifi"] .chat-header {
+  border-bottom: 1px solid rgba(0, 200, 255, 0.15);
+}
+
+/* --- Settings Inputs --- */
+[data-theme="scifi"] .setting-input {
+  background: rgba(10, 25, 55, 0.6);
+  border: 1px solid rgba(0, 200, 255, 0.2);
+  color: #c0d8f0;
+}
+
+[data-theme="scifi"] .setting-input:focus {
+  border-color: rgba(0, 200, 255, 0.5);
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.15);
+}
+
+[data-theme="scifi"] .setting-row {
+  border-bottom-color: rgba(0, 200, 255, 0.08);
+}
+
+/* --- Search Bar --- */
+[data-theme="scifi"] .search-bar {
+  background: rgba(10, 25, 55, 0.5);
+  border-color: rgba(0, 200, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+[data-theme="scifi"] .search-bar input {
+  color: #c0d8f0;
+}
+
+[data-theme="scifi"] .search-bar input::placeholder {
+  color: #3870a0;
+}
+
+/* --- Game Items --- */
+[data-theme="scifi"] .game-item {
+  border-top-color: rgba(0, 200, 255, 0.08);
+}
+
+[data-theme="scifi"] .game-item:hover {
+  background: rgba(0, 150, 220, 0.08);
+}
+
+/* --- Reader Dialogue --- */
+[data-theme="scifi"] .dialogue-human {
+  background: rgba(0, 80, 160, 0.15);
+  border-color: rgba(0, 200, 255, 0.15);
+}
+
+[data-theme="scifi"] .dialogue-ai {
+  background: rgba(100, 0, 200, 0.1);
+  border-color: rgba(180, 60, 255, 0.2);
+}
+
+[data-theme="scifi"] .dialogue-ai .dialogue-role {
+  color: #b040ff;
+}
+
+[data-theme="scifi"] .vocab-badge-label {
+  background: linear-gradient(135deg, rgba(0, 200, 255, 0.3), rgba(180, 60, 255, 0.3));
+  color: #e0f0ff;
+  border: 1px solid rgba(0, 200, 255, 0.2);
+}
+
+[data-theme="scifi"] .vocab-badge::before,
+[data-theme="scifi"] .vocab-badge::after {
+  background: linear-gradient(180deg, transparent, rgba(0, 200, 255, 0.4), transparent);
+}
+
+/* --- Dialogue List --- */
+[data-theme="scifi"] .dialogue-list-item {
+  border-bottom-color: rgba(0, 200, 255, 0.08);
+}
+
+[data-theme="scifi"] .dialogue-list-item:hover {
+  background: rgba(0, 150, 220, 0.08);
+}
+
+/* --- Connection Dots --- */
+[data-theme="scifi"] .connection-dot--connected {
+  background: #00ffa0;
+  box-shadow: 0 0 8px rgba(0, 255, 160, 0.5);
+}
+
+[data-theme="scifi"] .connection-dot--disconnected {
+  background: #ff4060;
+  box-shadow: 0 0 8px rgba(255, 60, 90, 0.4);
+}
+
+[data-theme="scifi"] .connection-dot--checking {
+  background: #00d4ff;
+}
+
+/* --- Typing Indicator --- */
+[data-theme="scifi"] .typing-indicator span {
+  background: #00d4ff;
+  box-shadow: 0 0 6px rgba(0, 200, 255, 0.4);
+}
+
+/* --- Layer Tags --- */
+[data-theme="scifi"] .layer-tag--sanskrit { background: rgba(255, 204, 0, 0.15); color: #ffcc00; }
+[data-theme="scifi"] .layer-tag--chinese { background: rgba(255, 64, 64, 0.15); color: #ff6060; }
+[data-theme="scifi"] .layer-tag--japanese { background: rgba(200, 220, 255, 0.1); color: #c0d8f0; }
+[data-theme="scifi"] .layer-tag--anuhazi { background: rgba(64, 192, 255, 0.15); color: #40c0ff; }
+[data-theme="scifi"] .layer-tag--quantum { background: rgba(180, 60, 255, 0.15); color: #c060ff; }
+
+/* --- Model Selector --- */
+[data-theme="scifi"] .model-selector {
+  background: rgba(10, 25, 55, 0.6);
+  border-color: rgba(0, 200, 255, 0.2);
+  color: #c0d8f0;
+}
+
+[data-theme="scifi"] .model-selector:focus {
+  border-color: rgba(0, 200, 255, 0.5);
+}
+
+/* --- Module Section Header --- */
+[data-theme="scifi"] .module-section-header {
+  border-bottom-color: rgba(0, 200, 255, 0.15);
+}
+
+/* --- Temporal Navigator --- */
+[data-theme="scifi"] .temporal-nav-track {
+  background: linear-gradient(90deg,
+    rgba(0, 100, 200, 0.2) 0%,
+    rgba(0, 200, 255, 0.4) 50%,
+    rgba(0, 100, 200, 0.2) 100%
+  );
+  box-shadow: 0 0 10px rgba(0, 200, 255, 0.15);
+}
+
+[data-theme="scifi"] .temporal-nav-thumb {
+  background: radial-gradient(circle at 40% 40%, #40e8ff, #0090c0);
+  border-color: rgba(0, 200, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 200, 255, 0.4);
+}

@@ -1,0 +1,431 @@
+/* =============================================
+   THEME: Dark Luxury
+   Obsidian surfaces, gold filigree, premium noir
+   ============================================= */
+
+[data-theme="luxury"] {
+    /* Core Surfaces */
+    --parchment-light: #1a1a1a;
+    --parchment: #141414;
+    --parchment-dark: #0d0d0d;
+    --parchment-edge: rgba(200, 170, 100, 0.3);
+    --parchment-shadow: rgba(180, 150, 80, 0.15);
+    --parchment-burn: #d4a843;
+
+    /* Ink & Text */
+    --ink-black: #f0e8d8;
+    --ink-dark: #d8ccb8;
+    --ink-brown: #b8a890;
+    --ink-faded: #8a7e6e;
+    --ink-light: #5c524a;
+
+    /* Accent Colors */
+    --wax-seal: #6a1a1a;
+    --wax-seal-highlight: #a03030;
+    --gold: #c8a850;
+    --gold-bright: #e0c468;
+    --gold-dim: #9a8030;
+    --sapphire: #1a2a4a;
+    --emerald: #2a5a3a;
+    --amethyst: #4a2a5a;
+
+    /* Layer Colors */
+    --sanskrit-color: #d4a843;
+    --chinese-color: #c04040;
+    --japanese-color: #d8ccb8;
+    --anuhazi-color: #5090c0;
+    --quantum-color: #9050b0;
+
+    /* Typography — keep Cinzel for the luxury serif feel */
+    --font-heading: 'Cinzel', 'Times New Roman', serif;
+    --font-body: 'Crimson Text', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, sans-serif;
+}
+
+/* --- Body Background --- */
+[data-theme="luxury"] body {
+    background:
+        radial-gradient(ellipse at 25% 25%, rgba(200, 170, 100, 0.04) 0%, transparent 50%),
+        radial-gradient(ellipse at 75% 75%, rgba(200, 170, 100, 0.03) 0%, transparent 50%),
+        linear-gradient(180deg, #080808 0%, #0d0d0d 20%, #111111 50%, #0d0d0d 80%, #080808 100%);
+    background-attachment: fixed;
+}
+
+/* Subtle noise texture */
+[data-theme="luxury"] body::before {
+    background-image:
+        url("data:image/svg+xml,%3Csvg width='100' height='100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
+    opacity: 1;
+}
+
+/* --- Navigation Bar --- */
+[data-theme="luxury"] #main-nav {
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.98) 0%, rgba(12, 12, 12, 0.98) 100%);
+    border-bottom: 1px solid rgba(200, 170, 100, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+[data-theme="luxury"] #main-nav::after {
+    background: linear-gradient(90deg, transparent, rgba(200, 168, 80, 0.6), rgba(200, 168, 80, 0.2), rgba(200, 168, 80, 0.6), transparent);
+    height: 1px;
+}
+
+[data-theme="luxury"] .nav-title {
+    color: #d4a843;
+    text-shadow: 0 0 15px rgba(200, 168, 80, 0.3);
+    font-weight: 900;
+    letter-spacing: 0.15em;
+}
+
+[data-theme="luxury"] .nav-link {
+    color: #8a7e6e;
+}
+
+[data-theme="luxury"] .nav-link:hover,
+[data-theme="luxury"] .nav-link.active {
+    color: #d4a843;
+    border-bottom-color: #c8a850;
+    text-shadow: 0 0 8px rgba(200, 168, 80, 0.3);
+}
+
+/* --- Parchment Card (Obsidian Panel) --- */
+[data-theme="luxury"] .parchment-card {
+    background: linear-gradient(145deg, #1a1a1a 0%, #141414 50%, #0f0f0f 100%);
+    border: 1px solid rgba(200, 170, 100, 0.15);
+    box-shadow:
+        0 8px 30px rgba(0, 0, 0, 0.5),
+        inset 0 1px 0 rgba(200, 170, 100, 0.05),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="luxury"] .parchment-card::before {
+    border: 1px solid rgba(200, 170, 100, 0.06);
+}
+
+[data-theme="luxury"] .parchment-card:hover {
+    box-shadow:
+        0 12px 40px rgba(0, 0, 0, 0.6),
+        inset 0 1px 0 rgba(200, 170, 100, 0.08),
+        0 0 30px rgba(200, 168, 80, 0.03);
+    border-color: rgba(200, 170, 100, 0.25);
+}
+
+/* --- Scroll Container --- */
+[data-theme="luxury"] .scroll-container::before,
+[data-theme="luxury"] .scroll-container::after {
+    background: linear-gradient(180deg,
+            rgba(200, 170, 100, 0.15) 0%,
+            rgba(200, 170, 100, 0.08) 50%,
+            rgba(200, 170, 100, 0.15) 100%);
+    height: 2px;
+    box-shadow: 0 0 10px rgba(200, 168, 80, 0.1);
+    border-radius: 0;
+}
+
+[data-theme="luxury"] .scroll-edge-left {
+    background: linear-gradient(90deg,
+            rgba(200, 170, 100, 0.08) 0%,
+            transparent 100%);
+    width: 1px;
+    border-left: 1px solid rgba(200, 170, 100, 0.08);
+}
+
+[data-theme="luxury"] .scroll-edge-right {
+    background: linear-gradient(270deg,
+            rgba(200, 170, 100, 0.08) 0%,
+            transparent 100%);
+    width: 1px;
+    border-right: 1px solid rgba(200, 170, 100, 0.08);
+}
+
+/* --- Wax Seal (Luxury Medallion) --- */
+[data-theme="luxury"] .wax-seal {
+    background: radial-gradient(circle at 35% 35%,
+            #e0c468 0%,
+            #c8a850 40%,
+            #8a6820 100%);
+    border: 2px solid rgba(200, 170, 100, 0.4);
+    color: #1a1a1a;
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.5),
+        0 0 20px rgba(200, 168, 80, 0.15),
+        inset 0 -2px 4px rgba(0, 0, 0, 0.3),
+        inset 0 2px 4px rgba(255, 230, 150, 0.2);
+}
+
+[data-theme="luxury"] .wax-seal::after {
+    border: 1px solid rgba(255, 230, 150, 0.15);
+}
+
+[data-theme="luxury"] .wax-seal--gold {
+    background: radial-gradient(circle at 35% 35%,
+            #f0d878 0%,
+            #d4b050 50%,
+            #9a7828 100%);
+    color: #1a1a1a;
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.5),
+        0 0 25px rgba(200, 168, 80, 0.2);
+}
+
+/* --- Dividers --- */
+[data-theme="luxury"] .divider::before,
+[data-theme="luxury"] .divider::after {
+    background: linear-gradient(90deg, transparent, rgba(200, 170, 100, 0.3), rgba(200, 170, 100, 0.1), rgba(200, 170, 100, 0.3), transparent);
+}
+
+[data-theme="luxury"] .divider-symbol {
+    color: #c8a850;
+    text-shadow: 0 0 8px rgba(200, 168, 80, 0.4);
+}
+
+/* --- Ornate Header --- */
+[data-theme="luxury"] .ornate-header h1 {
+    color: #f0e8d8;
+    text-shadow: 0 0 20px rgba(200, 168, 80, 0.2);
+}
+
+[data-theme="luxury"] .ornate-header .subtitle {
+    color: #8a7e6e;
+}
+
+/* --- Chat Messages --- */
+[data-theme="luxury"] .message--human {
+    background: linear-gradient(135deg, #1e1e1e 0%, #181818 100%);
+    border: 1px solid rgba(200, 170, 100, 0.12);
+}
+
+[data-theme="luxury"] .message--ai {
+    background: linear-gradient(135deg, #1c1a16 0%, #16140f 100%);
+    border: 1px solid rgba(200, 170, 100, 0.2);
+    box-shadow: 0 0 15px rgba(200, 168, 80, 0.04);
+}
+
+[data-theme="luxury"] .message--human .message-role {
+    color: #b8a890;
+}
+
+[data-theme="luxury"] .message--ai .message-role {
+    color: #c8a850;
+}
+
+/* --- Chat Input --- */
+[data-theme="luxury"] .chat-input-container {
+    background: rgba(10, 10, 10, 0.95);
+    border-top: 1px solid rgba(200, 170, 100, 0.15);
+}
+
+[data-theme="luxury"] .chat-input {
+    background: #1a1a1a;
+    border: 1px solid rgba(200, 170, 100, 0.15);
+    color: #d8ccb8;
+}
+
+[data-theme="luxury"] .chat-input:focus {
+    border-color: rgba(200, 170, 100, 0.4);
+    box-shadow: 0 0 12px rgba(200, 168, 80, 0.15);
+}
+
+[data-theme="luxury"] .chat-input::placeholder {
+    color: #5c524a;
+}
+
+/* --- Buttons --- */
+[data-theme="luxury"] .btn {
+    background: linear-gradient(180deg, #1e1e1e 0%, #141414 100%);
+    border: 1px solid rgba(200, 170, 100, 0.2);
+    color: #b8a890;
+}
+
+[data-theme="luxury"] .btn:hover {
+    background: linear-gradient(180deg, #242424 0%, #1a1a1a 100%);
+    border-color: rgba(200, 170, 100, 0.4);
+    color: #d4a843;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 10px rgba(200, 168, 80, 0.08);
+}
+
+[data-theme="luxury"] .btn--primary {
+    background: linear-gradient(180deg, #c8a850 0%, #a08030 50%, #806820 100%);
+    border-color: rgba(200, 170, 100, 0.4);
+    color: #0d0d0d;
+    box-shadow: 0 4px 15px rgba(200, 168, 80, 0.15);
+}
+
+[data-theme="luxury"] .btn--primary:hover {
+    background: linear-gradient(180deg, #e0c468 0%, #c8a850 50%, #a08030 100%);
+    box-shadow: 0 6px 20px rgba(200, 168, 80, 0.25);
+}
+
+[data-theme="luxury"] .btn--seal {
+    background: linear-gradient(180deg, #6a1a1a 0%, #4a1010 100%);
+    border-color: rgba(160, 48, 48, 0.4);
+    color: #f0d0d0;
+}
+
+[data-theme="luxury"] .btn--seal:hover {
+    background: linear-gradient(180deg, #8a2020 0%, #6a1a1a 100%);
+}
+
+/* --- Scrollbar --- */
+[data-theme="luxury"] .chat-messages::-webkit-scrollbar-track {
+    background: #0d0d0d;
+}
+
+[data-theme="luxury"] .chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(200, 170, 100, 0.2);
+    border: 1px solid rgba(200, 170, 100, 0.1);
+}
+
+/* --- Chat Header --- */
+[data-theme="luxury"] .chat-header {
+    border-bottom: 1px solid rgba(200, 170, 100, 0.15);
+}
+
+/* --- Settings --- */
+[data-theme="luxury"] .setting-input {
+    background: #1a1a1a;
+    border: 1px solid rgba(200, 170, 100, 0.15);
+    color: #d8ccb8;
+}
+
+[data-theme="luxury"] .setting-input:focus {
+    border-color: rgba(200, 170, 100, 0.4);
+}
+
+[data-theme="luxury"] .setting-row {
+    border-bottom-color: rgba(200, 170, 100, 0.08);
+}
+
+/* --- Search Bar --- */
+[data-theme="luxury"] .search-bar {
+    background: #1a1a1a;
+    border-color: rgba(200, 170, 100, 0.15);
+}
+
+[data-theme="luxury"] .search-bar input {
+    color: #d8ccb8;
+}
+
+[data-theme="luxury"] .search-bar input::placeholder {
+    color: #5c524a;
+}
+
+/* --- Game Items --- */
+[data-theme="luxury"] .game-item {
+    border-top-color: rgba(200, 170, 100, 0.06);
+}
+
+[data-theme="luxury"] .game-item:hover {
+    background: rgba(200, 170, 100, 0.04);
+}
+
+/* --- Reader Dialogue --- */
+[data-theme="luxury"] .dialogue-human {
+    background: linear-gradient(135deg, #1e1e1e 0%, #181818 100%);
+    border-color: rgba(200, 170, 100, 0.12);
+}
+
+[data-theme="luxury"] .dialogue-ai {
+    background: linear-gradient(135deg, #1c1a16 0%, #16140f 100%);
+    border-color: rgba(200, 170, 100, 0.2);
+}
+
+[data-theme="luxury"] .dialogue-ai .dialogue-role {
+    color: #c8a850;
+}
+
+[data-theme="luxury"] .vocab-badge-label {
+    background: linear-gradient(135deg, #c8a850, #a08030);
+    color: #0d0d0d;
+}
+
+[data-theme="luxury"] .vocab-badge::before,
+[data-theme="luxury"] .vocab-badge::after {
+    background: linear-gradient(180deg, transparent, rgba(200, 170, 100, 0.4), transparent);
+}
+
+/* --- Dialogue List --- */
+[data-theme="luxury"] .dialogue-list-item {
+    border-bottom-color: rgba(200, 170, 100, 0.06);
+}
+
+[data-theme="luxury"] .dialogue-list-item:hover {
+    background: rgba(200, 170, 100, 0.04);
+}
+
+/* --- Connection Dots --- */
+[data-theme="luxury"] .connection-dot--connected {
+    background: #2a8a4a;
+    box-shadow: 0 0 6px rgba(42, 138, 74, 0.5);
+}
+
+[data-theme="luxury"] .connection-dot--disconnected {
+    background: #a03030;
+    box-shadow: 0 0 6px rgba(160, 48, 48, 0.4);
+}
+
+[data-theme="luxury"] .connection-dot--checking {
+    background: #c8a850;
+}
+
+/* --- Typing Indicator --- */
+[data-theme="luxury"] .typing-indicator span {
+    background: #c8a850;
+    box-shadow: 0 0 6px rgba(200, 168, 80, 0.3);
+}
+
+/* --- Layer Tags --- */
+[data-theme="luxury"] .layer-tag--sanskrit {
+    background: rgba(200, 170, 100, 0.12);
+    color: #d4a843;
+}
+
+[data-theme="luxury"] .layer-tag--chinese {
+    background: rgba(192, 64, 64, 0.12);
+    color: #c06060;
+}
+
+[data-theme="luxury"] .layer-tag--japanese {
+    background: rgba(200, 200, 200, 0.08);
+    color: #b8a890;
+}
+
+[data-theme="luxury"] .layer-tag--anuhazi {
+    background: rgba(80, 144, 192, 0.12);
+    color: #6098c0;
+}
+
+[data-theme="luxury"] .layer-tag--quantum {
+    background: rgba(144, 80, 176, 0.12);
+    color: #a870c0;
+}
+
+/* --- Model Selector --- */
+[data-theme="luxury"] .model-selector {
+    background: #1a1a1a;
+    border-color: rgba(200, 170, 100, 0.15);
+    color: #d8ccb8;
+}
+
+[data-theme="luxury"] .model-selector:focus {
+    border-color: rgba(200, 170, 100, 0.4);
+}
+
+/* --- Module Section --- */
+[data-theme="luxury"] .module-section-header {
+    border-bottom-color: rgba(200, 170, 100, 0.12);
+}
+
+/* --- Temporal Navigator --- */
+[data-theme="luxury"] .temporal-nav-track {
+    background: linear-gradient(90deg,
+            rgba(200, 170, 100, 0.1) 0%,
+            rgba(200, 170, 100, 0.3) 50%,
+            rgba(200, 170, 100, 0.1) 100%);
+}
+
+[data-theme="luxury"] .temporal-nav-thumb {
+    background: radial-gradient(circle at 40% 40%, #e0c468, #9a8030);
+    border-color: rgba(200, 170, 100, 0.4);
+    box-shadow: 0 0 10px rgba(200, 168, 80, 0.3);
+}

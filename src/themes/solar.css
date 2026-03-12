@@ -1,0 +1,383 @@
+/* ============================================
+   THEME: SOLAR
+   Blazing amber, gold, and warm orange with
+   sunburst radiance and solar flare energy
+   ============================================ */
+
+[data-theme="solar"] {
+    /* --- Color Palette --- */
+    --parchment-bg: #fff8e1;
+    --parchment-light: #ffecb3;
+    --parchment-dark: #ffe082;
+    --parchment-edge: #ffc107;
+    --parchment-shadow: rgba(255, 152, 0, 0.15);
+
+    --ink-black: #e65100;
+    --ink-brown: #ef6c00;
+    --ink-light: #f57c00;
+    --ink-faded: #fb8c00;
+
+    --gold: #ff9800;
+    --gold-bright: #ffb300;
+    --gold-dim: #ffc107;
+    --wax-seal: #ff6d00;
+
+    --scroll-start: #fff8e1;
+    --scroll-end: #ffecb3;
+
+    /* --- Fonts --- */
+    --font-heading: 'Outfit', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+/* Background — Solar radiance */
+[data-theme="solar"] body {
+    background:
+        radial-gradient(ellipse at 50% -20%, rgba(255, 183, 77, 0.5) 0%, transparent 60%),
+        radial-gradient(ellipse at 20% 80%, rgba(255, 236, 179, 0.4) 0%, transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(255, 224, 130, 0.3) 0%, transparent 40%),
+        linear-gradient(180deg, #fff8e1 0%, #ffecb3 40%, #ffe082 100%);
+    min-height: 100vh;
+}
+
+/* Solar corona effect */
+[data-theme="solar"] body::before {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 0;
+    background: radial-gradient(circle,
+            rgba(255, 183, 77, 0.15) 0%,
+            rgba(255, 152, 0, 0.08) 40%,
+            transparent 70%);
+    animation: solarPulse 8s ease-in-out infinite;
+}
+
+@keyframes solarPulse {
+
+    0%,
+    100% {
+        transform: translateX(-50%) scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: translateX(-50%) scale(1.15);
+        opacity: 1;
+    }
+}
+
+/* Solar rays animation */
+[data-theme="solar"] body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+    background:
+        conic-gradient(from 0deg at 50% -10%,
+            transparent 0deg,
+            rgba(255, 183, 77, 0.03) 15deg,
+            transparent 30deg,
+            rgba(255, 183, 77, 0.03) 45deg,
+            transparent 60deg,
+            rgba(255, 183, 77, 0.03) 75deg,
+            transparent 90deg,
+            rgba(255, 183, 77, 0.03) 105deg,
+            transparent 120deg,
+            rgba(255, 183, 77, 0.03) 135deg,
+            transparent 150deg,
+            rgba(255, 183, 77, 0.03) 165deg,
+            transparent 180deg,
+            rgba(255, 183, 77, 0.03) 195deg,
+            transparent 210deg,
+            rgba(255, 183, 77, 0.03) 225deg,
+            transparent 240deg,
+            rgba(255, 183, 77, 0.03) 255deg,
+            transparent 270deg,
+            rgba(255, 183, 77, 0.03) 285deg,
+            transparent 300deg,
+            rgba(255, 183, 77, 0.03) 315deg,
+            transparent 330deg,
+            rgba(255, 183, 77, 0.03) 345deg,
+            transparent 360deg);
+    animation: solarRaysSpin 60s linear infinite;
+}
+
+@keyframes solarRaysSpin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Nav */
+[data-theme="solar"] #main-nav {
+    background: linear-gradient(90deg,
+            rgba(255, 248, 225, 0.95) 0%,
+            rgba(255, 224, 130, 0.9) 50%,
+            rgba(255, 248, 225, 0.95) 100%);
+    border-bottom: 2px solid rgba(255, 152, 0, 0.3);
+    backdrop-filter: blur(12px);
+    box-shadow:
+        0 4px 20px rgba(255, 152, 0, 0.1),
+        0 1px 0 rgba(255, 183, 77, 0.4);
+}
+
+[data-theme="solar"] .nav-title {
+    color: #e65100;
+    text-shadow: 0 0 15px rgba(255, 152, 0, 0.3);
+}
+
+[data-theme="solar"] .nav-link {
+    color: #ef6c00;
+}
+
+[data-theme="solar"] .nav-link.active {
+    color: #e65100;
+    text-shadow: 0 0 10px rgba(255, 152, 0, 0.4);
+}
+
+[data-theme="solar"] .nav-link:hover {
+    color: #ff9800;
+}
+
+/* Cards */
+[data-theme="solar"] .parchment-card {
+    background: linear-gradient(135deg,
+            rgba(255, 248, 225, 0.9) 0%,
+            rgba(255, 236, 179, 0.8) 100%);
+    border: 1px solid rgba(255, 152, 0, 0.2);
+    box-shadow:
+        0 4px 20px rgba(255, 152, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(6px);
+}
+
+[data-theme="solar"] .parchment-card:hover {
+    box-shadow:
+        0 8px 30px rgba(255, 152, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 152, 0, 0.35);
+}
+
+/* Scroll Container */
+[data-theme="solar"] .scroll-container {
+    background: linear-gradient(135deg,
+            rgba(255, 248, 225, 0.95) 0%,
+            rgba(255, 236, 179, 0.9) 100%);
+    border: 1px solid rgba(255, 152, 0, 0.15);
+    box-shadow:
+        0 8px 40px rgba(255, 152, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.7);
+}
+
+[data-theme="solar"] .scroll-edge-left,
+[data-theme="solar"] .scroll-edge-right {
+    background: linear-gradient(to right,
+            rgba(255, 224, 130, 0.3), transparent);
+}
+
+[data-theme="solar"] .scroll-edge-right {
+    background: linear-gradient(to left,
+            rgba(255, 224, 130, 0.3), transparent);
+}
+
+/* Dividers */
+[data-theme="solar"] .divider::before,
+[data-theme="solar"] .divider::after {
+    background: linear-gradient(90deg,
+            transparent, rgba(255, 152, 0, 0.3), transparent);
+}
+
+[data-theme="solar"] .divider-symbol {
+    color: #ff9800;
+    text-shadow: 0 0 12px rgba(255, 152, 0, 0.4);
+}
+
+/* Wax Seal — Solar flare */
+[data-theme="solar"] .wax-seal {
+    background: radial-gradient(circle,
+            #ffb300 0%, #ff9800 60%, #e65100 100%);
+    box-shadow:
+        0 2px 8px rgba(255, 152, 0, 0.4),
+        0 0 20px rgba(255, 183, 77, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+/* Buttons */
+[data-theme="solar"] .btn {
+    border-color: rgba(255, 152, 0, 0.3);
+    color: #e65100;
+    background: rgba(255, 248, 225, 0.7);
+}
+
+[data-theme="solar"] .btn:hover {
+    background: rgba(255, 236, 179, 0.6);
+    border-color: #ff9800;
+    color: #bf360c;
+    box-shadow: 0 4px 15px rgba(255, 152, 0, 0.2);
+}
+
+[data-theme="solar"] .btn--primary {
+    background: linear-gradient(135deg, #ffb300 0%, #ff9800 50%, #fb8c00 100%);
+    color: #3e2723;
+    border-color: #ff9800;
+    font-weight: 700;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+[data-theme="solar"] .btn--primary:hover {
+    background: linear-gradient(135deg, #ffc107 0%, #ffb300 50%, #ff9800 100%);
+    box-shadow:
+        0 4px 20px rgba(255, 152, 0, 0.35),
+        0 0 30px rgba(255, 183, 77, 0.15);
+}
+
+/* Inputs */
+[data-theme="solar"] .chat-input,
+[data-theme="solar"] .setting-input,
+[data-theme="solar"] .model-selector {
+    background: rgba(255, 248, 225, 0.9);
+    border-color: rgba(255, 152, 0, 0.2);
+    color: #e65100;
+}
+
+[data-theme="solar"] .chat-input:focus,
+[data-theme="solar"] .setting-input:focus {
+    border-color: #ff9800;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.15);
+}
+
+/* Search Bar */
+[data-theme="solar"] .search-bar {
+    background: rgba(255, 236, 179, 0.7);
+    border-color: rgba(255, 152, 0, 0.15);
+}
+
+/* Module Cards */
+[data-theme="solar"] .module-card-title {
+    color: #e65100;
+}
+
+/* Connection Status */
+[data-theme="solar"] .connection-dot--connected {
+    background: #4caf50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.5);
+}
+
+[data-theme="solar"] .connection-dot--disconnected {
+    background: #ff5722;
+    box-shadow: 0 0 8px rgba(255, 87, 34, 0.5);
+}
+
+/* Dialogue */
+[data-theme="solar"] .dialogue-human {
+    background: rgba(255, 248, 225, 0.7);
+    border-color: rgba(255, 152, 0, 0.15);
+}
+
+[data-theme="solar"] .dialogue-ai {
+    background: rgba(255, 236, 179, 0.5);
+    border-color: rgba(255, 152, 0, 0.1);
+}
+
+/* Messages */
+[data-theme="solar"] .message--human {
+    background: linear-gradient(135deg, rgba(255, 248, 225, 0.9) 0%, rgba(255, 236, 179, 0.8) 100%);
+    border-color: rgba(255, 152, 0, 0.15);
+}
+
+[data-theme="solar"] .message--ai {
+    background: linear-gradient(135deg, rgba(255, 252, 241, 0.9) 0%, rgba(255, 248, 225, 0.85) 100%);
+    border-color: rgba(255, 152, 0, 0.1);
+}
+
+/* Markdown */
+[data-theme="solar"] .md-code-block {
+    background: rgba(255, 224, 130, 0.2);
+    border-color: rgba(255, 152, 0, 0.15);
+}
+
+[data-theme="solar"] .md-inline-code {
+    background: rgba(255, 224, 130, 0.3);
+    border-color: rgba(255, 152, 0, 0.12);
+}
+
+[data-theme="solar"] .md-quote {
+    border-left-color: #ff9800;
+    background: rgba(255, 236, 179, 0.15);
+}
+
+/* Ornate header glow */
+[data-theme="solar"] .ornate-header h1 {
+    text-shadow: 0 0 20px rgba(255, 152, 0, 0.2);
+}
+
+[data-theme="solar"] .ornate-header::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    margin: var(--space-sm) auto 0;
+    background: linear-gradient(90deg, transparent, #ff9800, transparent);
+    border-radius: 2px;
+}
+
+/* Theme cards */
+[data-theme="solar"] .theme-card {
+    background: rgba(255, 248, 225, 0.8);
+    border-color: rgba(255, 152, 0, 0.15);
+}
+
+[data-theme="solar"] .theme-card:hover {
+    border-color: #ff9800;
+    box-shadow: 0 6px 20px rgba(255, 152, 0, 0.18);
+}
+
+[data-theme="solar"] .theme-card--active {
+    border-color: #ff9800;
+    box-shadow: 0 0 0 1px #ff9800, 0 4px 15px rgba(255, 152, 0, 0.18);
+}
+
+[data-theme="solar"] .theme-card--active::after {
+    background: linear-gradient(90deg, #ffc107, #ff9800, #ffc107);
+}
+
+/* Typing Indicator */
+[data-theme="solar"] .typing-indicator span {
+    background: #ff9800;
+}
+
+/* Empty State */
+[data-theme="solar"] .empty-state {
+    color: #ef6c00;
+}
+
+/* Vocab Badge */
+[data-theme="solar"] .vocab-badge-label {
+    color: #e65100;
+    text-shadow: 0 0 6px rgba(255, 152, 0, 0.2);
+}
+
+/* Temporal Nav */
+[data-theme="solar"] .temporal-nav-track {
+    background: rgba(255, 224, 130, 0.3);
+}
+
+[data-theme="solar"] .temporal-nav-thumb {
+    background: #ff9800;
+    box-shadow: 0 0 10px rgba(255, 152, 0, 0.4);
+}

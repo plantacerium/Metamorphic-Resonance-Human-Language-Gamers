@@ -1,0 +1,32 @@
+{
+  "name": "metamorphic-resonance-human-language-gamers",
+  "author": "Plantacerium",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.10.0",
+    "@types/node": "^25.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3",
+    "vite": "^6.4.1"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.0",
+    "@mastra/core": "^1.10.0",
+    "@mastra/engine": "0.1.0-alpha.84",
+    "@mastra/libsql": "^1.6.4",
+    "@mastra/rag": "^2.1.2",
+    "@tauri-apps/api": "^2.10.1",
+    "@tauri-apps/plugin-dialog": "^2.6.0",
+    "@tauri-apps/plugin-fs": "^2.4.5",
+    "@tauri-apps/plugin-http": "^2.5.7",
+    "@tauri-apps/plugin-opener": "^2.5.3"
+  }
+}

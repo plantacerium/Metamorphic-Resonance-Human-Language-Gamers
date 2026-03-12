@@ -1,0 +1,489 @@
+/* =============================================
+   THEME: Celestial White Fire
+   Angelic radiance, white flames, divine luminosity
+   ============================================= */
+
+[data-theme="celestial"] {
+    /* Core Surfaces */
+    --parchment-light: #ffffff;
+    --parchment: #f8f5f0;
+    --parchment-dark: #f0ece6;
+    --parchment-edge: rgba(180, 160, 200, 0.3);
+    --parchment-shadow: rgba(200, 180, 220, 0.2);
+    --parchment-burn: #8a6ab8;
+
+    /* Ink & Text */
+    --ink-black: #2a2040;
+    --ink-dark: #3a3050;
+    --ink-brown: #5a4878;
+    --ink-faded: #8070a0;
+    --ink-light: #a898c0;
+
+    /* Accent Colors */
+    --wax-seal: #8060b0;
+    --wax-seal-highlight: #a880d8;
+    --gold: #b898d8;
+    --gold-bright: #d0b8f0;
+    --gold-dim: #9070b8;
+    --sapphire: #4060a0;
+    --emerald: #40a070;
+    --amethyst: #8060c0;
+
+    /* Layer Colors */
+    --sanskrit-color: #c0a0e0;
+    --chinese-color: #e07070;
+    --japanese-color: #f0ece6;
+    --anuhazi-color: #70a0e0;
+    --quantum-color: #a070d0;
+
+    /* Typography */
+    --font-heading: 'Cinzel', 'Times New Roman', serif;
+    --font-body: 'Crimson Text', Georgia, serif;
+    --font-ui: 'Inter', -apple-system, sans-serif;
+}
+
+/* --- Body Background --- */
+[data-theme="celestial"] body {
+    background:
+        radial-gradient(ellipse at 30% 20%, rgba(200, 170, 240, 0.15) 0%, transparent 50%),
+        radial-gradient(ellipse at 70% 80%, rgba(255, 200, 150, 0.08) 0%, transparent 50%),
+        radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.9) 0%, transparent 80%),
+        linear-gradient(180deg,
+            #f8f2ff 0%,
+            #ffffff 15%,
+            #fefcfa 40%,
+            #faf5ff 60%,
+            #f8f2ff 80%,
+            #f0eaff 100%);
+    background-attachment: fixed;
+}
+
+/* Ethereal light rays */
+[data-theme="celestial"] body::before {
+    background-image:
+        radial-gradient(ellipse at 50% -20%, rgba(200, 170, 240, 0.12) 0%, transparent 60%),
+        radial-gradient(ellipse at 30% 30%, rgba(255, 220, 180, 0.06) 0%, transparent 40%),
+        radial-gradient(ellipse at 70% 40%, rgba(180, 150, 230, 0.06) 0%, transparent 40%);
+    opacity: 1;
+    animation: celestialPulse 12s ease-in-out infinite;
+}
+
+@keyframes celestialPulse {
+
+    0%,
+    100% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes whiteFireGlow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(200, 170, 240, 0.1), 0 0 40px rgba(255, 220, 180, 0.05);
+    }
+
+    50% {
+        box-shadow: 0 0 30px rgba(200, 170, 240, 0.15), 0 0 60px rgba(255, 220, 180, 0.08);
+    }
+}
+
+/* --- Navigation Bar --- */
+[data-theme="celestial"] #main-nav {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px) saturate(1.3);
+    -webkit-backdrop-filter: blur(20px) saturate(1.3);
+    border-bottom: 1px solid rgba(180, 160, 200, 0.2);
+    box-shadow: 0 4px 20px rgba(180, 150, 220, 0.08);
+}
+
+[data-theme="celestial"] #main-nav::after {
+    background: linear-gradient(90deg, transparent, rgba(200, 170, 240, 0.4), rgba(255, 200, 160, 0.2), rgba(200, 170, 240, 0.4), transparent);
+    height: 1px;
+    box-shadow: 0 0 10px rgba(200, 170, 240, 0.3);
+}
+
+[data-theme="celestial"] .nav-title {
+    color: #5a3a90;
+    text-shadow: 0 0 15px rgba(200, 170, 240, 0.3);
+    font-weight: 900;
+    letter-spacing: 0.15em;
+}
+
+[data-theme="celestial"] .nav-link {
+    color: #8070a0;
+}
+
+[data-theme="celestial"] .nav-link:hover,
+[data-theme="celestial"] .nav-link.active {
+    color: #5a3a90;
+    border-bottom-color: #b898d8;
+    text-shadow: 0 0 8px rgba(200, 170, 240, 0.3);
+}
+
+/* --- Parchment Card (Luminous Panel) --- */
+[data-theme="celestial"] .parchment-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(200, 170, 240, 0.2);
+    box-shadow:
+        0 8px 30px rgba(180, 150, 220, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.8),
+        0 0 40px rgba(255, 220, 180, 0.03);
+    animation: whiteFireGlow 6s ease-in-out infinite;
+}
+
+[data-theme="celestial"] .parchment-card::before {
+    border: 1px solid rgba(200, 170, 240, 0.1);
+}
+
+[data-theme="celestial"] .parchment-card:hover {
+    box-shadow:
+        0 12px 40px rgba(180, 150, 220, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9),
+        0 0 50px rgba(200, 170, 240, 0.08);
+    border-color: rgba(200, 170, 240, 0.35);
+}
+
+/* --- Scroll Container --- */
+[data-theme="celestial"] .scroll-container::before,
+[data-theme="celestial"] .scroll-container::after {
+    background: linear-gradient(180deg,
+            rgba(200, 170, 240, 0.15) 0%,
+            rgba(200, 170, 240, 0.08) 50%,
+            rgba(200, 170, 240, 0.15) 100%);
+    height: 2px;
+    box-shadow: 0 0 15px rgba(200, 170, 240, 0.15);
+    border-radius: 0;
+}
+
+[data-theme="celestial"] .scroll-edge-left {
+    background: linear-gradient(90deg,
+            rgba(200, 170, 240, 0.06) 0%,
+            transparent 100%);
+    width: 2px;
+}
+
+[data-theme="celestial"] .scroll-edge-right {
+    background: linear-gradient(270deg,
+            rgba(200, 170, 240, 0.06) 0%,
+            transparent 100%);
+    width: 2px;
+}
+
+/* --- Wax Seal (Celestial Orb) --- */
+[data-theme="celestial"] .wax-seal {
+    background: radial-gradient(circle at 35% 35%,
+            #ffffff 0%,
+            #e8d8f8 30%,
+            #c0a0e0 60%,
+            #8a6ab8 100%);
+    border: 2px solid rgba(200, 170, 240, 0.3);
+    color: #5a3a90;
+    box-shadow:
+        0 4px 15px rgba(180, 150, 220, 0.3),
+        0 0 30px rgba(255, 255, 255, 0.4),
+        inset 0 2px 8px rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="celestial"] .wax-seal::after {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+[data-theme="celestial"] .wax-seal--gold {
+    background: radial-gradient(circle at 35% 35%,
+            #ffffff 0%,
+            #f0e0ff 30%,
+            #d0b8f0 60%,
+            #a080d0 100%);
+    color: #3a2060;
+    box-shadow:
+        0 4px 15px rgba(180, 150, 220, 0.3),
+        0 0 30px rgba(200, 170, 240, 0.2);
+}
+
+/* --- Dividers --- */
+[data-theme="celestial"] .divider::before,
+[data-theme="celestial"] .divider::after {
+    background: linear-gradient(90deg, transparent, rgba(200, 170, 240, 0.3), rgba(255, 200, 160, 0.15), rgba(200, 170, 240, 0.3), transparent);
+}
+
+[data-theme="celestial"] .divider-symbol {
+    color: #b898d8;
+    text-shadow: 0 0 10px rgba(200, 170, 240, 0.4);
+}
+
+/* --- Ornate Header --- */
+[data-theme="celestial"] .ornate-header h1 {
+    color: #3a2060;
+    text-shadow: 0 0 20px rgba(200, 170, 240, 0.2);
+}
+
+[data-theme="celestial"] .ornate-header .subtitle {
+    color: #8070a0;
+}
+
+/* --- Chat Messages --- */
+[data-theme="celestial"] .message--human {
+    background: rgba(245, 240, 255, 0.7);
+    border: 1px solid rgba(200, 170, 240, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+[data-theme="celestial"] .message--ai {
+    background: rgba(255, 250, 245, 0.7);
+    border: 1px solid rgba(200, 170, 240, 0.25);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 0 20px rgba(200, 170, 240, 0.06);
+}
+
+[data-theme="celestial"] .message--human .message-role {
+    color: #5a4878;
+}
+
+[data-theme="celestial"] .message--ai .message-role {
+    color: #8a6ab8;
+}
+
+/* --- Chat Input --- */
+[data-theme="celestial"] .chat-input-container {
+    background: rgba(248, 245, 255, 0.9);
+    border-top: 1px solid rgba(200, 170, 240, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+[data-theme="celestial"] .chat-input {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(200, 170, 240, 0.2);
+    color: #3a3050;
+}
+
+[data-theme="celestial"] .chat-input:focus {
+    border-color: rgba(200, 170, 240, 0.5);
+    box-shadow: 0 0 15px rgba(200, 170, 240, 0.15);
+}
+
+[data-theme="celestial"] .chat-input::placeholder {
+    color: #a898c0;
+}
+
+/* --- Buttons --- */
+[data-theme="celestial"] .btn {
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(200, 170, 240, 0.25);
+    color: #5a4878;
+    backdrop-filter: blur(8px);
+}
+
+[data-theme="celestial"] .btn:hover {
+    background: rgba(255, 255, 255, 0.9);
+    border-color: rgba(200, 170, 240, 0.45);
+    color: #5a3a90;
+    box-shadow: 0 4px 20px rgba(180, 150, 220, 0.15);
+}
+
+[data-theme="celestial"] .btn--primary {
+    background: linear-gradient(180deg, #d0b8f0 0%, #b898d8 50%, #9070b8 100%);
+    border-color: rgba(200, 170, 240, 0.4);
+    color: #ffffff;
+    box-shadow: 0 4px 15px rgba(180, 150, 220, 0.2);
+}
+
+[data-theme="celestial"] .btn--primary:hover {
+    background: linear-gradient(180deg, #e0c8ff 0%, #d0b8f0 50%, #b898d8 100%);
+    box-shadow: 0 6px 25px rgba(180, 150, 220, 0.3);
+}
+
+[data-theme="celestial"] .btn--seal {
+    background: linear-gradient(180deg, #a880d8 0%, #8060b0 100%);
+    border-color: rgba(160, 120, 200, 0.4);
+    color: #ffffff;
+}
+
+[data-theme="celestial"] .btn--seal:hover {
+    background: linear-gradient(180deg, #c098e8 0%, #a880d8 100%);
+}
+
+/* --- Scrollbar --- */
+[data-theme="celestial"] .chat-messages::-webkit-scrollbar-track {
+    background: rgba(240, 235, 250, 0.5);
+}
+
+[data-theme="celestial"] .chat-messages::-webkit-scrollbar-thumb {
+    background: rgba(200, 170, 240, 0.3);
+    border: 1px solid rgba(200, 170, 240, 0.15);
+}
+
+/* --- Chat Header --- */
+[data-theme="celestial"] .chat-header {
+    border-bottom: 1px solid rgba(200, 170, 240, 0.15);
+}
+
+/* --- Settings --- */
+[data-theme="celestial"] .setting-input {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(200, 170, 240, 0.2);
+    color: #3a3050;
+}
+
+[data-theme="celestial"] .setting-input:focus {
+    border-color: rgba(200, 170, 240, 0.5);
+    box-shadow: 0 0 10px rgba(200, 170, 240, 0.15);
+}
+
+[data-theme="celestial"] .setting-row {
+    border-bottom-color: rgba(200, 170, 240, 0.1);
+}
+
+/* --- Search Bar --- */
+[data-theme="celestial"] .search-bar {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(200, 170, 240, 0.2);
+    backdrop-filter: blur(8px);
+}
+
+[data-theme="celestial"] .search-bar input {
+    color: #3a3050;
+}
+
+[data-theme="celestial"] .search-bar input::placeholder {
+    color: #a898c0;
+}
+
+/* --- Game Items --- */
+[data-theme="celestial"] .game-item {
+    border-top-color: rgba(200, 170, 240, 0.1);
+}
+
+[data-theme="celestial"] .game-item:hover {
+    background: rgba(200, 170, 240, 0.06);
+}
+
+/* --- Reader Dialogue --- */
+[data-theme="celestial"] .dialogue-human {
+    background: rgba(245, 240, 255, 0.6);
+    border-color: rgba(200, 170, 240, 0.2);
+}
+
+[data-theme="celestial"] .dialogue-ai {
+    background: rgba(255, 250, 245, 0.6);
+    border-color: rgba(200, 170, 240, 0.25);
+}
+
+[data-theme="celestial"] .dialogue-ai .dialogue-role {
+    color: #8a6ab8;
+}
+
+[data-theme="celestial"] .vocab-badge-label {
+    background: linear-gradient(135deg, #d0b8f0, #b898d8);
+    color: #2a2040;
+    box-shadow: 0 2px 8px rgba(180, 150, 220, 0.2);
+}
+
+[data-theme="celestial"] .vocab-badge::before,
+[data-theme="celestial"] .vocab-badge::after {
+    background: linear-gradient(180deg, transparent, rgba(200, 170, 240, 0.4), transparent);
+}
+
+/* --- Dialogue List --- */
+[data-theme="celestial"] .dialogue-list-item {
+    border-bottom-color: rgba(200, 170, 240, 0.08);
+}
+
+[data-theme="celestial"] .dialogue-list-item:hover {
+    background: rgba(200, 170, 240, 0.05);
+}
+
+/* --- Connection Dots --- */
+[data-theme="celestial"] .connection-dot--connected {
+    background: #40a070;
+    box-shadow: 0 0 6px rgba(64, 160, 112, 0.4);
+}
+
+[data-theme="celestial"] .connection-dot--disconnected {
+    background: #d06060;
+    box-shadow: 0 0 6px rgba(208, 96, 96, 0.3);
+}
+
+[data-theme="celestial"] .connection-dot--checking {
+    background: #b898d8;
+}
+
+/* --- Typing Indicator --- */
+[data-theme="celestial"] .typing-indicator span {
+    background: #b898d8;
+    box-shadow: 0 0 6px rgba(200, 170, 240, 0.4);
+}
+
+/* --- Layer Tags --- */
+[data-theme="celestial"] .layer-tag--sanskrit {
+    background: rgba(200, 170, 240, 0.15);
+    color: #7a5ab0;
+}
+
+[data-theme="celestial"] .layer-tag--chinese {
+    background: rgba(224, 112, 112, 0.12);
+    color: #c06060;
+}
+
+[data-theme="celestial"] .layer-tag--japanese {
+    background: rgba(180, 160, 200, 0.1);
+    color: #5a4878;
+}
+
+[data-theme="celestial"] .layer-tag--anuhazi {
+    background: rgba(112, 160, 224, 0.12);
+    color: #4070b0;
+}
+
+[data-theme="celestial"] .layer-tag--quantum {
+    background: rgba(160, 112, 208, 0.12);
+    color: #7a50b0;
+}
+
+/* --- Model Selector --- */
+[data-theme="celestial"] .model-selector {
+    background: rgba(255, 255, 255, 0.7);
+    border-color: rgba(200, 170, 240, 0.2);
+    color: #3a3050;
+}
+
+[data-theme="celestial"] .model-selector:focus {
+    border-color: rgba(200, 170, 240, 0.5);
+}
+
+/* --- Module Section --- */
+[data-theme="celestial"] .module-section-header {
+    border-bottom-color: rgba(200, 170, 240, 0.15);
+}
+
+/* --- Temporal Navigator --- */
+[data-theme="celestial"] .temporal-nav-track {
+    background: linear-gradient(90deg,
+            rgba(200, 170, 240, 0.15) 0%,
+            rgba(200, 170, 240, 0.35) 50%,
+            rgba(200, 170, 240, 0.15) 100%);
+    box-shadow: 0 0 10px rgba(200, 170, 240, 0.1);
+}
+
+[data-theme="celestial"] .temporal-nav-thumb {
+    background: radial-gradient(circle at 40% 40%, #ffffff, #c0a0e0);
+    border-color: rgba(200, 170, 240, 0.4);
+    box-shadow:
+        0 2px 8px rgba(180, 150, 220, 0.3),
+        0 0 15px rgba(255, 255, 255, 0.3);
+}
+
+/* --- Headings --- */
+[data-theme="celestial"] h1,
+[data-theme="celestial"] h2,
+[data-theme="celestial"] h3,
+[data-theme="celestial"] h4,
+[data-theme="celestial"] h5 {
+    color: #2a2040;
+}
