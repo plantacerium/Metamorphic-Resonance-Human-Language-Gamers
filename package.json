@@ -30,7 +30,7 @@
     "@tauri-apps/plugin-opener": "^2.5.3"
   },
   "pnpm": {
-    "approvedBuilds": [
+    "onlyBuiltDependencies": [
       "esbuild",
       "onnxruntime-node",
       "protobufjs"
