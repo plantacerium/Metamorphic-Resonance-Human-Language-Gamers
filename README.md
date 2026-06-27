@@ -21,7 +21,7 @@
        style="display: block; margin: 0 auto; border-radius: 888px; max-width: 100%; height: auto;" />
 </p>   
 
-![Chronicles](./screenshots/Chronicles.JPG) 
+![Chronicles](./screenshots/MRHLG_V3.JPG) 
 ![Linguistic Chat](./screenshots/Chat.JPG) 
 
 
