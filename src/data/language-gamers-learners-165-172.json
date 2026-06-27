@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 165,
+        "module": "Lexical Ambiguity",
+        "game": "Homonym Hunt",
+        "human_role": "The Double Speaker (Uses a word that has two different meanings, but makes the sentence ambiguous).",
+        "ai_role": "The Meaning Selector (Asks for the visual context to decide which meaning was intended).",
+        "human_expansion": "Becoming aware of how single words can carry multiple realities.",
+        "mechanic": "Homonymic Awareness Tracking"
+    },
+    {
+        "synapse_id": 166,
+        "module": "Lexical Ambiguity",
+        "game": "Polysemy Puzzle",
+        "human_role": "The Core Refiner (Uses a common word like 'run' in three wildly different contexts).",
+        "ai_role": "The Semantic Historian (Identifies the 'central meaning' that connects all three uses).",
+        "human_expansion": "Finding the shared essence in diverse uses of common words.",
+        "mechanic": "Polysemic Root Identification"
+    },
+    {
+        "synapse_id": 167,
+        "module": "Lexical Ambiguity",
+        "game": "Contextual Disambiguation",
+        "human_role": "The Observer (Presents a sentence that could be read two ways depending on the 'vibe').",
+        "ai_role": "The Vibe Detector (Explains how changing the emotional tone of the speaker flips the meaning of the sentence).",
+        "human_expansion": "Recognizing that emotion is the ultimate disambiguator of language.",
+        "mechanic": "Affective Disambiguation Modeling"
+    },
+    {
+        "synapse_id": 168,
+        "module": "Lexical Ambiguity",
+        "game": "Semantic Overlap",
+        "human_role": "The Word Weaver (Chooses two words that are almost synonyms, like 'brave' and 'reckless').",
+        "ai_role": "The Nuance Carver (Explains the precise 'border' where one word ends and the other begins).",
+        "human_expansion": "Sharpening the precision of word choice.",
+        "mechanic": "Semantic Boundary Resolution"
+    },
+    {
+        "synapse_id": 169,
+        "module": "Lexical Ambiguity",
+        "game": "Shifting Definitions",
+        "human_role": "The Time Traveler (Uses a word as it would have been used 100 years ago).",
+        "ai_role": "The Modernizer (Explains how the meaning has drifted and what that says about society).",
+        "human_expansion": "Understanding that language is a living, shifting organism.",
+        "mechanic": "Diachronic Semantic Analysis"
+    },
+    {
+        "synapse_id": 170,
+        "module": "Lexical Ambiguity",
+        "game": "Double Entendre",
+        "human_role": "The Shadow Talker (Constructs a sentence with a hidden 'underworld' meaning).",
+        "ai_role": "The Infiltration Agent (Successfully 'cracks the code' and responds to the hidden meaning).",
+        "human_expansion": "Mastering layers of subtext and hidden messaging.",
+        "mechanic": "Subtextual Layer Encryption"
+    },
+    {
+        "synapse_id": 171,
+        "module": "Lexical Ambiguity",
+        "game": "Garden Path Sentences",
+        "human_role": "The Maze Maker (Starts a sentence that seems to go one way but ends up somewhere else).",
+        "ai_role": "The Re-Parser (Explains the exact point where they had to 'go back' and rethink the sentence).",
+        "human_expansion": "Analyzing the way the brain processes syntax in real-time.",
+        "mechanic": "Syntactic Garden-Path Processing"
+    },
+    {
+        "synapse_id": 172,
+        "module": "Lexical Ambiguity",
+        "game": "Vagueness Resolver",
+        "human_role": "The Vague Communicator (Uses 'fuzzy' words like 'soon' or 'maybe').",
+        "ai_role": "The Sharpener (Demands precise coordinates—time, place, and amount).",
+        "human_expansion": "Replacing 'fuzzy' thinking with crystal-clear specifics.",
+        "mechanic": "Precision Resolution Scaling"
+    }
+]

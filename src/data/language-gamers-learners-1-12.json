@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 1,
+        "module": "Sensory Grounding",
+        "game": "The Ghost of a Scent",
+        "human_role": "The Sensory Anchor (Describes a smell without using its name).",
+        "ai_role": "The Token Predictor (Identifies the object and predicts the emotion it triggers).",
+        "human_expansion": "Translating non-verbal sensory data into high-precision vocabulary.",
+        "mechanic": "Cross-modal translation."
+    },
+    {
+        "synapse_id": 2,
+        "module": "Sensory Grounding",
+        "game": "The Texture Bet",
+        "human_role": "The Tactile Architect (Describes the 'feeling' of a complex texture, e.g., 'wet velvet').",
+        "ai_role": "The Material Predictor (Suggests a 100-word story where that texture is the villain).",
+        "human_expansion": "Exploring the psychological impact of physical touch through adjectives.",
+        "mechanic": "Descriptive precision gambling."
+    },
+    {
+        "synapse_id": 3,
+        "module": "Micro-Emotions & Nuance",
+        "game": "Fleeting Feelings",
+        "human_role": "The Emotion Tracker (Describes a fleeting emotion experienced in a specific situation).",
+        "ai_role": "The Micro-Expression Analyst (Identifies the specific micro-expressions associated with the described emotion).",
+        "human_expansion": "Pinpointing the precise qualitative elements of a rapidly shifting emotional state.",
+        "mechanic": "Rapid Emotion Identification"
+    },
+    {
+        "synapse_id": 4,
+        "module": "Micro-Emotions & Nuance",
+        "game": "Internal States",
+        "human_role": "The Internal Navigator (Describes the feeling of a specific internal state, e.g., anxiety, anticipation).",
+        "ai_role": "The Physiological Sensor (Monitors physiological data - heart rate, skin conductance - to validate the described internal state).",
+        "human_expansion": "Mapping subjective feelings to measurable physiological responses.",
+        "mechanic": "Physiological Validation of Internal States"
+    },
+    {
+        "synapse_id": 5,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Subtle Shift",
+        "human_role": "The Dialogue Decoder (Identifies the subtle shifts in emotion between two dialogue exchanges).",
+        "ai_role": "The Contextual Analyzer (Analyzes the conversational context – tone, body language – for clues to the shifting emotions).",
+        "human_expansion": "Detecting nuance in communicative exchanges.",
+        "mechanic": "Shifting Sentiment Detection"
+    },
+    {
+        "synapse_id": 6,
+        "module": "Micro-Emotions & Nuance",
+        "game": "Emotional Palimpsest",
+        "human_role": "The Emotional Historian (Describes a past event, emphasizing the lingering emotions associated with it).",
+        "ai_role": "The Trauma Analyst (Identifies the potential trauma triggers within the description and their effect on the described emotions).",
+        "human_expansion": "Tracing echoes of the past through emotional resonance.",
+        "mechanic": "Emotional Resonance Tracing"
+    },
+    {
+        "synapse_id": 7,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Unspoken Tension",
+        "human_role": "The Tension Detector (Identifies the unspoken tension or conflict present in a social scenario).",
+        "ai_role": "The Social Cue Analyzer (Identifies the nonverbal cues that contribute to the tension).",
+        "human_expansion": "Reading between the lines to detect subtle emotional tensions.",
+        "mechanic": "Social Tension Detection"
+    },
+    {
+        "synapse_id": 8,
+        "module": "Historical Linguistics & Etymology",
+        "game": "Word Roots",
+        "human_role": "The Etymological Explorer (Identifies the original root of a given word).",
+        "ai_role": "The Historical Lexicon (Provides the historical evolution of the word's meaning and usage).",
+        "human_expansion": "Tracing the ancestry of words and understanding how their meanings have changed over time.",
+        "mechanic": "Root Identification"
+    },
+    {
+        "synapse_id": 9,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Lost Connections",
+        "human_role": "The Semantic Bridge (Links related words together to reveal a shared etymological origin).",
+        "ai_role": "The Semantic Network (Displays the interconnectedness of related words and concepts).",
+        "human_expansion": "Recognizing the intricate relationships between words through their shared histories.",
+        "mechanic": "Semantic Interconnectivity"
+    },
+    {
+        "synapse_id": 10,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Shifting Sands",
+        "human_role": "The Linguistic Time Traveler (Reconstructs the meanings of words from ancient texts).",
+        "ai_role": "The Archaic Dictionary (Provides access to historical linguistic data and corpora).",
+        "human_expansion": "Reinterpreting words through the lens of historical usage.",
+        "mechanic": "Historical Word Reconstruction"
+    },
+    {
+        "synapse_id": 11,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Forgotten Voices",
+        "human_role": "The Language Detective (Identifies the influence of extinct languages on the vocabulary of modern languages).",
+        "ai_role": "The Comparative Lexicon (Provides data on similarities and differences between related languages).",
+        "human_expansion": "Discovering the historical roots of our current languages.",
+        "mechanic": "Extinct Language Influence"
+    },
+    {
+        "synapse_id": 12,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Feynman Principle",
+        "human_role": "The Concept Translator (Explains a complex scientific concept in simple terms).",
+        "ai_role": "The Verification Engine (Checks the accuracy of the simplified explanation).",
+        "human_expansion": "Applying the Feynman Technique to understand and explain complex scientific concepts.",
+        "mechanic": "Feynman Simplification"
+    }
+]

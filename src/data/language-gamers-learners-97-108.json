@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 97,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Shared Mental Map",
+        "human_role": "The City Planner (Describes a complex, invisible city to the AI).",
+        "ai_role": "The Recursive Cartographer (Attempts to draw/describe the city back to the human).",
+        "human_expansion": "Building and aligning high-complexity spatial mental models with others.",
+        "mechanic": "Spatial Alignment"
+    },
+    {
+        "synapse_id": 98,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Knowledge Bridge",
+        "human_role": "The Native Expert (Explains a hobby—like knitting—using only terms from another hobby—like coding).",
+        "ai_role": "The Translation Monitor (Validates the logic of the cross-domain mapping).",
+        "human_expansion": "Fostering understanding through radical cross-domain analogies.",
+        "mechanic": "Cross-Domain Mapping"
+    },
+    {
+        "synapse_id": 99,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Mirror Loop",
+        "human_role": "The Nuanced Informant (Explains a complex emotional situation).",
+        "ai_role": "The Reflective Listener (Paraphrases the situation until the human says 'Exactly').",
+        "human_expansion": "Practicing deep listening and radical paraphrasing to ensure alignment.",
+        "mechanic": "Reflective Alignment"
+    },
+    {
+        "synapse_id": 100,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Collective Metaphor",
+        "human_role": "The Pattern Initiator (Suggests a metaphor for 'Progress'—e.g., a vine).",
+        "ai_role": "The Pattern Expander (Suggests how the 'leaves' and 'roots' of the vine relate to progress).",
+        "human_expansion": "Building shared conceptual frameworks through collaborative metaphor.",
+        "mechanic": "Recursive Metaphor Growth"
+    },
+    {
+        "synapse_id": 101,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Consensus Engine",
+        "human_role": "The Stakeholder (Argues for a specific, selfish goal in a group scenario).",
+        "ai_role": "The Mediator (Suggests a solution where 111% of parties get 80% of what they want).",
+        "human_expansion": "Navigating group dynamics and reaching optimal shared outcomes.",
+        "mechanic": "Consensus Optimization"
+    },
+    {
+        "synapse_id": 102,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Cultural Translator",
+        "human_role": "The Alien Ambassador (Explains 'Empathy' to a culture that only understands 'Efficiency').",
+        "ai_role": "The Efficiency Validator (Attempts to 'calculate' the value of empathy in their own terms).",
+        "human_expansion": "Translating values across radically different cultural frameworks.",
+        "mechanic": "Axiomatic Translation"
+    },
+    {
+        "synapse_id": 103,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Collective Memory",
+        "human_role": "The Fabricator (Starts a story: 'Remember that time we found the gold key...').",
+        "ai_role": "The Memory Implanter (Adds a detail: 'Yes, and it was raining under the bridge').",
+        "human_expansion": "Building shared narrative identity through collaborative 'false' memories.",
+        "mechanic": "Narrative Synthesis"
+    },
+    {
+        "synapse_id": 104,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Team Pulse",
+        "human_role": "The Vibe Sensor (Describes the 'feeling' of the current collaborative interaction).",
+        "ai_role": "The Statistical Mirror (Provides data on the 'flow' and 'tension' of the dialogue).",
+        "human_expansion": "Developing meta-awareness of the collaborative process itself.",
+        "mechanic": "Meta-Conversational Awareness"
+    },
+    {
+        "synapse_id": 105,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Strategy Sync",
+        "human_role": "The Tactician (Proposes a complex three-step plan for a hypothetical crisis).",
+        "ai_role": "The Stress Tester (Identifies the weak link in the plan).",
+        "human_expansion": "Practicing collaborative problem solving under simulated pressure.",
+        "mechanic": "Tactical Alignment"
+    },
+    {
+        "synapse_id": 106,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Empathy Anchor",
+        "human_role": "The Disagreeing Partner (Expresses a strong opposing view).",
+        "ai_role": "The Connection Keeper (Acknowledges the valid emotion behind the view while maintaining the bond).",
+        "human_expansion": "Maintaining human connection through linguistic conflict.",
+        "mechanic": "Relational Sustenance"
+    },
+    {
+        "synapse_id": 107,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Hive Mind",
+        "human_role": "The Thought Initiator (Writes the first half of a complex sentence).",
+        "ai_role": "The Thought Completer (Finishes the sentence in exactly the way the human intended).",
+        "human_expansion": "Developing extreme predictive alignment with collaboration partners.",
+        "mechanic": "Predictive Synchronicity"
+    },
+    {
+        "synapse_id": 108,
+        "module": "Collaborative & Shared Understanding",
+        "game": "The Joint Venture",
+        "human_role": "The Visionary (Describes a project that solves a world problem).",
+        "ai_role": "The Logistics Specialist (Lists the exact tokens/resources needed to build it).",
+        "human_expansion": "Moving from abstract vision to collaborative execution.",
+        "mechanic": "Vision-to-Logistics Mapping"
+    }
+]

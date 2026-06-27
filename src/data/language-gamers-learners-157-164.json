@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 157,
+        "module": "Metaphor & Analogy",
+        "game": "Figurative Bridge",
+        "human_role": "The Meaning Linker (Explains a complex idea by comparing it to a common household object).",
+        "ai_role": "The Structural Verifier (Points out where the comparison breaks down and where it's most accurate).",
+        "human_expansion": "Using familiar objects to ground abstract concepts.",
+        "mechanic": "Concrete-Abstract Mapping"
+    },
+    {
+        "synapse_id": 158,
+        "module": "Metaphor & Analogy",
+        "game": "Analogical Mapping",
+        "human_role": "The Relationship Scout (States that 'A is to B as C is to...').",
+        "ai_role": "The Completionist (Completes the analogy and explains the underlying functional relationship).",
+        "human_expansion": "Recognizing pattern relationships across different domains.",
+        "mechanic": "Relational Pattern Completion"
+    },
+    {
+        "synapse_id": 159,
+        "module": "Metaphor & Analogy",
+        "game": "Metaphorical Extension",
+        "human_role": "The Metaphor Master (Starts a metaphor e.g., 'Life is a river').",
+        "ai_role": "The Deep Diver (Extends the metaphor by talking about the rocks, the delta, and the current).",
+        "human_expansion": "Developing the stamina to sustain and explore complex metaphors.",
+        "mechanic": "Sustained Metaphor Exploration"
+    },
+    {
+        "synapse_id": 160,
+        "module": "Metaphor & Analogy",
+        "game": "Concrete to Abstract",
+        "human_role": "The Physical Witness (Describes a physical sensation like 'biting into a lemon').",
+        "ai_role": "The Abstractor (Translates that sensation into a social or emotional situation).",
+        "human_expansion": "Linking raw sensory data to complex social meanings.",
+        "mechanic": "Sensory-Social Transcoding"
+    },
+    {
+        "synapse_id": 161,
+        "module": "Metaphor & Analogy",
+        "game": "Conceptual Blending",
+        "human_role": "The Blender (Takes two metaphors and mixes them into a new, weird one).",
+        "ai_role": "The Alchemist (Finds the 'hidden logic' that makes the new blend work).",
+        "human_expansion": "Breaking metaphorical clichés to find original insights.",
+        "mechanic": "Metaphorical Blend Synthesis"
+    },
+    {
+        "synapse_id": 162,
+        "module": "Metaphor & Analogy",
+        "game": "Deep Analogy",
+        "human_role": "The Core Seeker (Describes a software bug as if it were a biological virus).",
+        "ai_role": "The Functional Analyst (Maps the 'immune response' of the computer system to the biological metaphor).",
+        "human_expansion": "Using cross-domain analogies to solve technical problems.",
+        "mechanic": "Cross-Domain Functional Mapping"
+    },
+    {
+        "synapse_id": 163,
+        "module": "Metaphor & Analogy",
+        "game": "Image Schema",
+        "human_role": "The Spatialist (Uses words like 'up', 'down', 'in', or 'out' to describe their mood).",
+        "ai_role": "The Schema Tracker (Explains how the physical direction chosen relates to their emotional state).",
+        "human_expansion": "Understanding the spatial basis of all abstract language.",
+        "mechanic": "Spatial-Emotional Schema Mapping"
+    },
+    {
+        "synapse_id": 164,
+        "module": "Metaphor & Analogy",
+        "game": "Proverb Deciphering",
+        "human_role": "The Ancient Sage (Quotes a proverb from another culture).",
+        "ai_role": "The Universal Translator (Explains the core human truth behind the proverb in modern, direct terms).",
+        "human_expansion": "Extracting universal wisdom from cultural-specific metaphors.",
+        "mechanic": "Proverbial Wisdom Extraction"
+    }
+]

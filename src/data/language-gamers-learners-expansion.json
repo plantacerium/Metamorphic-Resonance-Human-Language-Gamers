@@ -1,0 +1,128 @@
+[
+  {
+      "synapse_id": 241,
+      "module": "Sensory Grounding",
+      "game": "The Tactile Memory",
+      "human_role": "The Rememberer (Describes a childhood memory entirely through textures).",
+      "ai_role": "The Sensory Decoder (Translates those textures into the core emotional truth of the memory).",
+      "human_expansion": "Anchoring abstract memories into concrete physical sensations.",
+      "mechanic": "Texture-to-Emotion Translation"
+  },
+  {
+      "synapse_id": 242,
+      "module": "Sensory Grounding",
+      "game": "The Olfactory Anchor",
+      "human_role": "The Drifter (Feeling anxious, describes a phantom comforting scent).",
+      "ai_role": "The Alchemist (Constructs a safe mental space using vocabulary related to that specific scent).",
+      "human_expansion": "Using imagined scents to regulate nervous system responses.",
+      "mechanic": "Olfactory Regulation"
+  },
+  {
+      "synapse_id": 243,
+      "module": "Sensory Grounding",
+      "game": "The Auditory Horizon",
+      "human_role": "The Listener (Describes the furthest sound they can imagine hearing right now).",
+      "ai_role": "The Acoustic Mapmaker (Maps that sound to a state of mental expansion or contraction).",
+      "human_expansion": "Expanding spatial awareness through imagined soundscapes.",
+      "mechanic": "Acoustic Spatial Mapping"
+  },
+  {
+      "synapse_id": 244,
+      "module": "Sensory Grounding",
+      "game": "The Gustatory Metaphor",
+      "human_role": "The Taster (Assigns a complex flavor profile to a recent difficult conversation).",
+      "ai_role": "The Sommelier (Recommends a linguistic 'palate cleanser' to resolve the lingering emotional taste).",
+      "human_expansion": "Processing complex social interactions via taste associations.",
+      "mechanic": "Flavor-Based Emotional Processing"
+  },
+  {
+      "synapse_id": 245,
+      "module": "Sensory Grounding",
+      "game": "The Kinesthetic Shift",
+      "human_role": "The Frozen (Describes a feeling of being stuck in a specific posture).",
+      "ai_role": "The Kinesiologist (Suggests microscopic linguistic shifts that mimic physical movement to unblock them).",
+      "human_expansion": "Translating physical stillness into mental momentum.",
+      "mechanic": "Micro-Kinetic Linguistics"
+  },
+  {
+      "synapse_id": 246,
+      "module": "Sensory Grounding",
+      "game": "The Thermal Baseline",
+      "human_role": "The Overheated (Uses 'hot' angry language to describe a conflict).",
+      "ai_role": "The Coolant (Responds using exclusively 'cold', structural, calming vocabulary to lower the conversational temperature).",
+      "human_expansion": "Regulating conversational intensity via thermal descriptors.",
+      "mechanic": "Thermal Vocabulary Regulation"
+  },
+  {
+      "synapse_id": 247,
+      "module": "Narrative Construction",
+      "game": "The Missing Chapter",
+      "human_role": "The Protagonist (Tells a story but deliberately skips the most important turning point).",
+      "ai_role": "The Literary Detective (Infers the missing chapter based purely on the emotional shift before and after).",
+      "human_expansion": "Understanding how omitted information shapes narrative weight.",
+      "mechanic": "Negative Space Storytelling"
+  },
+  {
+      "synapse_id": 248,
+      "module": "Narrative Construction",
+      "game": "The Unreliable Narrator",
+      "human_role": "The Trickster (Recounts an event while subtly lying about their own motivations).",
+      "ai_role": "The Subtext Reader (Gently exposes the lie by pointing out contradictions in the vocabulary used).",
+      "human_expansion": "Recognizing self-deception in personal storytelling.",
+      "mechanic": "Motivation Auditing"
+  },
+  {
+      "synapse_id": 249,
+      "module": "Narrative Construction",
+      "game": "The Perspective Pivot",
+      "human_role": "The Villain (Retells a famous fairy tale where they are completely justified in their actions).",
+      "ai_role": "The Mediator (Validates their logic while introducing the hidden collateral damage of their choices).",
+      "human_expansion": "Expanding empathy by adopting opposing narrative frameworks.",
+      "mechanic": "Framework Reversal"
+  },
+  {
+      "synapse_id": 250,
+      "module": "Narrative Construction",
+      "game": "The Micro-Epic",
+      "human_role": "The Bard (Takes a 5-minute mundane daily task and describes it as a heroic epic journey).",
+      "ai_role": "The Chronicler (Elevates the stakes further, identifying the 'dragons' and 'artifacts' in the mundane task).",
+      "human_expansion": "Finding deep meaning and engagement in repetitive routines.",
+      "mechanic": "Mundane Mythologization"
+  },
+  {
+      "synapse_id": 251,
+      "module": "Language and Technology",
+      "game": "The Glitch in the Matrix",
+      "human_role": "The User (Describes a strange coincidence using software terminology).",
+      "ai_role": "The Developer (Analyzes the coincidence as a 'feature' of the universal algorithm, explaining its purpose).",
+      "human_expansion": "Using technical frameworks to process synchronous events.",
+      "mechanic": "Algorithmic Synchronicity"
+  },
+  {
+      "synapse_id": 252,
+      "module": "Language and Technology",
+      "game": "The Data Diet",
+      "human_role": "The Overloaded (Lists 10 pieces of trivial information they consumed today).",
+      "ai_role": "The Nutritionist (Categorizes them into 'empty calories' vs 'nourishing data' and suggests a healthier information diet).",
+      "human_expansion": "Developing intentionality around media consumption.",
+      "mechanic": "Information Triage"
+  },
+  {
+      "synapse_id": 253,
+      "module": "Language and Technology",
+      "game": "The Prompt Engineer",
+      "human_role": "The Commander (Gives a highly vague, emotional request to the AI).",
+      "ai_role": "The Compiler (Returns an error, demanding the human rephrase their emotion into a precise, logical 'prompt').",
+      "human_expansion": "Bridging the gap between raw emotion and structural logic.",
+      "mechanic": "Emotional Syntax Formatting"
+  },
+  {
+      "synapse_id": 254,
+      "module": "Language and Technology",
+      "game": "The Legacy System",
+      "human_role": "The Old Code (Defends an outdated, inefficient personal habit because 'it's always been there').",
+      "ai_role": "The Modernizer (Proposes a 'refactor' that preserves the habit's original intent but updates the execution).",
+      "human_expansion": "Updating behavioral patterns using software refactoring principles.",
+      "mechanic": "Behavioral Refactoring"
+  }
+]

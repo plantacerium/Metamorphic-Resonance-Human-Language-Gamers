@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 213,
+        "module": "Sign Language",
+        "game": "Spatial Syntax",
+        "human_role": "The Signer (Describes where they 'placed' three different characters in the 3D space in front of them).",
+        "ai_role": "The Spatial Decoder (Explains how the spatial layout changes the relationship between the characters).",
+        "human_expansion": "Visualizing language as a three-dimensional geometric structure.",
+        "mechanic": "3D Spatial-Semantic Mapping"
+    },
+    {
+        "synapse_id": 214,
+        "module": "Sign Language",
+        "game": "Classifier Shapes",
+        "human_role": "The Hand-Shaper (Describes a complex movement, like a leaf falling, using only hand-shape metaphors).",
+        "ai_role": "The Motion Analyst (Translates the 'hand-shape' back into the physics of the movement).",
+        "human_expansion": "Communicating complex action through iconic physical forms.",
+        "mechanic": "Iconic Hand-Shape Synthesis"
+    },
+    {
+        "synapse_id": 215,
+        "module": "Sign Language",
+        "game": "Non-Manual Markers",
+        "human_role": "The Facial Grammarian (Explains how raising their eyebrows changes a 'statement' into a 'question').",
+        "ai_role": "The Grammar Mirror (Highlights the importance of facial expressions in visual-spatial grammar).",
+        "human_expansion": "Integrating the whole body into the grammatical structure of communication.",
+        "mechanic": "Facial-Syntactic Integration"
+    },
+    {
+        "synapse_id": 216,
+        "module": "Sign Language",
+        "game": "Simultaneous Meaning",
+        "human_role": "The Dual Signer (Describes two different things happening at the exact same time).",
+        "ai_role": "The Multi-Processor (Explains how visual language can be 'parallel' while spoken language is 'linear').",
+        "human_expansion": "Breaking out of linear time into simultaneous, multi-channel communication.",
+        "mechanic": "Parallel Meaning Processing"
+    },
+    {
+        "synapse_id": 217,
+        "module": "Sign Language",
+        "game": "Visual Vernacular",
+        "human_role": "The Cinematic Storyteller (Describes a whole scene as if it were a movie being played out in signs).",
+        "ai_role": "The Camera Operator (Identifies the 'camera angles' and 'zooms' hidden in the sign description).",
+        "human_expansion": "Understanding the cinematic and immersive nature of visual language.",
+        "mechanic": "Cinematic Storytelling Synthesis"
+    },
+    {
+        "synapse_id": 218,
+        "module": "Sign Language",
+        "game": "Deictic Points",
+        "human_role": "The Pointer (Assigns a specific point in space to hold the concept of 'Yesterday' or 'Home').",
+        "ai_role": "The Anchor Tracker (Ensures the conversation consistently refers back to that specific spatial point).",
+        "human_expansion": "Anchoring abstract concepts in a physical, consistent spatial map.",
+        "mechanic": "Spatial Concept Anchoring"
+    },
+    {
+        "synapse_id": 219,
+        "module": "Sign Language",
+        "game": "Metalinguistic Awareness",
+        "human_role": "The Sign Analyst (Explains how a particular sign 'looks like' the thing it represents).",
+        "ai_role": "The Iconicity Hunter (Finds the direct link between the physical sign and the mental category).",
+        "human_expansion": "Bridging the gap between the symbol and the thing-itself through physical form.",
+        "mechanic": "Iconic-Symbolic Convergence"
+    },
+    {
+        "synapse_id": 220,
+        "module": "Sign Language",
+        "game": "Rhythmic Signing",
+        "human_role": "The Pulse Signer (Describes a walk through a forest using a specific 'signing rhythm').",
+        "ai_role": "The Beat Detector (Explains how the rhythm of the hands dictates the 'feel' of the forest).",
+        "human_expansion": "Infusing physical movement with the rhythmic cadence of the soul.",
+        "mechanic": "Kinetic/Rhythmic Syncing"
+    }
+]

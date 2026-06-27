@@ -1,0 +1,38 @@
+[
+    {
+        "synapse_id": 153,
+        "module": "Narrative Construction",
+        "game": "The Story Thread",
+        "human_role": "The Inciting Incident (Starts a story with a single dramatic action).",
+        "ai_role": "The Narrative Weaver (Connects that action to a larger theme of personal growth).",
+        "human_expansion": "Understanding the structural seeds of storytelling.",
+        "mechanic": "Inciting Incident Projection"
+    },
+    {
+        "synapse_id": 154,
+        "module": "Narrative Construction",
+        "game": "Character Motivation",
+        "human_role": "The Internal Actor (Describes a character's secret fear).",
+        "ai_role": "The Motivation Analyst (Predicts how that fear will manifest as a physical obstacle in the story).",
+        "human_expansion": "Linking internal psychology to external periodic conflict.",
+        "mechanic": "Psychological-Conflict Mapping"
+    },
+    {
+        "synapse_id": 155,
+        "module": "Narrative Construction",
+        "game": "Narrative Arc",
+        "human_role": "The Climax Architect (Describes the highest point of tension in a story).",
+        "ai_role": "The Resolution Guide (Suggests two different ways the story could end, based on the hero's choice).",
+        "human_expansion": "Mastering the structural rhythm of narrative tension and release.",
+        "mechanic": "Structural Tension Release"
+    },
+    {
+        "synapse_id": 156,
+        "module": "Narrative Construction",
+        "game": "World Building",
+        "human_role": "The Myth Maker (Describes a single law of nature in a fictional world).",
+        "ai_role": "The Culture Sim (Describes how that physical law would shape the architecture and social rules of the people living there).",
+        "human_expansion": "Understanding how environment and physical laws dictate cultural narrative.",
+        "mechanic": "Socio-Environmental World Building"
+    }
+]

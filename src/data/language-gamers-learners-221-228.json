@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 221,
+        "module": "Non-Verbal Communication",
+        "game": "The Micro-Expression",
+        "human_role": "The Masked Speaker (Describes a 1/2-second involuntary facial tic that betrays their true intent).",
+        "ai_role": "The Truth Detector (Explains why that micro-expression is more 'honest' than the words being spoken).",
+        "human_expansion": "Detecting the subtle, involuntary leakages of authentic emotion.",
+        "mechanic": "Micro-Expression Truth Tracking"
+    },
+    {
+        "synapse_id": 222,
+        "module": "Non-Verbal Communication",
+        "game": "Proxemics Meter",
+        "human_role": "The Space-Maker (Describes how close they are standing to someone and why).",
+        "ai_role": "The Intimacy Analyst (Maps the 'distance' to a specific level of social or emotional relationship).",
+        "human_expansion": "Understanding the silent language of physical distance and personal space.",
+        "mechanic": "Spatial-Intimacy Distance Mapping"
+    },
+    {
+        "synapse_id": 223,
+        "module": "Non-Verbal Communication",
+        "game": "Paralinguistic Tone",
+        "human_role": "The Voice Sculptor (Describes a sentence by only talking about the 'pitch', 'speed', and 'breathiness').",
+        "ai_role": "The Tone Interpreter (Draws the emotional landscape created by those specific vocal qualities).",
+        "human_expansion": "Separating the *how* you speak from the *what* you say.",
+        "mechanic": "Paralinguistic Affective Analysis"
+    },
+    {
+        "synapse_id": 224,
+        "module": "Non-Verbal Communication",
+        "game": "Haptic Feedback",
+        "human_role": "The Touch Witness (Describes the specific pressure and temperature of a handshake).",
+        "ai_role": "The Intent Decoder (Infers the social standing and confidence level behind the touch).",
+        "human_expansion": "Mastering the communicative power of touch and physical contact.",
+        "mechanic": "Haptic-Social Intent Calibration"
+    },
+    {
+        "synapse_id": 225,
+        "module": "Non-Verbal Communication",
+        "game": "Kinesic Flow",
+        "human_role": "The Body Reader (Describes a person's posture without using any emotion words).",
+        "ai_role": "The Emotion Extractor (Infers the person's mood and internal state from the posture description).",
+        "human_expansion": "Reading the silent and profound narrative written into the body's posture.",
+        "mechanic": "Kinesic-Emotional Data Decoding"
+    },
+    {
+        "synapse_id": 226,
+        "module": "Non-Verbal Communication",
+        "game": "Gaze Direction",
+        "human_role": "The Watcher (Describes a person by only talking about where their eyes are focusing—floor, ceiling, person).",
+        "ai_role": "The Attention Mapper (Explains what the gaze reveals about their dominance, submission, or boredom).",
+        "human_expansion": "Mastering the power dynamics and social cues of eye contact.",
+        "mechanic": "Gaze-Attention Social Tracking"
+    },
+    {
+        "synapse_id": 227,
+        "module": "Non-Verbal Communication",
+        "game": "Chronemics (Time use)",
+        "human_role": "The Time Waiter (Describes how long they wait before answering a text from a crush).",
+        "ai_role": "The Power Auditor (Explains the 'message' that the silence and delay are sending).",
+        "human_expansion": "Understanding time as a powerful, non-verbal communicative tool.",
+        "mechanic": "Temporal Delay Meaning Calibration"
+    },
+    {
+        "synapse_id": 228,
+        "module": "Non-Verbal Communication",
+        "game": "Artifactual Communication",
+        "human_role": "The Style Guardian (Describes a person's accessories—watch, glasses, tattoos—without their clothes).",
+        "ai_role": "The Identity Builder (Reconstructs the person's self-image from their 'artifacts').",
+        "human_expansion": "Recognizing that the objects we wear are extensions of our linguistic identity.",
+        "mechanic": "Artifactual Identity Synthesis"
+    }
+]

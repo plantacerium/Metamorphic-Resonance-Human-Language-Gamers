@@ -1,0 +1,38 @@
+[
+    {
+        "synapse_id": 237,
+        "module": "Language and Technology",
+        "game": "The Gutenberg Shift",
+        "human_role": "The Monk (Describes how it feels to copy a book by hand).",
+        "ai_role": "The Printer (Explains how the printing press 'democratized' the same information).",
+        "human_expansion": "Tracing the impact of technological media on human consciousness.",
+        "mechanic": "Techno-Cultural Paradigm Mapping"
+    },
+    {
+        "synapse_id": 238,
+        "module": "Language and Technology",
+        "game": "Digital Slang",
+        "human_role": "The Netizen (Uses an acronym that only makes sense in a specific online subculture).",
+        "ai_role": "The Decoder (Translates the acronym into its underlying social value).",
+        "human_expansion": "Understanding how digital environments accelerate linguistic evolution.",
+        "mechanic": "Accelerated Vernacular Evolution"
+    },
+    {
+        "synapse_id": 239,
+        "module": "Language and Technology",
+        "game": "Search Intent",
+        "human_role": "The Seeker (Inputs three keywords into a 'cosmic search engine').",
+        "ai_role": "The Result Generator (Ranks the results based on the human's 'unspoken' intent).",
+        "human_expansion": "Mastering the interaction between core intent and keyword-based metadata.",
+        "mechanic": "Metadata-Intent Alignment"
+    },
+    {
+        "synapse_id": 240,
+        "module": "Language and Technology",
+        "game": "The Binary Soul",
+        "human_role": "The Transhuman (Describes their consciousness as if it were a complex software architecture).",
+        "ai_role": "The System Admin (Points out the 'memory leaks' or 'bugs' in their current emotional code).",
+        "human_expansion": "Subjectively using technological metaphors to debug the self.",
+        "mechanic": "Cybernetic Self-Analysis"
+    }
+]

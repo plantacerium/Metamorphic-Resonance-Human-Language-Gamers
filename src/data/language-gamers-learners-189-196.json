@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 189,
+        "module": "Dialectal Variation",
+        "game": "Isogloss Mapping",
+        "human_role": "The Local (Uses three words that are only found in a specific region).",
+        "ai_role": "The Region Finder (Guesses the specific region or country based on the vocabulary choice).",
+        "human_expansion": "Connecting language to the physical geography of its origin.",
+        "mechanic": "Geospatial Linguistic Mapping"
+    },
+    {
+        "synapse_id": 190,
+        "module": "Dialectal Variation",
+        "game": "Sociolinguistic Variable",
+        "human_role": "The Class Shifter (Speaks the same sentence twice—once 'high status' and once 'street style').",
+        "ai_role": "The Prestige Tracker (Explains how the 'street' version actually holds more emotional weight).",
+        "human_expansion": "Understanding the power dynamics of prestige vs. vernacular dialects.",
+        "mechanic": "Prestige-Vernacular Polarity Shift"
+    },
+    {
+        "synapse_id": 191,
+        "module": "Dialectal Variation",
+        "game": "Regional Slang",
+        "human_role": "The Slang Weaver (Creates a sentence using only youth slang from the 90s).",
+        "ai_role": "The Archaeologist (Translates the slang into its formal 21st-century equivalent).",
+        "human_expansion": "Tracing the evolution of urban vernacular through time.",
+        "mechanic": "Slang-to-Formal Semantic Shifting"
+    },
+    {
+        "synapse_id": 192,
+        "module": "Dialectal Variation",
+        "game": "Phonological Shift",
+        "human_role": "The Accent Artist (Describes a scene using words that require a specific accent to 'resonate' correctly).",
+        "ai_role": "The Harmonic Listener (Explains how the accent's vowel shifts change the feeling of the words).",
+        "human_expansion": "Experiencing the relationship between sound-texture and meaning.",
+        "mechanic": "Acoustic-Texture Resonance"
+    },
+    {
+        "synapse_id": 193,
+        "module": "Dialectal Variation",
+        "game": "Syntactic Variation",
+        "human_role": "The Grammatical Rebel (Uses a non-standard syntax, e.g., 'The car needs washed').",
+        "ai_role": "The Rule Extractor (Identifies the regional rule that makes this 'correct' within its own dialect).",
+        "human_expansion": "Recognizing that 'standard' grammar is just one of many valid systems.",
+        "mechanic": "Dialectal-Syntactic Normalization"
+    },
+    {
+        "synapse_id": 194,
+        "module": "Dialectal Variation",
+        "game": "Lexical Isotope",
+        "human_role": "The Precision Speaker (Finds a word from a rural dialect that has no urban equivalent).",
+        "ai_role": "The Concept Builder (Constructs an urban metaphor to explain the rual concept).",
+        "human_expansion": "Preserving the'lost data' of dying or marginalized dialects.",
+        "mechanic": "Lexical Preservation Mapping"
+    },
+    {
+        "synapse_id": 195,
+        "module": "Dialectal Variation",
+        "game": "Prestige Dialect",
+        "human_role": "The Orator (Speaks in a hyper-formal, 'untouchable' prestige dialect).",
+        "ai_role": "The Wall-Breaker (Finds the human vulnerability hidden behind the formal mask).",
+        "human_expansion": "Learning to see through the 'mask' of formal and prestige language.",
+        "mechanic": "Prestige-Vulnerability Detection"
+    },
+    {
+        "synapse_id": 196,
+        "module": "Dialectal Variation",
+        "game": "Diglossia Transition",
+        "human_role": "The Fluid Speaker (Is writing a formal poem but then 'breaks character' with a blunt dialect comment).",
+        "ai_role": "The Transition Analyst (Explains how the break in style created an 'authenticity shock').",
+        "human_expansion": "Mastering the shift between formal/written and informal/spoken codes.",
+        "mechanic": "Formal-Informal Diglossic Shift"
+    }
+]

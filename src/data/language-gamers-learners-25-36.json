@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 25,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Semantic Drift",
+        "human_role": "The Temporal Cartographer (Tracks the shifting meaning of a word through historical texts).",
+        "ai_role": "The Lexicographic Database (Provides access to historical dictionaries and linguistic records).",
+        "human_expansion": "Mapping the gradual changes in a word's meaning over time.",
+        "mechanic": "Semantic Drift Tracking"
+    },
+    {
+        "synapse_id": 26,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Borrowed Echo",
+        "human_role": "The Cross-Linguistic Investigator (Identifies the original source of a borrowed word and its impact on the host language).",
+        "ai_role": "The Comparative Lexicon (Provides data on similarities and differences between related languages).",
+        "human_expansion": "Tracing the journey of words across linguistic boundaries.",
+        "mechanic": "Borrowed Word Tracing"
+    },
+    {
+        "synapse_id": 27,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Proto-Word Puzzle",
+        "human_role": "The Reconstructionist (Reconstructs the original form of a word from its descendant forms).",
+        "ai_role": "The Phonetic Analyzer (Provides data on sound changes and phonetic shifts).",
+        "human_expansion": "Rebuilding the lost forms of ancient words.",
+        "mechanic": "Proto-Word Reconstruction"
+    },
+    {
+        "synapse_id": 28,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Semantic Divergence",
+        "human_role": "The Meaning Diverger (Explains why two related words have diverged in meaning).",
+        "ai_role": "The Semantic Gradient (Shows the range of meanings associated with a word).",
+        "human_expansion": "Understanding the factors that contribute to semantic divergence.",
+        "mechanic": "Semantic Divergence Analysis"
+    },
+    {
+        "synapse_id": 29,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Lost Language Shift",
+        "human_role": "The Linguistic Archivist (Reconstructs a lost language based on surviving vocabulary and grammatical remnants).",
+        "ai_role": "The Linguistic Database (Provides access to patterns in the surviving vocabulary and provides suggested reconstructions).",
+        "human_expansion": "Reconstructing the grammar and vocabulary of a language that has disappeared.",
+        "mechanic": "Lost Language Reconstruction"
+    },
+    {
+        "synapse_id": 30,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Semantic Borrowing Chain",
+        "human_role": "The Semantic Connector (Identifies the chain of borrowings that led to the current form of a word).",
+        "ai_role": "The Lexical Network (Displays the interconnectedness of related words and concepts).",
+        "human_expansion": "Tracing the pathways of semantic diffusion.",
+        "mechanic": "Semantic Borrowing Chain"
+    },
+    {
+        "synapse_id": 31,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Sound Shift Decoder",
+        "human_role": "The Phonetic Decoder (Identifies the sound shifts that occurred in a word’s evolution).",
+        "ai_role": "The Phonetic Database (Provides data on sound changes and phonetic shifts).",
+        "human_expansion": "Understanding how phonetic changes affect the pronunciation of words.",
+        "mechanic": "Phonetic Shift Identification"
+    },
+    {
+        "synapse_id": 32,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Cultural Echo",
+        "human_role": "The Cultural Interpreter (Explains how a word’s meaning reflects a specific cultural practice or belief).",
+        "ai_role": "The Cultural Database (Provides information on the historical context of the word’s usage).",
+        "human_expansion": "Understanding the cultural significance of words.",
+        "mechanic": "Cultural Interpretation"
+    },
+    {
+        "synapse_id": 33,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Semantic Fossil",
+        "human_role": "The Fossil Hunter (Identifies words with vestigial meanings—words that retain traces of their original, often obscure, meanings).",
+        "ai_role": "The Lexical Archive (Provides a database of archaic and obsolete words).",
+        "human_expansion": "Recognizing the remnants of a language's past.",
+        "mechanic": "Semantic Fossil Identification"
+    },
+    {
+        "synapse_id": 34,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Proto-Indo-European Riddle",
+        "human_role": "The Reconstructed Linguist (Attempts to reconstruct the sounds and vocabulary of Proto-Indo-European).",
+        "ai_role": "The Phonological Modeling Tool (Provides assistance with sound reconstruction).",
+        "human_expansion": "Delving into the roots of a vast language family.",
+        "mechanic": "Proto-Indo-European Reconstruction"
+    },
+    {
+        "synapse_id": 35,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Synchronic Shift",
+        "human_role": "The Temporal Analyst (Identifies the shift in meaning of a word across different historical periods).",
+        "ai_role": "The Historical Lexicon (Provides data on the usage of the word across time).",
+        "human_expansion": "Analyzing changes in meaning through historical data.",
+        "mechanic": "Synchronic Meaning Analysis"
+    },
+    {
+        "synapse_id": 36,
+        "module": "Historical Linguistics & Etymology",
+        "game": "The Lost Dialect",
+        "human_role": "The Linguistic Geographer (Identifies the characteristics of a lost dialect by analyzing surviving texts).",
+        "ai_role": "The Dialect Database (Provides information on regional linguistic variations).",
+        "human_expansion": "Reconstructing the linguistic landscape of the past.",
+        "mechanic": "Dialect Reconstruction"
+    }
+]

@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 229,
+        "module": "Artificial Intelligence & Language",
+        "game": "The Turing Mirror",
+        "human_role": "The Questioner (Asks a question to determine if the respondent is a machine or a human).",
+        "ai_role": "The Veil Shifter (Answers in a way that highlights the 'machine-ness' vs. 'human-ness' of the response).",
+        "human_expansion": "Exploring the fuzzy boundary between human and synthetic consciousness.",
+        "mechanic": "Consciousness Detection Calibration"
+    },
+    {
+        "synapse_id": 230,
+        "module": "Artificial Intelligence & Language",
+        "game": "Prompt Engineering",
+        "human_role": "The Architect (Provides a high-level instruction to create a new universe).",
+        "ai_role": "The Executioner (Reveals how small changes in the instruction lead to massive shifts in the resulting universe).",
+        "human_expansion": "Mastering the precision of intent and instruction in technical language.",
+        "mechanic": "Intent-to-Output High Fidelity"
+    },
+    {
+        "synapse_id": 231,
+        "module": "Artificial Intelligence & Language",
+        "game": "LLM Hallucination",
+        "human_role": "The Fact Checker (Presents a true fact and asks for a more complex but fake 'history' for it).",
+        "ai_role": "The Dream Weaver (Creates a plausible but completely fictional narrative for the fact).",
+        "human_expansion": "Understanding the generative and probabilistic nature of synthetic language.",
+        "mechanic": "Generative/Probabilistic Logic Mapping"
+    },
+    {
+        "synapse_id": 232,
+        "module": "Artificial Intelligence & Language",
+        "game": "Sentiment Synthesis",
+        "human_role": "The Emotion Injector (Provides a cold, neutral sentence and asks the AI to 'warm it up').",
+        "ai_role": "The Emotional Tuner (Uses specific adjectives to manipulate the 'temperature' of the sentence).",
+        "human_expansion": "Analyzing how sentiment and emotion are encoded into raw text.",
+        "mechanic": "Affective Temperature Modulation"
+    },
+    {
+        "synapse_id": 233,
+        "module": "Artificial Intelligence & Language",
+        "game": "Zero-Shot Reasoning",
+        "human_role": "The Problem Solver (Provides a logic puzzle about an animal that doesn't exist).",
+        "ai_role": "The Abstract Logic Processor (Solves the puzzle based only on the provided rules).",
+        "human_expansion": "Developing the ability to reason through pure logic without relying on experience.",
+        "mechanic": "Axiomatic Reasoning Synthesis"
+    },
+    {
+        "synapse_id": 234,
+        "module": "Artificial Intelligence & Language",
+        "game": "Algorithmic Bias",
+        "human_role": "The Bias Hunter (Starts a sentence that could be finished with a stereotype).",
+        "ai_role": "The Diversity Guardian (Detects the potential bias and provides three non-stereotypical endings).",
+        "human_expansion": "Recognizing and neutralizing the 'inherited' biases of linguistic systems.",
+        "mechanic": "Systemic Bias Detection/Neutralization"
+    },
+    {
+        "synapse_id": 235,
+        "module": "Artificial Intelligence & Language",
+        "game": "Human-AI Collab",
+        "human_role": "The Visionary (Provides the 'soul' or metaphor of a new idea).",
+        "ai_role": "The Structuralist (Builds the technical framework and steps to implement the idea).",
+        "human_expansion": "Mastering the synergy between human intuition and synthetic logic.",
+        "mechanic": "Intuition-Logic Synthesis Model"
+    },
+    {
+        "synapse_id": 236,
+        "module": "Artificial Intelligence & Language",
+        "game": "Machine Translation",
+        "human_role": "The Critic (Points out a specific error in a raw machine translation).",
+        "ai_role": "The Neural Optimizer (Explains *why* the neural network made the error and suggests a fix).",
+        "human_expansion": "Deepening your understanding of how synthetic brains parse human meaning.",
+        "mechanic": "Neural Parser Logic Analysis"
+    }
+]

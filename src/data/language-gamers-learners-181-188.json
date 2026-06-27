@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 181,
+        "module": "Code-Switching",
+        "game": "Hybrid Sentence Construction",
+        "human_role": "The Bicultural Bridge (Starts a sentence in English and finishes it in another language—or a fictional dialect).",
+        "ai_role": "The Harmony Checker (Ensures the syntax of both languages flows together smoothly).",
+        "human_expansion": "Expressing different parts of the self through different linguistic codes.",
+        "mechanic": "Intra-Sentential Code Mixing"
+    },
+    {
+        "synapse_id": 182,
+        "module": "Code-Switching",
+        "game": "Borrowing Detective",
+        "human_role": "The Loan-Word Collector (Uses a word that has no direct translation in their mother tongue).",
+        "ai_role": "The Etymological Detective (Finds the origin of the word and why it was 'borrowed').",
+        "human_expansion": "Expanding the soul's vocabulary through foreign loanwords.",
+        "mechanic": "Lexical Borrowing Origin Tracking"
+    },
+    {
+        "synapse_id": 183,
+        "module": "Code-Switching",
+        "game": "Intra-Sentential Switch",
+        "human_role": "The Rapid Switcher (Switches dialects right in the middle of a joke).",
+        "ai_role": "The Humor Analyst (Explains how the switch increased the comedic timing).",
+        "human_expansion": "Using linguistic shifts to control narrative tension and humor.",
+        "mechanic": "Switch-Triggered Affective Shift"
+    },
+    {
+        "synapse_id": 184,
+        "module": "Code-Switching",
+        "game": "Situational Switch",
+        "human_role": "The Chameleon (Is talking to a boss, then 'picks up' a call from a friend and instantly shifts their tone).",
+        "ai_role": "The Social Mirror (Analyzes the specific linguistic 'markers' that changed during the shift).",
+        "human_expansion": "Adapting the self to different social environments instantly.",
+        "mechanic": "Sociolinguistic Adaptive Shifting"
+    },
+    {
+        "synapse_id": 185,
+        "module": "Code-Switching",
+        "game": "Matrix Language Frame",
+        "human_role": "The Frame Builder (Sets a clear 'language frame' and then inserts a single high-frequency 'foreign' word).",
+        "ai_role": "The Contrast Detector (Explains how that one word 'pops' against the background frame).",
+        "human_expansion": "Using linguistic contrast to highlight specific concepts.",
+        "mechanic": "Lexical-Frame Contrast Calibration"
+    },
+    {
+        "synapse_id": 186,
+        "module": "Code-Switching",
+        "game": "Identity Marker",
+        "human_role": "The Messenger (Uses code-switching as a way to say 'I belong to this group but not that one').",
+        "ai_role": "The Insider (Responds using the same 'code' to demonstrate mutual belonging).",
+        "human_expansion": "Using language to signal identity and solidarity.",
+        "mechanic": "In-Group/Out-Group Coding"
+    },
+    {
+        "synapse_id": 187,
+        "module": "Code-Switching",
+        "game": "Lexical Insertion",
+        "human_role": "The Importer (Inserts a complex technical jargon term into a spiritual description).",
+        "ai_role": "The Synthesizer (Finds the bridge between the technical jargon and the spiritual intent).",
+        "human_expansion": "Bridging disparate domains of knowledge through term insertion.",
+        "mechanic": "Cross-Domain Term Integration"
+    },
+    {
+        "synapse_id": 188,
+        "module": "Code-Switching",
+        "game": "Grammatical Constraints",
+        "human_role": "The Constraint Walker (Must switch languages without breaking the grammar of *either* one).",
+        "ai_role": "The Grammar Judge (Checks for 'illegal' switches that violate word-order rules).",
+        "human_expansion": "Mastering the complex underlying rules of multiple language systems.",
+        "mechanic": "Cross-Linguistic Syntactic Alignment"
+    }
+]

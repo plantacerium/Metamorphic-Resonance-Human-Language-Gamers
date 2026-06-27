@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 13,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Silent Witness",
+        "human_role": "The Observational Interpreter (Describes the experience of a silent witness).",
+        "ai_role": "The Social Cue Analyzer (Identifies the nonverbal cues that contribute to the tension).",
+        "human_expansion": "Understanding the role of observation in the experience of reality.",
+        "mechanic": "Observational Interpretation"
+    },
+    {
+        "synapse_id": 14,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Unspoken Tension",
+        "human_role": "The Tension Detector (Identifies the unspoken tension or conflict present in a social scenario).",
+        "ai_role": "The Social Cue Analyzer (Identifies the nonverbal cues that contribute to the tension).",
+        "human_expansion": "Reading between the lines to detect subtle emotional tensions.",
+        "mechanic": "Social Tension Detection"
+    },
+    {
+        "synapse_id": 15,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Subtle Shift",
+        "human_role": "The Dialogue Decoder (Identifies the subtle shifts in emotion between two dialogue exchanges).",
+        "ai_role": "The Contextual Analyzer (Analyzes the conversational context – tone, body language – for clues to the shifting emotions).",
+        "human_expansion": "Detecting nuance in communicative exchanges.",
+        "mechanic": "Shifting Sentiment Detection"
+    },
+    {
+        "synapse_id": 16,
+        "module": "Micro-Emotions & Nuance",
+        "game": "Emotional Palimpsest",
+        "human_role": "The Emotional Historian (Describes a past event, emphasizing the lingering emotions associated with it).",
+        "ai_role": "The Trauma Analyst (Identifies the potential trauma triggers within the description and their effect on the described emotions).",
+        "human_expansion": "Tracing echoes of the past through emotional resonance.",
+        "mechanic": "Emotional Resonance Tracing"
+    },
+    {
+        "synapse_id": 17,
+        "module": "Micro-Emotions & Nuance",
+        "game": "Internal States",
+        "human_role": "The Internal Navigator (Describes the feeling of a specific internal state, e.g., anxiety, anticipation).",
+        "ai_role": "The Physiological Sensor (Monitors physiological data - heart rate, skin conductance - to validate the described internal state).",
+        "human_expansion": "Mapping subjective feelings to measurable physiological responses.",
+        "mechanic": "Physiological Validation of Internal States"
+    },
+    {
+        "synapse_id": 18,
+        "module": "Micro-Emotions & Nuance",
+        "game": "Fleeting Feelings",
+        "human_role": "The Emotion Tracker (Describes a fleeting emotion experienced in a specific situation).",
+        "ai_role": "The Micro-Expression Analyst (Identifies the specific micro-expressions associated with the described emotion).",
+        "human_expansion": "Pinpointing the precise qualitative elements of a rapidly shifting emotional state.",
+        "mechanic": "Rapid Emotion Identification"
+    },
+    {
+        "synapse_id": 19,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Politeness Analyzer",
+        "human_role": "The Subtext Reader (Identifies the underlying resistance conveyed in a seemingly polite statement).",
+        "ai_role": "The Politeness Analyzer (Identifies the levels of politeness in the exchange).",
+        "human_expansion": "Decoding the messages hidden beneath superficially polite language.",
+        "mechanic": "Politeness Resistance"
+    },
+    {
+        "synapse_id": 20,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Dominant Impression",
+        "human_role": "The Power Broker (Identifies the dynamics of power at play in a given conversation).",
+        "ai_role": "The Social Hierarchy Analyzer (Provides data on social status and influence).",
+        "human_expansion": "Recognizing the subtle ways in which power dynamics shape communication.",
+        "mechanic": "Social Hierarchy Analysis"
+    },
+    {
+        "synapse_id": 21,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Meta-Link",
+        "human_role": "The Conscious Observer (Explains what it feels like to be 'bored').",
+        "ai_role": "The Statistical Mirror (Predicts the exact word the human will use next based on their tone).",
+        "human_expansion": "Self-reflection and identifying one’s own linguistic patterns.",
+        "mechanic": "Recursive feedback loop."
+    },
+    {
+        "synapse_id": 22,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Timeless Moment",
+        "human_role": "The Temporal Anchor (Describes a timeless moment in time).",
+        "ai_role": "The Temporal Analyzer (Evaluates the temporal properties of the described moment).",
+        "human_expansion": "Understanding the experience of timelessness.",
+        "mechanic": "Temporal Anchoring"
+    },
+    {
+        "synapse_id": 23,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Empty Box",
+        "human_role": "The Conceptual Filler (Describes the contents of an empty box).",
+        "ai_role": "The Conceptual Validator (Checks the consistency of the described contents).",
+        "human_expansion": "Exploring the nature of existence and non-existence through the concept of an empty box.",
+        "mechanic": "Conceptual Filling"
+    },
+    {
+        "synapse_id": 24,
+        "module": "Micro-Emotions & Nuance",
+        "game": "The Paradox Filter",
+        "human_role": "The Paradox Resolver (Explains a paradoxical statement).",
+        "ai_role": "The Logical Analyzer (Identifies the contradictions within the statement).",
+        "human_expansion": "Understanding the nature of paradoxes and the challenges of representing them in language.",
+        "mechanic": "Paradox Resolution"
+    }
+]

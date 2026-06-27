@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 37,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Gray Zone",
+        "human_role": "The Boundary Tester (Identifies the boundaries of acceptable behavior in a tense social situation).",
+        "ai_role": "The Social Norm Analyzer (Flags potential violations of social norms).",
+        "human_expansion": "Navigating ambiguous situations and understanding unspoken expectations.",
+        "mechanic": "Boundary Identification"
+    },
+    {
+        "synapse_id": 38,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Polite Resistance",
+        "human_role": "The Indirect Communicator (Identifies the underlying resistance expressed through polite language).",
+        "ai_role": "The Politeness Validator (Checks the level of politeness used in the exchange).",
+        "human_expansion": "Decoding subtle forms of disagreement expressed through politeness.",
+        "mechanic": "Polite Resistance Detection"
+    },
+    {
+        "synapse_id": 39,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Dominant Impression",
+        "human_role": "The Power Broker (Identifies the dynamics of power at play in a given conversation).",
+        "ai_role": "The Social Hierarchy Analyzer (Provides data on social status and influence).",
+        "human_expansion": "Recognizing the subtle ways in which power dynamics shape communication.",
+        "mechanic": "Social Hierarchy Analysis"
+    },
+    {
+        "synapse_id": 40,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Silent Complaint",
+        "human_role": "The Sentiment Detective (Identifies the underlying complaint hidden within a seemingly innocuous statement).",
+        "ai_role": "The Emotional Inference Engine (Predicts the underlying emotion).",
+        "human_expansion": "Reading between the lines to detect subtle emotional tensions.",
+        "mechanic": "Sentiment Inference"
+    },
+    {
+        "synapse_id": 41,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Unspoken Agreement",
+        "human_role": "The Implied Contract (Identifies the unspoken agreement between two parties).",
+        "ai_role": "The Contextual Analyzer (Analyzes the conversational context – tone, body language – for clues to the implied agreement).",
+        "human_expansion": "Understanding agreements that aren’t explicitly stated.",
+        "mechanic": "Implied Agreement Detection"
+    },
+    {
+        "synapse_id": 42,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Backhanded Compliment",
+        "human_role": "The Subtext Decoder (Identifies the underlying criticism in a seemingly positive statement).",
+        "ai_role": "The Social Cue Analyzer (Flags the elements of the compliment that function as criticism).",
+        "human_expansion": "Recognizing subtly insulting phrases disguised as compliments.",
+        "mechanic": "Subtext Identification"
+    },
+    {
+        "synapse_id": 43,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Mirror Image",
+        "human_role": "The Reflective Responder (Identifies the mirroring behavior within a dialogue).",
+        "ai_role": "The Behavioral Pattern Analyzer (Tracks recurring patterns of communication).",
+        "human_expansion": "Recognizing the techniques of mirroring to establish rapport.",
+        "mechanic": "Behavioral Pattern Analysis"
+    },
+    {
+        "synapse_id": 44,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Subtle Disagreement",
+        "human_role": "The Opinion Diverger (Identifies the nuances of disagreement within a seemingly neutral statement).",
+        "ai_role": "The Semantic Gradient (Checks the range of associated meanings).",
+        "human_expansion": "Detecting disagreements masked by polite language.",
+        "mechanic": "Disagreement Identification"
+    },
+    {
+        "synapse_id": 45,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Code Switch",
+        "human_role": "The Contextual Navigator (Identifies when a person shifts their language or behavior to suit a different social context).",
+        "ai_role": "The Social Setting Analyzer (Evaluates the social setting and potential triggers for code-switching).",
+        "human_expansion": "Understanding the reasons for adapting one's communication style.",
+        "mechanic": "Contextual Adaptation"
+    },
+    {
+        "synapse_id": 46,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Loaded Question",
+        "human_role": "The Trap Identifier (Identifies questions designed to elicit a specific response).",
+        "ai_role": "The Rhetorical Analysis Engine (Evaluates the potential for manipulation).",
+        "human_expansion": "Recognizing questions with hidden assumptions or biases.",
+        "mechanic": "Rhetorical Analysis"
+    },
+    {
+        "synapse_id": 47,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Red Herring",
+        "human_role": "The Distraction Detector (Identifies attempts to shift the focus of a conversation).",
+        "ai_role": "The Topic Tracking System (Monitors the conversation’s main focus).",
+        "human_expansion": "Recognizing diversionary tactics.",
+        "mechanic": "Topic Diversion"
+    },
+    {
+        "synapse_id": 48,
+        "module": "Social Subtext & Power Dynamics",
+        "game": "The Calculated Silence",
+        "human_role": "The Contextual Reader (Identifies the strategic significance of silence in a social exchange).",
+        "ai_role": "The Non-Verbal Cue Analyst (Analyzes nonverbal cues accompanying the silence).",
+        "human_expansion": "Understanding the power of silence to convey meaning.",
+        "mechanic": "Silence Analysis"
+    }
+]

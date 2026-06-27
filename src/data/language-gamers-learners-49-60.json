@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 49,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Quantum Paradox",
+        "human_role": "The Explainer (Explains quantum superposition in simple terms to a child).",
+        "ai_role": "The Clarity Checker (Provides feedback on the clarity and accessibility of the explanation).",
+        "human_expansion": "Applying the Feynman Method to explain a notoriously complex quantum concept.",
+        "mechanic": "Feynman Simplification – Quantum Mechanics"
+    },
+    {
+        "synapse_id": 50,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Black Hole Mystery",
+        "human_role": "The Communicator (Explains the concept of a black hole’s event horizon).",
+        "ai_role": "The Analogy Generator (Suggests an analogy to help visualize the event horizon).",
+        "human_expansion": "Breaking down the concept of a black hole into understandable terms.",
+        "mechanic": "Feynman Simplification – Astrophysics"
+    },
+    {
+        "synapse_id": 51,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Genetic Code",
+        "human_role": "The Gene Translator (Explains how DNA encodes genetic information).",
+        "ai_role": "The Visual Aid Proposer (Suggests a diagram or visual representation of the genetic code).",
+        "human_expansion": "Simplifying the complex workings of the genetic code.",
+        "mechanic": "Feynman Simplification – Biology"
+    },
+    {
+        "synapse_id": 52,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Thermodynamics Equation",
+        "human_role": "The Heat Explainer (Explains the concept of entropy and the second law of thermodynamics).",
+        "ai_role": "The Analogy Provider (Suggests an analogy for understanding entropy).",
+        "human_expansion": "Demystifying the equation and its implications.",
+        "mechanic": "Feynman Simplification – Physics"
+    },
+    {
+        "synapse_id": 53,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Chemical Reaction",
+        "human_role": "The Reaction Reconstructor (Explains a complex chemical reaction, detailing reactants and products).",
+        "ai_role": "The Reaction Simulator (Models the reaction and displays the changes).",
+        "human_expansion": "Simplifying the process of chemical reactions.",
+        "mechanic": "Feynman Simplification – Chemistry"
+    },
+    {
+        "synapse_id": 54,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Plate Tectonics Puzzle",
+        "human_role": "The Earth Shaper (Explains the theory of plate tectonics).",
+        "ai_role": "The Geological Model Viewer (Displays a 3D model of the Earth’s tectonic plates).",
+        "human_expansion": "Making sense of the movement of continents and the formation of mountains.",
+        "mechanic": "Feynman Simplification – Geology"
+    },
+    {
+        "synapse_id": 55,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Neural Network",
+        "human_role": "The Synapse Connector (Explains how artificial neural networks learn).",
+        "ai_role": "The Algorithm Visualizer (Provides a visual representation of the learning algorithm).",
+        "human_expansion": "Demystifying artificial intelligence.",
+        "mechanic": "Feynman Simplification – Computer Science"
+    },
+    {
+        "synapse_id": 56,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The General Relativity Concept",
+        "human_role": "The Gravity Explained (Explains the concept of gravity as described by Einstein).",
+        "ai_role": "The Space-Time Visualizer (Provides a visual representation of spacetime curvature).",
+        "human_expansion": "Simplifying the theory of general relativity.",
+        "mechanic": "Feynman Simplification – Physics"
+    },
+    {
+        "synapse_id": 57,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Doppler Effect",
+        "human_role": "The Sound Wave Shifter (Explains the Doppler effect in terms of wave behavior).",
+        "ai_role": "The Wave Simulation Tool (Demonstrates the Doppler effect with simulated waves).",
+        "human_expansion": "Making sense of sound and light shift.",
+        "mechanic": "Feynman Simplification – Wave Phenomena"
+    },
+     {
+        "synapse_id": 58,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Electromagnetic Spectrum",
+        "human_role": "The Wave Categorizer (Explains the different types of electromagnetic radiation).",
+        "ai_role": "The Spectrum Visualization Tool (Displays the different wavelengths of the electromagnetic spectrum).",
+        "human_expansion": "Mapping the range of wavelengths of electromagnetic radiation.",
+        "mechanic": "Feynman Simplification – Electromagnetic Radiation"
+    },
+    {
+        "synapse_id": 59,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Cell Cycle",
+        "human_role": "The Growth Narrator (Explains the stages of cell division).",
+        "ai_role": "The Chromosome Model (Provides a visual representation of the cell cycle).",
+        "human_expansion": "Understanding the process of cell division.",
+        "mechanic": "Feynman Simplification – Cell Biology"
+    },
+    {
+        "synapse_id": 60,
+        "module": "Scientific Simplification & Conceptualization",
+        "game": "The Logic Gates",
+        "human_role": "The Boolean Builder (Explains the function of logic gates).",
+        "ai_role": "The Circuit Simulator (Simulates the operation of logic gates).",
+        "human_expansion": "Making sense of digital circuits.",
+        "mechanic": "Feynman Simplification – Digital Logic"
+    }
+]

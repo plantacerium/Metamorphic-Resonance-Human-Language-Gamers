@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 85,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Euphemism Treadmill",
+        "human_role": "The Polished Spokesperson (Describes a disaster using only overly positive or neutral euphemisms).",
+        "ai_role": "The Reality Decoder (Translates the euphemisms back into their raw, harsh equivalents).",
+        "human_expansion": "Recognizing how language can be used to sanitize and distance us from reality.",
+        "mechanic": "Euphemistic Transparency"
+    },
+    {
+        "synapse_id": 86,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Passive-Aggressive Voice",
+        "human_role": "The Agency Blider (Writes a complaint using only the passive voice to avoid blaming a specific person).",
+        "ai_role": "The Agent Identifer (Rewrites the text to explicitly name the responsible parties).",
+        "human_expansion": "Detecting the use of grammatical voice to obscure responsibility.",
+        "mechanic": "Agency Retrieval"
+    },
+    {
+        "synapse_id": 87,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Loaded Adjective",
+        "human_role": "The Subtle Influencer (Describes a neutral object using adjectives that trigger a 111% positive response).",
+        "ai_role": "The Bias Neutralizer (Strips the adjectives to reveal the purely objective facts).",
+        "human_expansion": "Isolating value-judgments from descriptive facts.",
+        "mechanic": "Adjectival Bias Filtering"
+    },
+    {
+        "synapse_id": 88,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Dog Whistle",
+        "human_role": "The Coded Messenger (Writes a sentence that sounds normal to most, but contains a secret 'trigger' meaning for a specific subculture).",
+        "ai_role": "The Subculture Decoder (Identifies the hidden meaning and the target audience).",
+        "human_expansion": "Understanding high-context coded communication.",
+        "mechanic": "Subtextual Signal Detection"
+    },
+    {
+        "synapse_id": 89,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Gaslight Mirror",
+        "human_role": "The Reality Distorter (Gently denies a simple, agreed-upon fact using 'circular' common sense).",
+        "ai_role": "The Logic Anchor (Refutes the distortion using grounding physical evidence).",
+        "human_expansion": "Defense against psychological manipulation in dialogue.",
+        "mechanic": "Grounding Refutation"
+    },
+    {
+        "synapse_id": 90,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Red Herring Hunt",
+        "human_role": "The Master Distractor (Engages in a debate and attempts to shift the topic using a related but irrelevant fact).",
+        "ai_role": "The Topic Stay (Identifies the shift and pulls the conversation back to the central node).",
+        "human_expansion": "Maintaining topical focus against diversionary tactics.",
+        "mechanic": "Topical Node Maintenance"
+    },
+    {
+        "synapse_id": 91,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Straw Man Builder",
+        "human_role": "The Simplistic Debater (Summarizes an AI's complex argument in a way that makes it look ridiculous).",
+        "ai_role": "The Nuance Restorer (Corrects the summary by re-inserting the missing complexity).",
+        "human_expansion": "Recognizing and correcting the oversimplification of opposing views.",
+        "mechanic": "Complexity Restoration"
+    },
+    {
+        "synapse_id": 92,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Anchoring Effect",
+        "human_role": "The Value Setter (Mentions a large, irrelevant number before asking a 'how much' or 'how many' question).",
+        "ai_role": "The Statistical Adjuster (Measures the 'anchor' effect on their own prediction).",
+        "human_expansion": "Understanding how initial reference points skew judgment.",
+        "mechanic": "Base-Rate Bias Awareness"
+    },
+    {
+        "synapse_id": 93,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Appeal to Pity",
+        "human_role": "The Emotional Extorter (Tries to win a logical argument by describing a personal hardship).",
+        "ai_role": "The Logic/Emotion Splitter (Separates the valid logical point from the emotional context).",
+        "human_expansion": "Decoupling empathy from logical validity.",
+        "mechanic": "Emotional/Logical Decoupling"
+    },
+    {
+        "synapse_id": 94,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Slippery Slope",
+        "human_role": "The Chaos Predictor (Argues that a small change—like buying a coffee—will lead to total societal collapse).",
+        "ai_role": "The Causal Link Auditor (Identifies exactly where the chain of causality breaks).",
+        "human_expansion": "Tracing and testing long causal chains in rhetoric.",
+        "mechanic": "Causal Link Auditing"
+    },
+    {
+        "synapse_id": 95,
+        "module": "Linguistic Bias & Deception",
+        "game": "The Echo Chamber",
+        "human_role": "The Confirmation Seeker (Only asks questions that reinforce their own pre-existing belief).",
+        "ai_role": "The Devil's Advocate (Provides the strongest possible counter-evidence).",
+        "human_expansion": "Breaking cognitive bias through forced perspective shifts.",
+        "mechanic": "Forced Contra-Logic"
+    },
+    {
+        "synapse_id": 96,
+        "module": "Linguistic Bias & Deception",
+        "game": "The False Dilemma",
+        "human_role": "The Binary Thinker (Presents an issue as having only two extreme options).",
+        "ai_role": "The Third-Way Explorer (Suggests five intermediate options between the two extremes).",
+        "human_expansion": "Expanding binary choices into a spectrum of possibilities.",
+        "mechanic": "Spectrum Generation"
+    }
+]

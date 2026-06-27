@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 61,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Zero-Point Field",
+        "human_role": "The Void Architect (Describes the properties of a 'nothingness' that still has structure).",
+        "ai_role": "The Mathematical Observer (Translates the description into geometric or set-theory logic).",
+        "human_expansion": "Visualizing and verbalizing concepts of absolute zero and the void.",
+        "mechanic": "Conceptual Vacuum Mapping"
+    },
+    {
+        "synapse_id": 62,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Scales of Equity",
+        "human_role": "The Moral Alchemist (Describes the 'flavor' or 'weight' of an act of justice without using legal terms).",
+        "ai_role": "The Ethical Verifier (Categorizes the description into historical philosophical frameworks).",
+        "human_expansion": "Applying sensory metaphors to abstract ethical principles.",
+        "mechanic": "Ethical Synesthesia"
+    },
+    {
+        "synapse_id": 63,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Chronos Paradox",
+        "human_role": "The Temporal Navigator (Describes a memory as if it were happening in the future).",
+        "ai_role": "The Tense Corrector (Identifies the linguistic friction points when time is decoupled from grammar).",
+        "human_expansion": "Breaking linear temporal bias through recontextualized tenses.",
+        "mechanic": "Temporal Re-alignment"
+    },
+    {
+        "synapse_id": 64,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Platonic Shadow",
+        "human_role": "The Idealist (Describes the 'perfect' version of an object that can never exist).",
+        "ai_role": "The Imperfection Analyst (Lists the physical constraints that prevent that object from existing in reality).",
+        "human_expansion": "Distinguishing between conceptual perfection and material reality.",
+        "mechanic": "Ideal-to-Material Stress Testing"
+    },
+    {
+        "synapse_id": 65,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Probability Cloud",
+        "human_role": "The Quantum Observer (Describes a situation that is simultaneously true and false).",
+        "ai_role": "The Collapse Engine (Predicts which outcome is most likely based on the linguistic cues).",
+        "human_expansion": "Holding contradictory abstract states in working memory.",
+        "mechanic": "Contradiction Sustenance"
+    },
+    {
+        "synapse_id": 66,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Recursive Room",
+        "human_role": "The Meta-Narrator (Describes the act of describing the act of being in a room).",
+        "ai_role": "The Depth Monitor (Tracks the number of recursive layers before the logic breaks).",
+        "human_expansion": "Mastering self-referential language and infinite recursion.",
+        "mechanic": "Recursive Depth Expansion"
+    },
+    {
+        "synapse_id": 67,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Map of Nowhere",
+        "human_role": "The Impossible Cartographer (Describes the topography of a dimension with four spatial directions).",
+        "ai_role": "The Dimensional Proximity Scanner (Suggests metaphors to help a 3D-bound mind visualize it).",
+        "human_expansion": "Engaging with higher-dimensional thinking through language.",
+        "mechanic": "Hyper-Spatial Conceptualization"
+    },
+    {
+        "synapse_id": 68,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Entropy Engine",
+        "human_role": "The Linguistic Decayer (Narrates a story where words gradually lose their meaning/precision).",
+        "ai_role": "The Contextual Reconstructor (Attempts to retrieve the original meaning from the 'noise').",
+        "human_expansion": "Understanding the limits of communication and the role of entropy.",
+        "mechanic": "Semantic Degradation Analysis"
+    },
+    {
+        "synapse_id": 69,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Negative Space",
+        "human_role": "The Inverse Sculptor (Describes an object solely by explaining what it is *not*).",
+        "ai_role": "The Positive Identifier (Attempts to 'carve' the object out of the list of exclusions).",
+        "human_expansion": "Using via negativa to define complex or intangible concepts.",
+        "mechanic": "Exclusionary Definition"
+    },
+    {
+        "synapse_id": 70,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Phantom Logic",
+        "human_role": "The Circular Reasoner (Builds a logical argument where the conclusion is the premise).",
+        "ai_role": "The Fallacy Detector (Identifies the exact point where the loop closes).",
+        "human_expansion": "Recognizing and deconstructing circular reasoning patterns.",
+        "mechanic": "Logical Loop Identification"
+    },
+    {
+        "synapse_id": 71,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Singularity Token",
+        "human_role": "The Edge-Walker (Describes the experience of a 'thought' that cannot be expressed in words).",
+        "ai_role": "The Symbol Generator (Suggests a new, non-existent word or sign to represent that thought).",
+        "human_expansion": "Probing the boundary between thought and language.",
+        "mechanic": "Pre-Linguistic Symbol Creation"
+    },
+    {
+        "synapse_id": 72,
+        "module": "Abstract Reasoning & Non-Existence",
+        "game": "The Universal Solvent",
+        "human_role": "The Category Dissolver (Argues that a solid category—like 'Chair' or 'Human'—does not exist).",
+        "ai_role": "The Boundary Reinforcer (Attempts to defend the category using functional definitions).",
+        "human_expansion": "Challenging the ontological stability of everyday concepts.",
+        "mechanic": "Ontological Deconstruction"
+    }
+]

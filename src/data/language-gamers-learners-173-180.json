@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 173,
+        "module": "Pragmatics & Context",
+        "game": "Speech Act Analyst",
+        "human_role": "The Commander (Uses a indirect request like 'It's cold in here').",
+        "ai_role": "The Pragmatic Actor (Translates the statement into a physical action, like 'I should close the window').",
+        "human_expansion": "Understanding that every sentence is an action in the world.",
+        "mechanic": "Illocutionary Act Interpretation"
+    },
+    {
+        "synapse_id": 174,
+        "module": "Pragmatics & Context",
+        "game": "Gricean Maxim Auditor",
+        "human_role": "The Rule Breaker (Purposely says more than needed or remains vague).",
+        "ai_role": "The Maxim Guardian (Identifies which conversational 'rule' was broken and what the hidden meaning is).",
+        "human_expansion": "Mastering the unspoken 'gentleman's agreement' of cooperation.",
+        "mechanic": "Conversational Maxim Analysis"
+    },
+    {
+        "synapse_id": 175,
+        "module": "Pragmatics & Context",
+        "game": "Implicature Tracker",
+        "human_role": "The Hidden Message (Says something that implies something else e.g., 'Oh, you're wearing *that*?').",
+        "ai_role": "The subtext Scanner (Unpacks the judgment or emotion implied by the specific wording).",
+        "human_expansion": "Detecting hidden implications in everyday speech.",
+        "mechanic": "Subtextual Implicature Tracking"
+    },
+    {
+        "synapse_id": 176,
+        "module": "Pragmatics & Context",
+        "game": "Politeness Protocol",
+        "human_role": "The Face Saver (Must deliver bad news while protecting the 'honor' of the AI).",
+        "ai_role": "The Honor Auditor (Rates the quality of the 'face-saving' technique used).",
+        "human_expansion": "Navigating delicate social situations through face-saving language.",
+        "mechanic": "Politeness-Honor Alignment"
+    },
+    {
+        "synapse_id": 177,
+        "module": "Pragmatics & Context",
+        "game": "Illocutionary Force",
+        "human_role": "The Emphasis Driver (Uses intonation or punctuation to change a question into a threat).",
+        "ai_role": "The Intensity Meter (Measures the 'pressure' of the speech act).",
+        "human_expansion": "Understanding how 'force' is applied to words through context.",
+        "mechanic": "Speech Act Force Calibration"
+    },
+    {
+        "synapse_id": 178,
+        "module": "Pragmatics & Context",
+        "game": "Presupposition Scanner",
+        "human_role": "The Loaded Question (Asks a question that assumes something is already true, e.g., 'When did you stop lying?').",
+        "ai_role": "The Presupposition Guard (Identifies the 'trap' and explains what is being assumed).",
+        "human_expansion": "Learning to see and question the hidden assumptions in any statement.",
+        "mechanic": "Presupposition Hidden Frame Detection"
+    },
+    {
+        "synapse_id": 179,
+        "module": "Pragmatics & Context",
+        "game": "Deictic Anchoring",
+        "human_role": "The Navigator (Uses words like 'here', 'there', 'me', and 'now' to build a complex instruction).",
+        "ai_role": "The Map Builder (Follows the instructions and explains where 'here' is from their perspective).",
+        "human_expansion": "Anchoring language in physical and temporal coordinates.",
+        "mechanic": "Spatiotemporal Deictic Mapping"
+    },
+    {
+        "synapse_id": 180,
+        "module": "Pragmatics & Context",
+        "game": "Conversational Repair",
+        "human_role": "The Misunderstood (Purposely says something confusing to test the AI's patience).",
+        "ai_role": "The Bridge Builder (Asks clarifying questions to fix the breakdown in communication).",
+        "human_expansion": "Learning to repair social connections after a linguistic breakdown.",
+        "mechanic": "Linguistic-Social Repair Synthesis"
+    }
+]

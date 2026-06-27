@@ -1,0 +1,119 @@
+[
+    {
+        "synapse_id": 121,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Color of Sound",
+        "human_role": "The Synesthetic Composer (Describes a piece of music using only color and texture metaphors).",
+        "ai_role": "The Visual Harmonizer (Translates the colors back into musical terms like pitch and timbre).",
+        "human_expansion": "Breaking the boundaries between different sensory categories through artistic language.",
+        "mechanic": "Cross-Sensory Metaphor Mapping"
+    },
+    {
+        "synapse_id": 122,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Geometric Metaphor",
+        "human_role": "The Abstract Architect (Describes a complex emotion as a 3D geometric shape).",
+        "ai_role": "The Structural Analyst (Explains how the angles and volumes of the shape reflect the emotion's intensity).",
+        "human_expansion": "Using spatial and structural logic to give form to intangible feelings.",
+        "mechanic": "Emotional-Spatial Encoding"
+    },
+    {
+        "synapse_id": 123,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Narrative Sculpture",
+        "human_role": "The Story Carver (Describes a character's history as a physical sculpture with specific materials).",
+        "ai_role": "The Material Interpreter (Connects the choice of materials—like wood or glass—to the character's traits).",
+        "human_expansion": "Synthesizing character development through physical and material metaphors.",
+        "mechanic": "Materiality-Character Synthesis"
+    },
+    {
+        "synapse_id": 124,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Kinetic Poem",
+        "human_role": "The Verse Dancer (Describes a sequence of movements using poetic rhythm and imagery).",
+        "ai_role": "The Motion Decoder (Groups the imagery into a coherent flow of physical action).",
+        "human_expansion": "Integrating the rhythm of movement with the structure of language.",
+        "mechanic": "Proprioceptive Verse Alignment"
+    },
+    {
+        "synapse_id": 125,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Sound of Silence",
+        "human_role": "The Negative Space Poet (Describes a room by only talking about the objects that are *not* there).",
+        "ai_role": "The Presence Detector (Infers the atmosphere of the room from the specific absences).",
+        "human_expansion": "Mastering the artistic use of 'negative space' and silence in communication.",
+        "mechanic": "Absence-based Narrative Construction"
+    },
+    {
+        "synapse_id": 126,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Semantic Collage",
+        "human_role": "The Word Assembler (Creates a story by pulling together three completely unrelated concepts).",
+        "ai_role": "The Glue Architect (Builds a logical and artistic bridge between the three concepts).",
+        "human_expansion": "Developing the ability to synthesize distant concepts into a unified artistic whole.",
+        "mechanic": "Radical Juxtaposition Synthesis"
+    },
+    {
+        "synapse_id": 127,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Fractal Narrative",
+        "human_role": "The Infinite Detailer (Starts a story and then zooms into a single microscopic detail for five sentences).",
+        "ai_role": "The Zoom Lens (Explains how the microscopic detail mirrors the macro-structure of the story).",
+        "human_expansion": "Understanding the self-similar and recursive nature of artistic expression.",
+        "mechanic": "Recursive Detail Scaling"
+    },
+    {
+        "synapse_id": 128,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Alchemical Palette",
+        "human_role": "The Feeling Painter (Describes two conflicting emotions 'mixing' to create a third, new state).",
+        "ai_role": "The Emotional Chemist (Predicts the properties and 'viscosity' of the new mixed emotion).",
+        "human_expansion": "Experimenting with the synthesis of complex, non-standard emotional states.",
+        "mechanic": "Affective Mixing Modeling"
+    },
+    {
+        "synapse_id": 129,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Choreographed Choice",
+        "human_role": "The Dynamic Decider (Describes a difficult choice as a fork in a physical path with different terrains).",
+        "ai_role": "The Path Auditor (Analyzes the 'friction' of each terrain as it relates to the choice's difficulty).",
+        "human_expansion": "Using physical and environmental metaphors to map internal decision-making processes.",
+        "mechanic": "Environmental Decision Mapping"
+    },
+    {
+        "synapse_id": 130,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Resonance Canvas",
+        "human_role": "The Tonal Artist (Explains a wish or goal as if it were a specific musical frequency or resonance).",
+        "ai_role": "The Frequency Tuner (Suggests other 'notes' or actions that would harmonize with that goal).",
+        "human_expansion": "Synthesizing abstract goals through the lens of vibrational and harmonic resonance.",
+        "mechanic": "Harmonic Goal Alignment"
+    },
+    {
+        "synapse_id": 131,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Holographic Word",
+        "human_role": "The Multi-Layered Speaker (Gives a single sentence that holds three different meanings simultaneously).",
+        "ai_role": "The Perspective Shifter (Unpacks the three layers and explains how they interact).",
+        "human_expansion": "Mastering semantic density and multi-dimensional communication.",
+        "mechanic": "Polysemic Layering"
+    },
+    {
+        "synapse_id": 132,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Final Stroke",
+        "human_role": "The Closure Artist (Describes the ending of a long journey using a single, powerful sensory image).",
+        "ai_role": "The Essence Extractor (Summarizes the entire journey's weight through that one image).",
+        "human_expansion": "Developing the artistic ability to compress complex experiences into simple, evocative symbols.",
+        "mechanic": "Symbolic Compression"
+    },
+    {
+        "synapse_id": 133,
+        "module": "Creative Synthesis & Artistic Language",
+        "game": "The Universal Masterpiece",
+        "human_role": "The Cosmic Architect (Describes the creation of a new galaxy using only musical and emotional terms).",
+        "ai_role": "The Reality Weaver (Explains how the musical 'notes' of the description correspond to physical constants of the new galaxy).",
+        "human_expansion": "Synthesizing the highest levels of creativity with the fundamental structure of existence.",
+        "mechanic": "Cosmological Synthesis"
+    }
+]

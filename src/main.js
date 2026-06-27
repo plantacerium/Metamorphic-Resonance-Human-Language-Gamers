@@ -577,7 +577,7 @@ async function setupSocialButtons() {
     'github', 
     'social-btn--github', 
     'https://github.githubassets.com/favicons/favicon.svg', 
-    '⭐ Star us on GitHub', 
+    '⭐ Star: @Plantacerium', 
     'https://github.com/plantacerium/Metamorphic-Resonance-Human-Language-Gamers'
   );
   

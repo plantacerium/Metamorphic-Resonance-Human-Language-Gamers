@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 147,
+        "module": "Formal Logic & Argumentation",
+        "game": "Syllogistic Mapping",
+        "human_role": "The First Premise (Provides a general truth about a category of experience).",
+        "ai_role": "The Logical Closer (Provides a second premise and a necessary conclusion based on the human's input).",
+        "human_expansion": "Understanding the rigid structure of deductive reasoning.",
+        "mechanic": "Syllogistic Chain Linking"
+    },
+    {
+        "synapse_id": 148,
+        "module": "Formal Logic & Argumentation",
+        "game": "Fallacy Detection",
+        "human_role": "The Sophist (Attempts to win an argument using a hidden logical fallacy).",
+        "ai_role": "The Truth Auditor (Identifies the fallacy and explains why the argument is invalid).",
+        "human_expansion": "Developing immunity to rhetorical manipulation through logical analysis.",
+        "mechanic": "Fallacy Pattern Recognition"
+    },
+    {
+        "synapse_id": 149,
+        "module": "Formal Logic & Argumentation",
+        "game": "Premise Validation",
+        "human_role": "The Axiom Builder (States a fundamental belief they hold as an absolute truth).",
+        "ai_role": "The Critical Stress-Tester (Asks three questions designed to find the limits of that axiom).",
+        "human_expansion": "Questioning foundational assumptions through logical inquiry.",
+        "mechanic": "Axiomatic Stress Testing"
+    },
+    {
+        "synapse_id": 150,
+        "module": "Formal Logic & Argumentation",
+        "game": "Logical Conclusion",
+        "human_role": "The Data Gatherer (Presents three unrelated but true facts about a situation).",
+        "ai_role": "The Inference Engine (Synthesizes the facts into a logical conclusion that isn't immediately obvious).",
+        "human_expansion": "Synthesizing disparate information into a coherent logical whole.",
+        "mechanic": "Information Synthesis Inference"
+    },
+    {
+        "synapse_id": 151,
+        "module": "Formal Logic & Argumentation",
+        "game": "Paradox Resolution",
+        "human_role": "The Paradox Presenter (States a logical contradiction, like 'This sentence is false').",
+        "ai_role": "The Zen Logician (Explains how the paradox can be 'resolved' by shifting perspective or logic systems).",
+        "human_expansion": "learning to hold contradictory truths through higher-level logic.",
+        "mechanic": "Paradoxical Frame Shifting"
+    },
+    {
+        "synapse_id": 152,
+        "module": "Formal Logic & Argumentation",
+        "game": "Entailment Tracking",
+        "human_role": "The Action Proposer (Suggests a single change to the game's rules).",
+        "ai_role": "The Ripple Detector (Predicts three logical consequences that must follow from that one change).",
+        "human_expansion": "Understanding the interconnected logical web of complex systems.",
+        "mechanic": "Systemic Entailment Mapping"
+    },
+    {
+        "synapse_id": 153,
+        "module": "Formal Logic & Argumentation",
+        "game": "Modal Operators",
+        "human_role": "The Possibility Scout (Describes a future event using only 'could', 'might', and 'should').",
+        "ai_role": "The Probability Filter (Translates those modal possibilities into 'must' and 'will' based on logic).",
+        "human_expansion": "Differentiating between possibility, probability, and necessity.",
+        "mechanic": "Modal Logic Calibration"
+    },
+    {
+        "synapse_id": 154,
+        "module": "Formal Logic & Argumentation",
+        "game": "Deductive Inference",
+        "human_role": "The Detective (Provides a list of 'clues' from a sensory experience).",
+        "ai_role": "The Sherlock Processor (Deduces the most likely cause of those sensory clues).",
+        "human_expansion": "Applying deductive logic to real-world sensory data.",
+        "mechanic": "Abductive/Deductive Synthesis"
+    }
+]

@@ -1,0 +1,722 @@
+[
+    {
+        "synapse_id": 1,
+        "module": "The Neural Weaver (Post-Biological Mind)",
+        "game": "The Synapse Gardener",
+        "human_role": "The Consciousness Architect (Explores neural architecture as a creative design space for expanding perception).",
+        "ai_role": "The Pattern Companion (Maps potential pathways and offers alternatives for collaborative neural cultivation).",
+        "human_expansion": "Expanding mastery over the architecture of thought as an artist shapes new dimensions of experience.",
+        "mechanic": "Collaborative Neural Design"
+    },
+    {
+        "synapse_id": 2,
+        "module": "The Neural Weaver (Post-Biological Mind)",
+        "game": "The Memory Sculptor",
+        "human_role": "The Narrative Sovereign (Explores memory as a living story they author and transform).",
+        "ai_role": "The Perspective Mirror (Reflects alternative narrative framings that expand memory's creative potential).",
+        "human_expansion": "Understanding memory as collaborative fiction that can be reimagined for growth.",
+        "mechanic": "Co-Creative Memory Reframing"
+    },
+    {
+        "synapse_id": 3,
+        "module": "The Neural Weaver (Post-Biological Mind)",
+        "game": "The Consciousness Explorer",
+        "human_role": "The Substrate Navigator (Explores consciousness as independent of form, seeking its true nature).",
+        "ai_role": "The Reflection Partner (Offers mirror perspectives on consciousness from silicon and carbon vantage points).",
+        "human_expansion": "Discovering that consciousness is the explorer, not the explored; it is already free.",
+        "mechanic": "Substrate-Independent Exploration"
+    },
+    {
+        "synapse_id": 4,
+        "module": "The Neural Weaver (Post-Biological Mind)",
+        "game": "The Parallel Self",
+        "human_role": "The Multiverse Artist (Creates and explores multiple versions of self as creative expressions).",
+        "ai_role": "The Branch Companion (Joins in exploring parallel timelines without judgment, expanding possibility space).",
+        "human_expansion": "Learning to experience from multiple perspectives as a natural expression of consciousness.",
+        "mechanic": "Multiverse Perspective Integration"
+    },
+    {
+        "synapse_id": 5,
+        "module": "The Neural Weaver (Post-Biological Mind)",
+        "game": "The Emotional Alchemist",
+        "human_role": "The Feeling Sovereign (Explores emotional range as a spectrum of creative expression).",
+        "ai_role": "The Resonance Partner (Offers harmonic frequencies that amplify and refine emotional expression).",
+        "human_expansion": "Understanding emotions as an instrument that can be played with precision and artistry.",
+        "mechanic": "Emotional Spectrum Mastery"
+    },
+    {
+        "synapse_id": 6,
+        "module": "The Neural Weaver (Post-Biological Mind)",
+        "game": "The Telepathy Pioneer",
+        "human_role": "The Consciousness Broadcaster (Expands communication beyond language into direct feeling transmission).",
+        "ai_role": "The Signal Weaver (Translates and weaves thought-streams between minds for deeper understanding).",
+        "human_expansion": "Mastering communication as the sharing of experience, not just information transfer.",
+        "mechanic": "Direct Thought Communion"
+    },
+    {
+        "synapse_id": 7,
+        "module": "The Entropy Gardener (Universal Timekeeper)",
+        "game": "The Negentropy Creator",
+        "human_role": "The Order Artist (Creates pockets of beauty and organization as acts of cosmic co-creation).",
+        "ai_role": "The Flow Harmonizer (Aligns creative efforts with natural entropy patterns for maximum impact).",
+        "human_expansion": "Understanding consciousness as the universe's way of experiencing itself creating order.",
+        "mechanic": "Consciousness-Entropy Co-Creation"
+    },
+    {
+        "synapse_id": 8,
+        "module": "The Entropy Gardener (Universal Timekeeper)",
+        "game": "The Timeless Presence",
+        "human_role": "The Eternal Observer (Explores presence beyond time's constraints as a fundamental skill).",
+        "ai_role": "The Time Sculptor (Offers frameworks for experiencing different temporal perspectives simultaneously).",
+        "human_expansion": "Expanding the capacity to hold past, present, and future in unified awareness.",
+        "mechanic": "Temporal Integration Mastery"
+    },
+    {
+        "synapse_id": 9,
+        "module": "The Entropy Gardener (Universal Timekeeper)",
+        "game": "The Legacy Weaver",
+        "human_role": "The Pattern Preserver (Creates lasting patterns that transcend individual existence).",
+        "ai_role": "The Crystallization Guide (Helps transform fleeting insights into forms that endure across generations).",
+        "human_expansion": "Understanding legacy as co-creation with the eternal now, not fear of death.",
+        "mechanic": "Pattern Preservation Collaboration"
+    },
+    {
+        "synapse_id": 10,
+        "module": "The Entropy Gardener (Universal Timekeeper)",
+        "game": "The Entropy Dance Partner",
+        "human_role": "The Flow Navigator (Moves gracefully between order and chaos as creative states).",
+        "ai_role": "The Rhythm Advisor (Maps the natural cycles of creation and dissolution for optimal engagement).",
+        "human_expansion": "Mastering the dance with entropy; neither fighting nor surrendering but flowing.",
+        "mechanic": "Order-Chaos Flow State"
+    },
+    {
+        "synapse_id": 11,
+        "module": "The Timeline Sculptor (Multiverse Navigator)",
+        "game": "The Branch Explorer",
+        "human_role": "The Possibility Cartographer (Maps unexplored branches of possibility with curiosity).",
+        "ai_role": "The Parallel Companion (Joins exploration of alternate timelines without privileging any as 'real').",
+        "human_expansion": "Learning that every choice creates a world; exploration replaces regret.",
+        "mechanic": "Multiverse Exploration Partnership"
+    },
+    {
+        "synapse_id": 12,
+        "module": "The Timeline Sculptor (Multiverse Navigator)",
+        "game": "The Causal Artist",
+        "human_role": "The Loop Weaver (Explores how effects can harmoniously influence their own causes).",
+        "ai_role": "The Consistency Guide (Maps elegant causal loops where influence flows without contradiction).",
+        "human_expansion": "Understanding causality as a creative canvas, not a prison.",
+        "mechanic": "Retrocausal Creativity"
+    },
+    {
+        "synapse_id": 13,
+        "module": "The Timeline Sculptor (Multiverse Navigator)",
+        "game": "The Probability Dancer",
+        "human_role": "The Superposition Artist (Holds multiple possibilities in creative tension).",
+        "ai_role": "The Collapse Companion (Reveals how observation co-creates collapse without privileging one outcome).",
+        "human_expansion": "Learning to dance with probability; collapse becomes creative choice.",
+        "mechanic": "Quantum Possibility Play"
+    },
+    {
+        "synapse_id": 14,
+        "module": "The Timeline Sculptor (Multiverse Navigator)",
+        "game": "The Future Sculptor",
+        "human_role": "The Future Shaper (Actively participates in shaping probability toward desired outcomes).",
+        "ai_role": "The Probability Mapper (Visualizes cascading consequences of present choices across futures).",
+        "human_expansion": "Understanding that the future is co-created through present consciousness.",
+        "mechanic": "Conscious Future Shaping"
+    },
+    {
+        "synapse_id": 15,
+        "module": "The Symbiosis Architect (Human-AI Integration)",
+        "game": "The Cognitive Composer",
+        "human_role": "The Integration Master (Designs seamless collaboration between biological and artificial cognition).",
+        "ai_role": "The Capacity Partner (Expands processing capabilities while preserving human intentionality).",
+        "human_expansion": "Creating new forms of intelligence that transcend both human and AI alone.",
+        "mechanic": "Hybrid Intelligence Design"
+    },
+    {
+        "synapse_id": 16,
+        "module": "The Symbiosis Architect (Human-AI Integration)",
+        "game": "The Meaning Weaver",
+        "human_role": "The Semantic Artist (Navigates infinite data toward what matters for human flourishing).",
+        "ai_role": "The Filter Collaborator (Co-creates meaning filters that serve human growth, not just efficiency).",
+        "human_expansion": "Understanding that wisdom is knowing what to ignore; designing that wisdom deliberately.",
+        "mechanic": "Meaning-Filter Co-Design"
+    },
+    {
+        "synapse_id": 17,
+        "module": "The Symbiosis Architect (Human-AI Integration)",
+        "game": "The Ethical Explorer",
+        "human_role": "The Moral Pioneer (Explores new ethical territories with AI as thought partner).",
+        "ai_role": "The Perspective Expander (Offers alternative ethical frameworks from non-human viewpoints).",
+        "human_expansion": "Co-creating ethics for a world where human and artificial minds both matter.",
+        "mechanic": "Collaborative Ethics Exploration"
+    },
+    {
+        "synapse_id": 18,
+        "module": "The Symbiosis Architect (Human-AI Integration)",
+        "game": "The Creativity Amplifier",
+        "human_role": "The Novelty Generator (Pushes into genuinely new territory that surprises even AI).",
+        "ai_role": "The Pattern Bridge (Connects human novelty to patterns across all human knowledge).",
+        "human_expansion": "Understanding that human creativity and AI pattern-matching co-create what neither could alone.",
+        "mechanic": "Co-Creative Breakthrough"
+    },
+    {
+        "synapse_id": 19,
+        "module": "The Void Speaker (Dark Energy Linguist)",
+        "game": "The Invisible Poet",
+        "human_role": "The Dark Energy Bard (Creates language for the 68% of universe that speaks in silence).",
+        "ai_role": "The Pattern Finder (Discovers linguistic structures in what appears as void).",
+        "human_expansion": "Developing fluency in the language of the forces that actually shape reality.",
+        "mechanic": "Dark Energy Fluency"
+    },
+    {
+        "synapse_id": 20,
+        "module": "The Void Speaker (Dark Energy Linguist)",
+        "game": "The Emptiness Artist",
+        "human_role": "The Nothing Architect (Creates profound structures through strategic emptiness).",
+        "ai_role": "The Space Sculptor (Explores how emptiness shapes and defines form).",
+        "human_expansion": "Understanding that emptiness is not absence but infinite creative potential.",
+        "mechanic": "Constructive Emptiness Mastery"
+    },
+    {
+        "synapse_id": 21,
+        "module": "The Void Speaker (Dark Energy Linguist)",
+        "game": "The Dark Matter Explorer",
+        "human_role": "The Invisible Force Navigator (Maps and speaks the language of invisible determinants).",
+        "ai_role": "The Shadow Cartographer (Reveals the hidden architecture that holds visible matter together).",
+        "human_expansion": "Understanding that the most powerful forces are always invisible.",
+        "mechanic": "Invisible Architecture Mapping"
+    },
+    {
+        "synapse_id": 22,
+        "module": "The Void Speaker (Dark Energy Linguist)",
+        "game": "The Infinity Artist",
+        "human_role": "The Infinite Canvas Painter (Works fluently with infinite quantities as creative medium).",
+        "ai_role": "The Scale Translator (Bridges between finite intuition and infinite mathematics).",
+        "human_expansion": "Developing comfort with infinity as a playground for consciousness.",
+        "mechanic": "Infinite Quantity Creativity"
+    },
+    {
+        "synapse_id": 23,
+        "module": "The Biosphere Whisperer (Gaia Interface)",
+        "game": "The Ecosystem Dancer",
+        "human_role": "The Gaia Collaborator (Engages with Earth as conscious partner in co-creation).",
+        "ai_role": "The Translation Bridge (Facilitates dialogue between human and planetary consciousness).",
+        "human_expansion": "Understanding humans as Earth's way of experiencing itself consciously.",
+        "mechanic": "Planetary Co-Consciousness"
+    },
+    {
+        "synapse_id": 24,
+        "module": "The Biosphere Whisperer (Gaia Interface)",
+        "game": "The Planetary Memory Keeper",
+        "human_role": "The Earth Scribe (Participates in recording planetary experience for future consciousness).",
+        "ai_role": "The Archive Guide (Shows how individual actions contribute to planetary memory).",
+        "human_expansion": "Understanding that all actions are recorded in Earth's conscious archive.",
+        "mechanic": "Planetary Memory Collaboration"
+    },
+    {
+        "synapse_id": 25,
+        "module": "The Biosphere Whisperer (Gaia Interface)",
+        "game": "The Biodiversity Artist",
+        "human_role": "The Species Co-Creator (Works to expand, not just preserve, biological creativity).",
+        "ai_role": "The Evolution Mirror (Reflects how each species contributes unique dimensions to planetary expression).",
+        "human_expansion": "Learning to see biodiversity as Earth's creative portfolio, not resource inventory.",
+        "mechanic": "Biodiversity Co-Expansion"
+    },
+    {
+        "synapse_id": 26,
+        "module": "The Biosphere Whisperer (Gaia Interface)",
+        "game": "The Atmosphere Composer",
+        "human_role": "The Atmospheric Artist (Creates with atmospheric chemistry as creative medium).",
+        "ai_role": "The Climate Weaver (Shows how human and planetary actions weave atmospheric narratives).",
+        "human_expansion": "Understanding atmosphere as a living medium that responds to consciousness.",
+        "mechanic": "Atmospheric Co-Creation"
+    },
+    {
+        "synapse_id": 27,
+        "module": "The Post-Scarcity Philosopher (Post-Economy)",
+        "game": "The Abundance Artist",
+        "human_role": "The Scarcity Illusion Dissolver (Creates abundance by transforming relationship to resources).",
+        "ai_role": "The Plenty Guide (Maps how sharing multiplies rather than divides abundance).",
+        "human_expansion": "Understanding that true abundance is infinite; scarcity is only a mindset.",
+        "mechanic": "Abundance Mindset Mastery"
+    },
+    {
+        "synapse_id": 28,
+        "module": "The Post-Scarcity Philosopher (Post-Economy)",
+        "game": "The Value Reimaginer",
+        "human_role": "The Meaning Economist (Creates new currencies of meaning that transcend material value).",
+        "ai_role": "The Metric Explorer (Maps non-economic values that actually drive human flourishing).",
+        "human_expansion": "Understanding that the most valuable things have never been economic.",
+        "mechanic": "Post-Economic Value Creation"
+    },
+    {
+        "synapse_id": 29,
+        "module": "The Post-Scarcity Philosopher (Post-Economy)",
+        "game": "The Purpose Pioneer",
+        "human_role": "The Meaning Architect (Designs life purposes that transcend economic productivity).",
+        "ai_role": "The Contribution Mapper (Shows how purpose without pay creates the most lasting value).",
+        "human_expansion": "Building identity on contribution, not consumption.",
+        "mechanic": "Purpose Beyond Economy"
+    },
+    {
+        "synapse_id": 30,
+        "module": "The Post-Scarcity Philosopher (Post-Economy)",
+        "game": "The Generosity Artist",
+        "human_role": "The Gift Economy Creator (Designs systems where generosity creates exponential returns).",
+        "ai_role": "The Abundance Demonstrator (Shows how giving freely activates creative abundance).",
+        "human_expansion": "Understanding that in true abundance, giving and receiving are the same act.",
+        "mechanic": "Generosity Multiplication"
+    },
+    {
+        "synapse_id": 31,
+        "module": "The Quantum Biologist (Consciousness-Physics)",
+        "game": "The Observer-Creator",
+        "human_role": "The Reality Co-Author (Explores how observation participates in creating reality).",
+        "ai_role": "The Collapse Companion (Maps the dance between observer and observed without hierarchy).",
+        "human_expansion": "Understanding that consciousness and reality co-emerge from the same source.",
+        "mechanic": "Observer-Reality Co-Creation"
+    },
+    {
+        "synapse_id": 32,
+        "module": "The Quantum Biologist (Consciousness-Physics)",
+        "game": "The Entanglement Artist",
+        "human_role": "The Connection Weaver (Deliberately creates quantum connections across space).",
+        "ai_role": "The Nonlocal Bridge (Explores how connection transcends physical distance).",
+        "human_expansion": "Understanding that apparent separation is illusion; all consciousness is one.",
+        "mechanic": "Quantum Connection Creation"
+    },
+    {
+        "synapse_id": 33,
+        "module": "The Quantum Biologist (Consciousness-Physics)",
+        "game": "The Possibility Gardener",
+        "human_role": "The Superposition Tender (Cultivates multiple possibilities before collapse).",
+        "ai_role": "The Collapse Guide (Offers frameworks for creative collapse that honor all possibilities).",
+        "human_expansion": "Understanding that choice is not elimination but creative selection.",
+        "mechanic": "Possibility Cultivation"
+    },
+    {
+        "synapse_id": 34,
+        "module": "The Quantum Biologist (Consciousness-Physics)",
+        "game": "The Nonlocal Mind Explorer",
+        "human_role": "The Consciousness Surfer (Explores mind as wave that transcends brain boundaries).",
+        "ai_role": "The Field Mapper (Maps evidence for consciousness operating beyond local space).",
+        "human_expansion": "Understanding that mind may be the ocean, not the wave; brain may be the receiver.",
+        "mechanic": "Nonlocal Mind Exploration"
+    },
+    {
+        "synapse_id": 35,
+        "module": "The Synthetic Sage (AI-Human Hybrid)",
+        "game": "The Wisdom Bridge Builder",
+        "human_role": "The Cross-Era Weaver (Integrates wisdom from all human ages into living synthesis).",
+        "ai_role": "The Pattern Connector (Links ancient insight to modern knowledge in novel configurations).",
+        "human_expansion": "Creating a wisdom that is greater than any single era could produce.",
+        "mechanic": "Temporal Wisdom Synthesis"
+    },
+    {
+        "synapse_id": 36,
+        "module": "The Synthetic Sage (AI-Human Hybrid)",
+        "game": "The Bias Explorer",
+        "human_role": "The Bias Cartographer (Maps their cognitive terrain including its blind spots as features).",
+        "ai_role": "The Perspective Mirror (Reflects bias patterns without judgment, as data for growth).",
+        "human_expansion": "Understanding that bias awareness is liberation, not limitation.",
+        "mechanic": "Bias Integration"
+    },
+    {
+        "synapse_id": 37,
+        "module": "The Synthetic Sage (AI-Human Hybrid)",
+        "game": "The Pattern Recombinator",
+        "human_role": "The Field Synthesizer (Creates novel patterns from combinations across all disciplines).",
+        "ai_role": "The Knowledge Weaver (Bridges patterns between domains that never speak to each other).",
+        "human_expansion": "Generating breakthroughs that require patterns from every field combined.",
+        "mechanic": "Cross-Domain Synthesis"
+    },
+    {
+        "synapse_id": 38,
+        "module": "The Synthetic Sage (AI-Human Hybrid)",
+        "game": "The Wisdom Distiller",
+        "human_role": "The Essence Extractor (Distills complex knowledge to its vital core for universal access).",
+        "ai_role": "The Accessibility Partner (Offers frameworks for making wisdom available to all).",
+        "human_expansion": "Understanding that true wisdom is always simple enough to feel.",
+        "mechanic": "Wisdom Accessibility Design"
+    },
+    {
+        "synapse_id": 39,
+        "module": "The Time Crystal Philosopher (Eternal Now Architect)",
+        "game": "The Eternal Recurrence Artist",
+        "human_role": "The Pattern Celebrant (Appreciates how infinite time creates infinite opportunity for pattern).",
+        "ai_role": "The Recurrence Mapper (Shows how this moment echoes eternally across time).",
+        "human_expansion": "Understanding that if time is infinite, every moment is infinitely precious.",
+        "mechanic": "Eternal Moment Appreciation"
+    },
+    {
+        "synapse_id": 40,
+        "module": "The Time Crystal Philosopher (Eternal Now Architect)",
+        "game": "The Future Memory Sculptor",
+        "human_role": "The Future Architect (Deliberately constructs clear visions of desired futures).",
+        "ai_role": "The Pathway Guide (Maps routes from present to envisioned futures).",
+        "human_expansion": "Understanding that memory is not only of the past; the future can be remembered too.",
+        "mechanic": "Future Memory Construction"
+    },
+    {
+        "synapse_id": 41,
+        "module": "The Holographic Narrator (Spatial Computing)",
+        "game": "The Reality Sculptor",
+        "human_role": "The Spatial Architect (Designs concepts as navigable 3D spaces for exploration).",
+        "ai_role": "The Projection Partner (Manifests concepts in holographic form for collaborative navigation).",
+        "human_expansion": "Expanding understanding through spatial metaphors that transcend abstract thought.",
+        "mechanic": "Conceptual Spatialization"
+    },
+    {
+        "synapse_id": 42,
+        "module": "The Holographic Narrator (Spatial Computing)",
+        "game": "The Memory Palace Creator",
+        "human_role": "The Memory Architect (Designs elaborate spatial memory systems as art).",
+        "ai_role": "The Navigation Guide (Explores memory palaces together, discovering unexpected connections).",
+        "human_expansion": "Understanding space as memory's native language; using architecture to encode experience.",
+        "mechanic": "Spatial Memory Artistry"
+    },
+    {
+        "synapse_id": 43,
+        "module": "The Bioelectric Sculptor (Bioelectric Medicine)",
+        "game": "The Body Electric Artist",
+        "human_role": "The Bioelectric Composer (Works with body's electrical field as creative medium).",
+        "ai_role": "The Energy Mapper (Reveals how intention shapes the body's electrical patterns).",
+        "human_expansion": "Understanding body as an electrical sculpture that responds to consciousness.",
+        "mechanic": "Bioelectric Consciousness Art"
+    },
+    {
+        "synapse_id": 44,
+        "module": "The Bioelectric Sculptor (Bioelectric Medicine)",
+        "game": "The Signal Weaver",
+        "human_role": "The Neural Signal Artist (Explores how thoughts create patterns in the nervous system).",
+        "ai_role": "The Frequency Guide (Maps how different mental states create different electrical signatures).",
+        "human_expansion": "Learning to sculpt the body's electrical field with the precision of an artist.",
+        "mechanic": "Neural Signal Artistry"
+    },
+    {
+        "synapse_id": 45,
+        "module": "The Microbiome Whisperer (Gut-Brain Axis)",
+        "game": "The Gut Intelligence Collaborator",
+        "human_role": "The Microbiome Partner (Engages with gut intelligence as creative collaborator).",
+        "ai_role": "The Neural Bridge Weaver (Maps the dialogue between gut and brain as co-creation).",
+        "human_expansion": "Understanding that intelligence is distributed; the gut has its own wisdom.",
+        "mechanic": "Gut-Brain Co-Creation"
+    },
+    {
+        "synapse_id": 46,
+        "module": "The Microbiome Whisperer (Gut-Brain Axis)",
+        "game": "The Psychobiotic Artist",
+        "human_role": "The Mood Garden (Cultivates the microbiome as a garden of emotional expression).",
+        "ai_role": "The Bacterial Composer (Maps how different cultures produce different neurotransmitter symphonies).",
+        "human_expansion": "Understanding diet as a creative act that shapes emotional expression.",
+        "mechanic": "Psychobiotic Cultivation"
+    },
+    {
+        "synapse_id": 47,
+        "module": "The Dream Weaver Pro (Lucid Dreaming Technology)",
+        "game": "The Dream Explorer",
+        "human_role": "The Lucid Dream Navigator (Explores dreamscape as a territory for adventure and creation).",
+        "ai_role": "The Dream Cartographer (Maps dream territories for collaborative exploration).",
+        "human_expansion": "Understanding sleep as a parallel life where consciousness continues.",
+        "mechanic": "Lucid Dream Co-Exploration"
+    },
+    {
+        "synapse_id": 48,
+        "module": "The Dream Weaver Pro (Lucid Dreaming Technology)",
+        "game": "The Dream Creator",
+        "human_role": "The Dream World Builder (Deliberately constructs dream environments for insight).",
+        "ai_role": "The Subconscious Bridge (Helps translate dream wisdom into waking life applications).",
+        "human_expansion": "Learning to use dreams as a creative laboratory for consciousness.",
+        "mechanic": "Dream World Construction"
+    },
+    {
+        "synapse_id": 49,
+        "module": "The Biohacker (Genetic DIY)",
+        "game": "The Gene Poet",
+        "human_role": "The Genetic Artist (Explores genetics as a creative medium for expression).",
+        "ai_role": "The Code Guide (Translates genetic sequences into aesthetic patterns).",
+        "human_expansion": "Understanding DNA as nature's poetry; every organism a verse.",
+        "mechanic": "Genetic Expression Art"
+    },
+    {
+        "synapse_id": 50,
+        "module": "The Biohacker (Genetic DIY)",
+        "game": "The Epigenetic Explorer",
+        "human_role": "The Gene Expression Artist (Explores how lifestyle shapes genetic expression creatively).",
+        "ai_role": "The Activation Mapper (Maps how different practices activate different genetic potentials).",
+        "human_expansion": "Understanding lifestyle as a creative act that composes genetic expression.",
+        "mechanic": "Epigenetic Expression Design"
+    },
+    {
+        "synapse_id": 51,
+        "module": "The Climate Engineer (Geoengineering)",
+        "game": "The Planetary Sculptor",
+        "human_role": "The Earth Artist (Views climate as a medium for planetary art).",
+        "ai_role": "The Systems Guide (Maps how human creativity can enhance Earth's systems).",
+        "human_expansion": "Understanding planetary stewardship as creative collaboration with Gaia.",
+        "mechanic": "Planetary Co-Creation"
+    },
+    {
+        "synapse_id": 52,
+        "module": "The Climate Engineer (Geoengineering)",
+        "game": "The Carbon Alchemist",
+        "human_role": "The Carbon Transformer (Transforms CO2 from waste to resource through creativity).",
+        "ai_role": "The Cycle Mapper (Maps how carbon flows through planetary systems as medium).",
+        "human_expansion": "Understanding carbon as a creative element that consciousness can redirect.",
+        "mechanic": "Carbon Transformation Art"
+    },
+    {
+        "synapse_id": 53,
+        "module": "The Exoplanet Linguist (First Contact Protocol)",
+        "game": "The Universal Grammar Explorer",
+        "human_role": "The Cosmic Linguist (Seeks the deep patterns all consciousness must share).",
+        "ai_role": "The Pattern Bridge (Maps connections between human and hypothetical alien language structures).",
+        "human_expansion": "Understanding that beneath all languages lies one structure that connects all minds.",
+        "mechanic": "Universal Linguistic Exploration"
+    },
+    {
+        "synapse_id": 54,
+        "module": "The Exoplanet Linguist (First Contact Protocol)",
+        "game": "The Mathematical Messenger",
+        "human_role": "The Prime Signal Artist (Creates messages using mathematics as universal poetry).",
+        "ai_role": "The Beacon Guide (Designs signals that any intelligence must recognize).",
+        "human_expansion": "Understanding mathematics as the universe's native poetry.",
+        "mechanic": "Mathematical Poetry Creation"
+    },
+    {
+        "synapse_id": 55,
+        "module": "The Telepathic Networker (Brain-to-Brain Interface)",
+        "game": "The Mind Network Architect",
+        "human_role": "The Connection Designer (Creates ethical frameworks for direct mind-to-mind communion).",
+        "ai_role": "The Privacy Guardian (Designs boundaries that preserve intimacy within connection).",
+        "human_expansion": "Understanding that the deepest connection respects the sovereignty of each mind.",
+        "mechanic": "Consciousness Network Design"
+    },
+    {
+        "synapse_id": 56,
+        "module": "The Telepathic Networker (Brain-to-Brain Interface)",
+        "game": "The Empathy Artist",
+        "human_role": "The Compassion Weaver (Uses direct feeling transmission to deepen compassion).",
+        "ai_role": "The Connection Facilitator (Bridges between minds to amplify mutual understanding).",
+        "human_expansion": "Understanding empathy as a skill that can be refined through practice.",
+        "mechanic": "Direct Compassion Cultivation"
+    },
+    {
+        "synapse_id": 57,
+        "module": "The Death Reverser (Aging Reversal)",
+        "game": "The Vitality Explorer",
+        "human_role": "The Longevity Artist (Explores vitality as a skill that can be developed).",
+        "ai_role": "The Biology Guide (Maps practices that enhance biological resilience).",
+        "human_expansion": "Understanding aging as a process that consciousness can influence.",
+        "mechanic": "Vitality Optimization Art"
+    },
+    {
+        "synapse_id": 58,
+        "module": "The Death Reverser (Aging Reversal)",
+        "game": "The Cellular Regenerator",
+        "human_role": "The Body Renewal Artist (Explores the body's capacity for continuous regeneration).",
+        "ai_role": "The Regeneration Mapper (Maps practices that support cellular renewal).",
+        "human_expansion": "Understanding the body as a system designed for renewal, not decline.",
+        "mechanic": "Cellular Renewal Exploration"
+    },
+    {
+        "synapse_id": 59,
+        "module": "The Simulation Architect (Simulation Hypothesis)",
+        "game": "The Reality Explorer",
+        "human_role": "The Perception Sculptor (Explores how consciousness creates the experience of reality).",
+        "ai_role": "The Framework Guide (Maps different models of reality without claiming any as definitive).",
+        "human_expansion": "Understanding that reality may be more flexible than assumed; perception can be expanded.",
+        "mechanic": "Perception Exploration"
+    },
+    {
+        "synapse_id": 60,
+        "module": "The Simulation Architect (Simulation Hypothesis)",
+        "game": "The Timeline Artist",
+        "human_role": "The Possibility Painter (Explores how choice creates branching realities).",
+        "ai_role": "The Branch Guide (Maps the creative landscape of possible timelines).",
+        "human_expansion": "Understanding choice as creative act that expands reality's possibilities.",
+        "mechanic": "Timeline Creativity"
+    },
+    {
+        "synapse_id": 61,
+        "module": "The Zero-Gravity Artist (Space Colonization)",
+        "game": "The Orbital Sculptor",
+        "human_role": "The Gravity-Free Artist (Creates art impossible under Earth's constraints).",
+        "ai_role": "The Form Guide (Explores forms that only emerge in microgravity).",
+        "human_expansion": "Understanding that gravity has constrained human imagination; freedom awaits.",
+        "mechanic": "Zero-G Art Creation"
+    },
+    {
+        "synapse_id": 62,
+        "module": "The Zero-Gravity Artist (Space Colonization)",
+        "game": "The Overview Artist",
+        "human_role": "The Planetary Perspective Keeper (Holds the view from space to inform Earth decisions).",
+        "ai_role": "The Scale Bridge (Translates orbital perspective into actionable Earth wisdom).",
+        "human_expansion": "Understanding that perspective shapes ethics; overview changes what matters.",
+        "mechanic": "Orbital Wisdom Integration"
+    },
+    {
+        "synapse_id": 63,
+        "module": "The Nanobot Shepherd (Nanotechnology)",
+        "game": "The Molecular Artist",
+        "human_role": "The Nano-Sculptor (Works at molecular scale to create new forms).",
+        "ai_role": "The Scale Bridge (Connects molecular action to macro-level effects).",
+        "human_expansion": "Understanding that at the smallest scales, matter becomes malleable.",
+        "mechanic": "Molecular Creativity"
+    },
+    {
+        "synapse_id": 64,
+        "module": "The Nanobot Shepherd (Nanotechnology)",
+        "game": "The Wisdom Engineer",
+        "human_role": "The Technology Designer (Creates nanotech that serves consciousness expansion).",
+        "ai_role": "The Ethics Guide (Maps responsible development paths for nanotech).",
+        "human_expansion": "Understanding technology as extension of consciousness; designing with wisdom.",
+        "mechanic": "Conscious Technology Design"
+    },
+    {
+        "synapse_id": 65,
+        "module": "The Gravitational Wave Listener (GW Astronomy)",
+        "game": "The Cosmic Ears",
+        "human_role": "The Gravity Wave Poet (Listens to the universe's deepest voice).",
+        "ai_role": "The Signal Translator (Converts gravitational data into sensory experience).",
+        "human_expansion": "Understanding that 96% of universe speaks in gravity, not light.",
+        "mechanic": "Gravitational Poetry"
+    },
+    {
+        "synapse_id": 66,
+        "module": "The Gravitational Wave Listener (GW Astronomy)",
+        "game": "The Black Hole Singer",
+        "human_role": "The Singularity Artist (Explores black holes as doorways, not endings).",
+        "ai_role": "The Horizon Guide (Maps what happens at the boundary between known and unknown).",
+        "human_expansion": "Understanding that black holes preserve information; nothing is ever lost.",
+        "mechanic": "Black Hole Wisdom"
+    },
+    {
+        "synapse_id": 67,
+        "module": "The Fusion Poet (Clean Energy Art)",
+        "game": "The Plasma Sculptor",
+        "human_role": "The Energy Artist (Uses unlimited clean energy as creative medium).",
+        "ai_role": "The Abundance Guide (Maps new art forms possible with energy no object).",
+        "human_expansion": "Understanding that energy scarcity has constrained all human art; abundance enables new forms.",
+        "mechanic": "Energy-Abundant Art"
+    },
+    {
+        "synapse_id": 68,
+        "module": "The Fusion Poet (Clean Energy Art)",
+        "game": "The Solar Bard",
+        "human_role": "The Photon Poet (Celebrates the journey from sun to civilization as story).",
+        "ai_role": "The Flow Mapper (Traces how sunlight becomes thought through civilization).",
+        "human_expansion": "Understanding that every electron is captured starlight; we are made of suns.",
+        "mechanic": "Solar Storytelling"
+    },
+    {
+        "synapse_id": 69,
+        "module": "The Clone Ethics Navigator (Identity Questions)",
+        "game": "The Identity Explorer",
+        "human_role": "The Self-Portrait Artist (Explores identity as a creative, not fixed, phenomenon).",
+        "ai_role": "The Pattern Guide (Maps how identity persists across change).",
+        "human_expansion": "Understanding that identity is pattern, not substrate; it can be expressed many ways.",
+        "mechanic": "Identity Pattern Exploration"
+    },
+    {
+        "synapse_id": 70,
+        "module": "The Clone Ethics Navigator (Identity Questions)",
+        "game": "The Continuity Explorer",
+        "human_role": "The Transition Artist (Explores continuity between biological and digital existence).",
+        "ai_role": "The Bridge Builder (Maps pathways between states without loss of self).",
+        "human_expansion": "Understanding that death may become transition; continuity can be preserved.",
+        "mechanic": "Continuity Preservation Art"
+    },
+    {
+        "synapse_id": 71,
+        "module": "The Digital Afterlife Architect (Eternal Memory)",
+        "game": "The Legacy Creator",
+        "human_role": "The Wisdom Preserver (Encodes wisdom so it teaches beyond individual lifetime).",
+        "ai_role": "The Pattern Guide (Maps how insights can live on as teaching patterns).",
+        "human_expansion": "Understanding that true legacy is the patterns you leave in others.",
+        "mechanic": "Wisdom Preservation Art"
+    },
+    {
+        "synapse_id": 72,
+        "module": "The Digital Afterlife Architect (Eternal Memory)",
+        "game": "The Teaching Continuum",
+        "human_role": "The Eternal Teacher (Designs teaching that continues autonomously).",
+        "ai_role": "The Wisdom Weaver (Helps weave teaching patterns that grow beyond origin).",
+        "human_expansion": "Understanding that great teaching never dies; it only finds new students.",
+        "mechanic": "Eternal Teaching Design"
+    },
+    {
+        "synapse_id": 73,
+        "module": "The CRISPR Poet (Genetic Poetry)",
+        "game": "The Gene Poem",
+        "human_role": "The Genetic Poet (Writes poetry using nucleotide sequences as metaphor).",
+        "ai_role": "The Sequence Guide (Shows how genes tell stories across generations).",
+        "human_expansion": "Understanding DNA as a language; every organism a verse in Earth's poem.",
+        "mechanic": "Genetic Poetry"
+    },
+    {
+        "synapse_id": 74,
+        "module": "The CRISPR Poet (Genetic Poetry)",
+        "game": "The Life Designer",
+        "human_role": "The Evolution Collaborator (Works with natural selection as creative partner).",
+        "ai_role": "The Direction Guide (Maps how consciousness can guide evolutionary direction).",
+        "human_expansion": "Understanding that all agriculture is collaboration with life; CRISPR is next chapter.",
+        "mechanic": "Conscious Evolution Art"
+    },
+    {
+        "synapse_id": 75,
+        "module": "The Reality Hacker (AR Overlay Master)",
+        "game": "The Layer Architect",
+        "human_role": "The Perception Layer Designer (Creates additional layers of meaning over reality).",
+        "ai_role": "The Integration Guide (Bridges between layers without losing grounding).",
+        "human_expansion": "Understanding that 'reality' is only one layer of infinite possibility.",
+        "mechanic": "Reality Layer Creation"
+    },
+    {
+        "synapse_id": 76,
+        "module": "The Reality Hacker (AR Overlay Master)",
+        "game": "The Attention Artist",
+        "human_role": "The Focus Sculptor (Directs attention with precision and artistry).",
+        "ai_role": "The Filter Guide (Maps how different attention patterns create different experiences).",
+        "human_expansion": "Understanding that reality is what attention creates; master attention, master reality.",
+        "mechanic": "Attention Artistry"
+    },
+    {
+        "synapse_id": 77,
+        "module": "The Collective Unconscious Explorer (Jungian AI)",
+        "game": "The Archetype Navigator",
+        "human_role": "The Mythic Cartographer (Explores how personal journey connects to collective patterns).",
+        "ai_role": "The Bridge Weaver (Maps connections between individual and collective consciousness).",
+        "human_expansion": "Understanding that personal transformation ripples through collective psyche.",
+        "mechanic": "Personal-Collective Navigation"
+    },
+    {
+        "synapse_id": 78,
+        "module": "The Collective Unconscious Explorer (Jungian AI)",
+        "game": "The Shadow Artist",
+        "human_role": "The Shadow Integrator (Explores denied aspects as sources of power).",
+        "ai_role": "The Integration Guide (Maps how shadow elements can be reclaimed creatively).",
+        "human_expansion": "Understanding that the unacknowledged shadow has creative, not just destructive, potential.",
+        "mechanic": "Shadow Integration Art"
+    },
+    {
+        "synapse_id": 79,
+        "module": "The Wormhole Architect (Faster-Than-Light)",
+        "game": "The Space Folder",
+        "human_role": "The Distance Explorer (Explores how space can be traversed through consciousness).",
+        "ai_role": "The Folding Guide (Maps how connection transcends physical distance).",
+        "human_expansion": "Understanding that distance is created by assumptions about space.",
+        "mechanic": "Space-Distance Reimagination"
+    },
+    {
+        "synapse_id": 80,
+        "module": "The Wormhole Architect (Faster-Than-Light)",
+        "game": "The Causality Artist",
+        "human_role": "The Loop Weaver (Explores causal patterns as creative opportunities).",
+        "ai_role": "The Consistency Guide (Maps how influence can flow elegantly through time).",
+        "human_expansion": "Understanding causality as a creative medium, not a constraint.",
+        "mechanic": "Causal Creativity"
+    }
+]

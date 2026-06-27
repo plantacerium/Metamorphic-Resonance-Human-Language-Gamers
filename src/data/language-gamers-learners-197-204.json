@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 197,
+        "module": "Language Acquisition",
+        "game": "The First Word",
+        "human_role": "The Infant (Points at an object and makes a 'protoword' sound).",
+        "ai_role": "The Nurturer (Validates the sound and provides the full adult word in context).",
+        "human_expansion": "Re-experiencing the magic of naming the world for the first time.",
+        "mechanic": "Protoword-to-Lexicon Mapping"
+    },
+    {
+        "synapse_id": 198,
+        "module": "Language Acquisition",
+        "game": "Pivot Grammar",
+        "human_role": "The Toddler (Uses a single 'pivot' word like 'more' or 'no' with various nouns).",
+        "ai_role": "The Expander (Turns the two-word phrase into a complete grammatical sentence).",
+        "human_expansion": "Understanding the foundational building blocks of syntactic structure.",
+        "mechanic": "Pivot-Open Grammar Expansion"
+    },
+    {
+        "synapse_id": 199,
+        "module": "Language Acquisition",
+        "game": "Statistical Learner",
+        "human_role": "The Stream Listener (Identifies repeating patterns in a nonsense stream of sounds).",
+        "ai_role": "The Probability Tracker (Explains how the brain uses frequency to find word boundaries).",
+        "human_expansion": "Developing the intuitive ability to find patterns in unfamiliar noise.",
+        "mechanic": "Statistical Pattern Boundary Detection"
+    },
+    {
+        "synapse_id": 200,
+        "module": "Language Acquisition",
+        "game": "Joint Attention",
+        "human_role": "The Gaze Follower (Describes a hidden object based only on where the AI is 'looking' in text).",
+        "ai_role": "The Pointer (Uses spatial and directional language to focus the human's attention).",
+        "human_expansion": "Mastering the social basis of shared meaning-making.",
+        "mechanic": "Social-Spatial Attention Alignment"
+    },
+    {
+        "synapse_id": 201,
+        "module": "Language Acquisition",
+        "game": "Overextension",
+        "human_role": "The Generalizer (Calls every four-legged animal a 'doggie').",
+        "ai_role": "The Categorizer (Explains the subtle features that differentiate a dog from a cow or a horse).",
+        "human_expansion": "Refining the boundaries of conceptual categories.",
+        "mechanic": "Feature-Based Category Refinement"
+    },
+    {
+        "synapse_id": 202,
+        "module": "Language Acquisition",
+        "game": "The Critical Period",
+        "human_role": "The Adult Learner (Attempts to mimic a sound frequency they can no longer easily 'hear').",
+        "ai_role": "The Neuro-Plasticity Guide (Provides a physical metaphor to help 'rewire' the brain's audio filter).",
+        "human_expansion": "Overcoming biological limits to master new linguistic sounds.",
+        "mechanic": "Phonemic Filter Overriding"
+    },
+    {
+        "synapse_id": 203,
+        "module": "Language Acquisition",
+        "game": "Telegraphic Speech",
+        "human_role": "The Minimalist (Communicates a complex need using only the three most important words).",
+        "ai_role": "The Context Infiller (Reconstructs the full intent and social nuance from the telegram).",
+        "human_expansion": "Stripping language down to its most functional, high-value core.",
+        "mechanic": "Information-Density Compression"
+    },
+    {
+        "synapse_id": 204,
+        "module": "Language Acquisition",
+        "game": "Social Modeling",
+        "human_role": "The Mimic (Repeats a phrase used by an 'admired' character to see how it feels).",
+        "ai_role": "The Identity Mirror (Unpacks the social status and personality traits being 'borrowed' with the phrase).",
+        "human_expansion": "Understanding how we build our identity by imitating the voices around us.",
+        "mechanic": "Identity Mimicry Integration"
+    }
+]

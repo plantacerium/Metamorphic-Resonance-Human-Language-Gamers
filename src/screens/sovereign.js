@@ -3,7 +3,7 @@
  * Upload schemas, manage categories/topics, create games
  */
 import * as sovereign from '../services/sovereign.js';
-import { getAllModules, allSynapseGames, allLinguisticGames } from '../data/games.js';
+import { getAllModules, allSynapseGames, allLinguisticGames, allBhhcsGames, allRootsGames, allNatureGames, allCraftsGames, allDomainsGames, allPsychicGames, getBhhcsModules, getRootsModules } from '../data/games.js';
 
 let currentView = 'overview'; // 'overview' | 'category' | 'game-editor'
 let currentCategoryId = null;
@@ -128,7 +128,14 @@ function renderOverview(container) {
         </div>
 
         <div id="builtin-browser" class="sov-builtin-browser">
+          ${renderBuiltinSection('Synapse Modules', '🧠', getBuiltinModuleSummaries())}
           ${renderBuiltinSection('Linguistic Mapping', '🗣️', [{ name: 'Linguistic Games', count: getBuiltinGamesForId('_linguistic').length, id: '_linguistic' }])}
+          ${renderBuiltinSection('BHHCS — Biomimetic Language', '🧬', getBhhcsModules().map(m => ({ name: m.name, count: m.games.length, id: `_bhhcs_${m.name}` })))}
+          ${renderBuiltinSection('Roots — Future Figures & Silice', '🌱', getRootsModules().map(m => ({ name: m.name, count: m.games.length, id: `_roots_${m.name}` })))}
+          ${renderBuiltinSection('Nature — Grounded Practices', '🌿', [{ name: 'Grounded Practices', count: allNatureGames.length, id: '_grounded' }])}
+          ${renderBuiltinSection('Crafts — Harmonic Professions', '⚒️', [{ name: 'Profession Scenarios', count: allCraftsGames.length, id: '_professions' }])}
+          ${renderBuiltinSection('Domains — Applied Systems', '🌐', [{ name: 'Domain Scenarios', count: allDomainsGames.length, id: '_domains' }])}
+          ${renderBuiltinSection('Psychic Birthright', '🔮', [{ name: 'Psychic Birthright', count: allPsychicGames.length, id: '_psychic' }])}
       </div>
 
       <div class="divider"><span class="divider-symbol">⚜️</span></div>
@@ -809,20 +816,31 @@ function renderBuiltinSection(title, icon, items) {
 
 function getBuiltinGamesForId(sourceId) {
   let staticGames = [];
-  if (sourceId === '_linguistic') staticGames = allLinguisticGames;
-  //else if (sourceId === '_grounded') staticGames = GROUNDED_PRACTICES;
-  //else if (sourceId === '_professions') staticGames = PROFESSION_SCENARIOS;
-  //else if (sourceId === '_domains') staticGames = DOMAIN_SCENARIOS;
-  //else if (sourceId === '_psychic') staticGames = PSYCHIC_BIRTHRIGHT;
-  //else if (sourceId.startsWith('_synapse_')) {
-  //  const modId = sourceId.replace('_synapse_', '');
-  //  const modules = getAllModules();
-  //  const mod = modules.find(m => String(m.id) === modId);
-  //  if (mod) {
-  //    const [start, end] = mod.range;
-  //    // staticGames = allSynapseGames.filter(g => g.synapse_id >= start && g.synapse_id <= end);
-  //  }
-  //}
+  if (sourceId === '_linguistic') {
+    staticGames = allLinguisticGames;
+  } else if (sourceId === '_grounded') {
+    staticGames = allNatureGames;
+  } else if (sourceId === '_professions') {
+    staticGames = allCraftsGames;
+  } else if (sourceId === '_domains') {
+    staticGames = allDomainsGames;
+  } else if (sourceId === '_psychic') {
+    staticGames = allPsychicGames;
+  } else if (sourceId.startsWith('_synapse_')) {
+    const modId = sourceId.replace('_synapse_', '');
+    const modules = getAllModules();
+    const mod = modules.find(m => String(m.id) === modId);
+    if (mod) {
+      const [start, end] = mod.range;
+      staticGames = allSynapseGames.filter(g => g.synapse_id >= start && g.synapse_id <= end);
+    }
+  } else if (sourceId.startsWith('_bhhcs_')) {
+    const moduleName = sourceId.replace('_bhhcs_', '');
+    staticGames = allBhhcsGames.filter(g => g.module === moduleName);
+  } else if (sourceId.startsWith('_roots_')) {
+    const moduleName = sourceId.replace('_roots_', '');
+    staticGames = allRootsGames.filter(g => g.module === moduleName);
+  }
 
   // Filter out hidden ones, and identify them as built-in
   const filteredStatic = staticGames
@@ -832,9 +850,6 @@ function getBuiltinGamesForId(sourceId) {
   // Get sovereign extensions for this source
   const extensions = sovereign.getBuiltinExtensions(sourceId).map(g => ({ ...g, _isSovereign: true }));
 
-  // Merge: Extensions might override static games if they share the same ID
-  // But usually sovereign games have their own IDs.
-  // We'll just return all of them.
   return [...filteredStatic, ...extensions];
 }
 

@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 109,
+        "module": "Language & Memory",
+        "game": "The Mnemonic Cartographer",
+        "human_role": "The Memory Archaeologist (Describes a vivid childhood memory in raw, unfiltered sensory detail).",
+        "ai_role": "The Linguistic Geologist (Analyzes which specific words trigger the memory's emotional charge and why those words were 'fossilized' in the mind).",
+        "human_expansion": "Discovering how specific word-choices cement memories and how changing the language around a memory can alter its emotional weight.",
+        "mechanic": "Linguistic Memory Excavation"
+    },
+    {
+        "synapse_id": 110,
+        "module": "Language & Memory",
+        "game": "The Palimpsest",
+        "human_role": "The Overwriter (Retells a painful memory using only beautiful, poetic language—no negative words allowed).",
+        "ai_role": "The Restoration Expert (Points out where the original 'dark ink' bleeds through the human's beautiful rewrite and what that reveals).",
+        "human_expansion": "Understanding how re-narrating memories in different linguistic registers physically rewires the neural pathways associated with them.",
+        "mechanic": "Narrative Overwriting"
+    },
+    {
+        "synapse_id": 111,
+        "module": "Language & Memory",
+        "game": "The Proust Protocol",
+        "human_role": "The Sensory Trigger (Describes a smell, taste, or texture in extreme detail without naming what it is).",
+        "ai_role": "The Memory Conductor (Guides the human deeper into the involuntary memory that the sensation evokes, asking questions that sharpen sensory recall).",
+        "human_expansion": "Activating involuntary memory through precise sensory language, bypassing the conscious mind's editorial filters.",
+        "mechanic": "Sensory-Mnemonic Activation"
+    },
+    {
+        "synapse_id": 112,
+        "module": "Language & Memory",
+        "game": "The False Chronicle",
+        "human_role": "The Confabulist (Tells a 'memory' that never happened but feels emotionally true).",
+        "ai_role": "The Authenticity Scanner (Identifies why the false memory feels true—what emotional need does it serve? What real experience is encoded beneath it?).",
+        "human_expansion": "Exploring how language can construct memories that feel real, and understanding the difference between factual and emotional truth.",
+        "mechanic": "Confabulation Analysis"
+    },
+    {
+        "synapse_id": 113,
+        "module": "Language & Memory",
+        "game": "The Ancestor Whisper",
+        "human_role": "The Descendant (Describes a family saying, phrase, or expression inherited from a grandparent or ancestor).",
+        "ai_role": "The Etymological Archaeologist (Traces the phrase through cultural layers, revealing what worldview, trauma, or wisdom is encoded in the inherited expression).",
+        "human_expansion": "Recognizing how inherited phrases carry compressed ancestral experience and how they shape present-day perception.",
+        "mechanic": "Intergenerational Linguistic Archaeology"
+    },
+    {
+        "synapse_id": 114,
+        "module": "Language & Memory",
+        "game": "The Time Capsule",
+        "human_role": "The Temporal Linguist (Uses only the vocabulary and syntax they had available at age 7 to describe a current life problem).",
+        "ai_role": "The Developmental Mirror (Shows how the limited childhood vocabulary reveals the emotional core of the problem, stripped of adult justifications).",
+        "human_expansion": "Understanding how vocabulary growth both enables and constrains the complexity of what we can remember and process.",
+        "mechanic": "Vocabulary Regression"
+    },
+    {
+        "synapse_id": 115,
+        "module": "Language & Memory",
+        "game": "The Forgotten Word",
+        "human_role": "The Loss Cataloguer (Describes a concept they once understood deeply but can no longer articulate—a word or idea on the tip of the tongue that vanished).",
+        "ai_role": "The Recovery Specialist (Helps reconstruct the lost concept by circling it with related words, metaphors, and associations until it re-emerges).",
+        "human_expansion": "Exploring the relationship between linguistic decay and memory decay—when a word fades, does the concept it held fade with it?",
+        "mechanic": "Lexical Recovery"
+    },
+    {
+        "synapse_id": 116,
+        "module": "Language & Memory",
+        "game": "The Dream Codex",
+        "human_role": "The Dreamer (Describes a recurring dream in the distorted, non-linear language that matches how the dream actually felt—not a clean narrative).",
+        "ai_role": "The Dream Decoder (Identifies the linguistic patterns in the dream-language that reveal subconscious memory processing and emotional encryption).",
+        "human_expansion": "Discovering how dreams use a different grammar than waking life, and how translating between dream-language and waking-language unlocks hidden memories.",
+        "mechanic": "Oneiric Linguistics"
+    },
+    {
+        "synapse_id": 117,
+        "module": "Language & Memory",
+        "game": "The Body Archive",
+        "human_role": "The Somatic Narrator (Locates a tension or sensation in their body and gives it a voice—lets it 'speak' in first person).",
+        "ai_role": "The Somatic Translator (Connects the body's language to specific stored memories, asking: 'When did this tension first learn to speak?').",
+        "human_expansion": "Accessing body-stored memories through somatic language, bypassing the verbal memory system entirely.",
+        "mechanic": "Somatic Memory Vocalization"
+    },
+    {
+        "synapse_id": 118,
+        "module": "Language & Memory",
+        "game": "The Bilingual Ghost",
+        "human_role": "The Language Shifter (Tells the same memory twice: once in Spanish, once mentally translated to how it would feel in another language they know or are learning).",
+        "ai_role": "The Comparative Analyst (Identifies what changes between the two versions—which emotions appear, disappear, or transform when the memory switches linguistic containers).",
+        "human_expansion": "Understanding how different languages store different aspects of the same memory, and how bilinguals carry parallel memory architectures.",
+        "mechanic": "Cross-Linguistic Memory Comparison"
+    },
+    {
+        "synapse_id": 119,
+        "module": "Language & Memory",
+        "game": "The Oral Tradition",
+        "human_role": "The Elder (Takes a personal experience and retells it as a myth, a legend, or a fairy tale—adding symbolic weight and removing personal details).",
+        "ai_role": "The Story Keeper (Identifies the archetypal structure that emerged and what this reveals about how individual memories become collective stories).",
+        "human_expansion": "Understanding how cultures compress individual memories into shared narratives, and how mythologizing personal experience reveals its universal structure.",
+        "mechanic": "Memory Mythologization"
+    },
+    {
+        "synapse_id": 120,
+        "module": "Language & Memory",
+        "game": "The Semantic Time Machine",
+        "human_role": "The Temporal Re-coder (Takes a memory and rewrites it from three perspectives: past self experiencing it, present self reflecting on it, future self having integrated it).",
+        "ai_role": "The Temporal Analyst (Tracks how the language shifts across the three temporal versions—tense, vocabulary, emotional tone—revealing how time transforms memory through language).",
+        "human_expansion": "Mastering temporal perspective-shifting to understand how memory is not fixed but constantly rewritten by the present moment's language.",
+        "mechanic": "Temporal Perspective Shifting"
+    }
+]

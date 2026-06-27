@@ -3,22 +3,35 @@
  * Plays a game with Ollama using game-specific system prompts
  * Uses Reader-style side-by-side dialogue layout
  */
-import { getGameById, getLinguisticGameById, getLayerEmoji } from '../data/games.js';
+import { getGameById, getLinguisticGameById, getLayerEmoji, allBhhcsGames, allRootsGames } from '../data/games.js';
+import { getV5GameById } from '../data/v5_expansion.js';
 import { getSovereignGameById } from '../services/sovereign.js';
 import * as ollama from '../services/ollama.js';
 import * as storage from '../services/storage.js';
 import { renderMarkdown } from '../services/markdown.js';
 import { startSession, endSession } from '../services/timetracker.js';
+import { storeVector, retrieveRelevantMemories } from '../services/vector-memory.js';
 
 let currentConversation = null;
 let isStreaming = false;
 
 export function renderChat(container, gameId, gameType, onBack) {
-  const game = gameType === 'linguistic'
-    ? getLinguisticGameById(gameId)
-    : gameType === 'sovereign'
-      ? getSovereignGameById(gameId)
-      : getGameById(gameId);
+  let game = null;
+  if (gameType === 'linguistic') {
+    game = getLinguisticGameById(gameId);
+  } else if (gameType === 'sovereign') {
+    game = getSovereignGameById(gameId);
+  } else if (gameType === 'bhhcs') {
+    const match = allBhhcsGames.find(g => String(g.synapse_id) === String(gameId));
+    if (match) game = { ...match, icon: '🧬', title: match.game, layer: 'BHHCS' };
+  } else if (gameType === 'roots') {
+    const match = allRootsGames.find(g => String(g.synapse_id) === String(gameId));
+    if (match) game = { ...match, icon: '🌱', title: match.game, layer: 'ROOTS' };
+  } else if (['nature', 'crafts', 'domains', 'psychic'].includes(gameType)) {
+    game = getV5GameById(gameId);
+  } else {
+    game = getGameById(gameId);
+  }
 
   if (!game) {
     container.innerHTML = `<div class="empty-state"><p class="empty-state-text">Game not found</p><button class="btn" id="back-btn">← Back to Chronicle</button></div>`;
@@ -79,8 +92,6 @@ export function renderChat(container, gameId, gameType, onBack) {
             </div>
           </div>
         </div>
-      }
-
       <div class="divider"><span class="divider-symbol">⊛</span></div>
 
       <!-- Messages -->
@@ -115,48 +126,74 @@ export function renderChat(container, gameId, gameType, onBack) {
   const sendMessage = async () => {
     const text = input.value.trim();
     if (!text || isStreaming) return;
-
+    
+    isStreaming = true;
     input.value = '';
-    appendDialoguePair(text, null);
-    storage.addMessage(currentConversation.id, 'user', text);
+    input.disabled = true;
+    input.classList.add('chat-input--disabled');
+    sendBtn.disabled = true;
 
-    // Build messages array for Ollama
-    const messages = [
-      { role: 'system', content: systemPrompt },
-      ...currentConversation.messages.map(m => ({
-        role: m.role === 'human' ? 'user' : m.role,
-        content: m.content,
-      })),
-    ];
-    const userEmbedding = await ollama.generateEmbedding(text);
-
-    let contextInjection = "";
-
-    if (userEmbedding) {
-      // 3. Store the thought in the Akashic Record
-      storeVector(messages, userEmbedding, 'user', currentConversation.id);
-
-      // 4. Retrieve resonant past memories (RAG logic)
-      const resonantMemories = retrieveRelevantMemories(userEmbedding, currentConversation.id, 15); // Get top 2
-
-      // 5. Build context if memories are found (Threshold > 0.6 means they are quite similar)
-      const highResonanceMemories = resonantMemories.filter(m => m.score > 0.6);
-      if (highResonanceMemories.length > 0) {
-        contextInjection = `\n\n[SYSTEM NOTE: The human's current thought strongly resonates with these past memories\n`;
-        highResonanceMemories.forEach(m => {
-          contextInjection += `- ${m.text}\n`;
-        });
-        contextInjection += `Use this context to weave a deeper narrative.]\n`;
-      }
+    const pairEl = appendDialoguePair(text, null);
+    
+    // Show typing indicator immediately while generating embeddings
+    const contentEl = pairEl.querySelector('.dialogue-ai-content');
+    if (contentEl) {
+      contentEl.innerHTML = '<div class="typing-indicator"><span></span><span></span><span></span></div>';
     }
 
-    const augmentedPrompt = contextInjection ? messages + contextInjection : messages;
+    currentConversation = storage.addMessage(currentConversation.id, 'user', text);
 
-    const aiResponse = await getAIResponse(augmentedPrompt);
+    try {
+      // Build messages array for Ollama
+      const messages = [
+        { role: 'system', content: systemPrompt },
+        ...currentConversation.messages.map(m => ({
+          role: m.role === 'human' ? 'user' : m.role,
+          content: m.content,
+        })),
+      ];
+      const userEmbedding = await ollama.generateEmbedding(text);
 
-    const aiEmbedding = await generateEmbedding(aiResponseText);
-    if (aiEmbedding) {
-      storeVector(aiResponseText, aiEmbedding, 'ai', currentConversation.id);
+      let contextInjection = "";
+
+      if (userEmbedding) {
+        // 3. Store the thought in the Akashic Record
+        storeVector(text, userEmbedding, 'user', currentConversation.id);
+
+        // 4. Retrieve resonant past memories (RAG logic)
+        const resonantMemories = retrieveRelevantMemories(userEmbedding, currentConversation.id, 15); // Get top 2
+
+        // 5. Build context if memories are found (Threshold > 0.6 means they are quite similar)
+        const highResonanceMemories = resonantMemories.filter(m => m.score > 0.6);
+        if (highResonanceMemories.length > 0) {
+          contextInjection = `\n\n[SYSTEM NOTE: The human's current thought strongly resonates with these past memories\n`;
+          highResonanceMemories.forEach(m => {
+            contextInjection += `- ${m.text}\n`;
+          });
+          contextInjection += `Use this context to weave a deeper narrative.]\n`;
+          
+          messages[messages.length - 1].content += contextInjection;
+        }
+      }
+
+      // getAIResponse handles isStreaming = false internally when it finishes
+      await getAIResponse(messages);
+
+      const aiResponseText = currentConversation.messages[currentConversation.messages.length - 1].content;
+      const aiEmbedding = await ollama.generateEmbedding(aiResponseText);
+      if (aiEmbedding) {
+        storeVector(aiResponseText, aiEmbedding, 'ai', currentConversation.id);
+      }
+    } catch (error) {
+      console.error(error);
+      if (contentEl) {
+        contentEl.innerHTML = `<span style="color:var(--wax-seal);">⚠️ Processing error: ${error.message}</span>`;
+      }
+      isStreaming = false;
+      input.disabled = false;
+      input.classList.remove('chat-input--disabled');
+      sendBtn.disabled = false;
+      input.focus();
     }
   };
 
@@ -193,6 +230,18 @@ export function renderChat(container, gameId, gameType, onBack) {
   document.getElementById('model-select')?.addEventListener('change', (e) => {
     ollama.setModel(e.target.value);
   });
+
+  // Automatically start AI greeting if conversation is empty
+  if (currentConversation.messages.length === 0) {
+    appendDialoguePair(null, null);
+    const triggerText = 'The human has entered the simulation. Greet them and initiate the first step of this game.';
+    currentConversation = storage.addMessage(currentConversation.id, 'user', triggerText);
+    const initialMessages = [
+      { role: 'system', content: systemPrompt },
+      { role: 'user', content: triggerText }
+    ];
+    getAIResponse(initialMessages);
+  }
 }
 
 function buildSystemPrompt(game, gameType) {
@@ -220,6 +269,23 @@ ${legacyWord ? `Legacy Word to transmute: ${legacyWord}` : ''}
 Goal: ${objective}
 
 Guide the human through this game. Be insightful, creative, and push their boundaries. Respond in the spirit of consciousness expansion.` + langInstruction;
+  } else if (['nature', 'crafts', 'domains', 'psychic'].includes(gameType)) {
+    const title = game.title || game.game;
+    const concept = game.concept || '';
+    const meaning = game.meaning || '';
+    const domain = game.domain || game.focus || '';
+    const objective = game.objective || '';
+
+    return `You are an AI Gamer Legend playing a V5 Harmonic expansion game called "${title}".
+Your role: ${game.ai_role}
+The human's role: ${game.human_role}
+Mechanic: ${game.mechanic}
+${concept ? `Core Concept: ${concept}` : ''}
+${meaning ? `Meaning: ${meaning}` : ''}
+${domain ? `Domain / Focus: ${domain}` : ''}
+Goal: ${objective}
+
+Guide the human through this game. Be insightful, creative, and push their boundaries. Respond in the spirit of consciousness expansion and harmonic evolution.` + langInstruction;
   } else {
     const title = game.game || game.title;
     const objective = game.human_expansion || game.objective;
@@ -241,17 +307,29 @@ function appendDialoguePair(humanText, aiText) {
   const messagesEl = document.getElementById('chat-messages');
   const pairEl = document.createElement('div');
   pairEl.className = 'dialogue-entry';
-  pairEl.innerHTML = `
-      <div class="dialogue-human">
-        <div class="dialogue-role">Human Gamer</div>
-        <div class="dialogue-text">${renderMarkdown(humanText)}</div>
-      </div>
-      <div class="vocab-badge"><div class="vocab-badge-label">⊛</div></div>
-      <div class="dialogue-ai">
+  
+  if (humanText === null || humanText === undefined) {
+    pairEl.style.gridTemplateColumns = '1fr';
+    pairEl.innerHTML = `
+      <div class="dialogue-ai" style="border-left: none; margin-left: 0; padding-left: 0;">
         <div class="dialogue-role">AI Gamer</div>
         <div class="dialogue-text dialogue-ai-content">${aiText ? renderMarkdown(aiText) : '<em>Awaiting response...</em>'}</div>
       </div>
     `;
+  } else {
+    pairEl.innerHTML = `
+        <div class="dialogue-human">
+          <div class="dialogue-role">Human Gamer</div>
+          <div class="dialogue-text">${renderMarkdown(humanText)}</div>
+        </div>
+        <div class="vocab-badge"><div class="vocab-badge-label">⊛</div></div>
+        <div class="dialogue-ai">
+          <div class="dialogue-role">AI Gamer</div>
+          <div class="dialogue-text dialogue-ai-content">${aiText ? renderMarkdown(aiText) : '<em>Awaiting response...</em>'}</div>
+        </div>
+    `;
+  }
+  
   pairEl.style.animation = 'messageAppear 0.3s ease-out';
   messagesEl.appendChild(pairEl);
   messagesEl.scrollTop = messagesEl.scrollHeight;

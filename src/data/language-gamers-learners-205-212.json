@@ -1,0 +1,74 @@
+[
+    {
+        "synapse_id": 205,
+        "module": "Translation Theory",
+        "game": "The Untranslatable",
+        "human_role": "The Meaning Holder (States a word with no English equivalent, like 'Saudade').",
+        "ai_role": "The Circumlocution Artist (Builds a multi-sentence bridge to capture the specific 'untranslatable' feeling).",
+        "human_expansion": "Navigating the 'gaps' between different linguistic realities.",
+        "mechanic": "Lexical Gap Bridging"
+    },
+    {
+        "synapse_id": 206,
+        "module": "Translation Theory",
+        "game": "Formal vs. Dynamic",
+        "human_role": "The Literal Transcriber (Provides a word-for-word translation of a poem).",
+        "ai_role": "The Spirit Speaker (Rewrites the poem to capture the *feeling* and rhythm, even if it changes words).",
+        "human_expansion": "Choosing between faithfulness to form and faithfulness to essence.",
+        "mechanic": "Equivalence Polarity Shifting"
+    },
+    {
+        "synapse_id": 207,
+        "module": "Translation Theory",
+        "game": "Cultural Filter",
+        "human_role": "The Local (Tells a joke that only makes sense in their hometown).",
+        "ai_role": "The Cultural Mediator (Explains why the joke fails in a different culture and 're-imagines' it).",
+        "human_expansion": "Understanding that meaning is anchored in shared cultural memory.",
+        "mechanic": "Socio-Cultural Schema Adaptation"
+    },
+    {
+        "synapse_id": 208,
+        "module": "Translation Theory",
+        "game": "The Translator's Invisibility",
+        "human_role": "The Hidden Hand (Translates a paragraph so perfectly the reader forgets it was ever translated).",
+        "ai_role": "The Auditor (Searches for a single 'fingerprint' or mistake that reveals the translator's presence).",
+        "human_expansion": "Mastering the art of transparent, zero-ego communication.",
+        "mechanic": "Linguistic Transparency Calibration"
+    },
+    {
+        "synapse_id": 209,
+        "module": "Translation Theory",
+        "game": "False Friends",
+        "human_role": "The Trickster (Uses a word that looks like it means one thing in two languages but means something else).",
+        "ai_role": "The Warning Signal (Identifies the 'trap' and explains the embarrassing mistake it could cause).",
+        "human_expansion": "Detecting deceptive similarities between linguistic systems.",
+        "mechanic": "Interlingual Interference Detection"
+    },
+    {
+        "synapse_id": 210,
+        "module": "Translation Theory",
+        "game": "Intertextual Weaving",
+        "human_role": "The Weaver (Quotes a line that only makes sense if you've read a specific ancient text).",
+        "ai_role": "The Librarian (Identifies the source text and explains how it changes the current meaning).",
+        "human_expansion": "Mapping the infinite web of references that connects all human literature.",
+        "mechanic": "Intertextual Resonance Mapping"
+    },
+    {
+        "synapse_id": 211,
+        "module": "Translation Theory",
+        "game": "Skopos Theory",
+        "human_role": "The Client (Demands a translation intended for a child vs. a scientist).",
+        "ai_role": "The Targeter (Reworks the same source text to perfectly fit the intended audience).",
+        "human_expansion": "Adapting language to fit a specific goal and audience (Function over Form).",
+        "mechanic": "Goal-Oriented Text Adaptation"
+    },
+    {
+        "synapse_id": 212,
+        "module": "Translation Theory",
+        "game": "Loss and Gain",
+        "human_role": "The Sacrificer (Admits what had to be 'lost' in a translation (e.g., a rhyme)).",
+        "ai_role": "The Compensationist (Suggests an 'addition' in another place to make up for the loss).",
+        "human_expansion": "Understanding translation as a series of necessary trade-offs and creative gains.",
+        "mechanic": "Equivalence Compensation Strategy"
+    }
+]

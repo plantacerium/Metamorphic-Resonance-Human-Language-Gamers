@@ -126,7 +126,10 @@ export function getSettings() {
  */
 export async function checkConnection() {
     try {
-        const res = await apiFetch(`${getBaseUrl()}/api/tags`, { signal: AbortSignal.timeout(3000) });
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 3000);
+        const res = await apiFetch(`${getBaseUrl()}/api/tags`, { signal: controller.signal });
+        clearTimeout(timeoutId);
         return res.ok;
     } catch {
         return false;

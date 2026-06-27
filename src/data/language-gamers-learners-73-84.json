@@ -1,0 +1,110 @@
+[
+    {
+        "synapse_id": 73,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Heartbeat Meter",
+        "human_role": "The Rhythmic Speaker (Describes a calm scene using only sentences that match their resting heart rate).",
+        "ai_role": "The Pulse Monitor (Evaluates the rhythmic consistency of the text).",
+        "human_expansion": "Syncing internal physiological states with linguistic cadence.",
+        "mechanic": "Physio-Linguistic Synchronization"
+    },
+    {
+        "synapse_id": 74,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Staccato Strike",
+        "human_role": "The Impact Narrator (Describes a high-action event using only one-word or two-word sentences).",
+        "ai_role": "The Momentum Analyst (Measures the 'impact force' of the truncated syntax).",
+        "human_expansion": "Using brevity and percussion to convey urgency and force.",
+        "mechanic": "Truncated Syntax Impact"
+    },
+    {
+        "synapse_id": 75,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Temporal Blur",
+        "human_role": "The Speed Reader (Describes a fast-moving object using extremely long, run-on sentences with no punctuation).",
+        "ai_role": "The Velocity Sensor (Tracks how the lack of breath/pause mimics physical speed).",
+        "human_expansion": "Mimicking physical velocity through grammatical flow.",
+        "mechanic": "Punctuationless Flow"
+    },
+    {
+        "synapse_id": 76,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Echo Chamber",
+        "human_role": "The Resonance Expert (Builds a paragraph where every sentence must repeat at least one word from the previous one).",
+        "ai_role": "The Loop Detector (Identifies the 'semantic echoes' created by the repetition).",
+        "human_expansion": "Creating linguistic patterns through intentional lexical repetition.",
+        "mechanic": "Lexical Chaining"
+    },
+    {
+        "synapse_id": 77,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Syncopated Pause",
+        "human_role": "The Silence Strategist (Places '...' in a dialogue to shift the power dynamic or meaning).",
+        "ai_role": "The Subtext Infiner (Predicts what was left unsaid during each specific pause).",
+        "human_expansion": "Mastering the 'music' of the unspoken gap in communication.",
+        "mechanic": "Proximity of Silence"
+    },
+    {
+        "synapse_id": 78,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Rhyme of Logic",
+        "human_role": "The Poetic Prover (Explains a logical fact using internal rhyme to make it sound more 'true').",
+        "ai_role": "The Phonetical Analyst (Detects the 'Keats Heuristic'—the tendency to believe beautiful statements).",
+        "human_expansion": "Understanding how phonology influences the perception of truth.",
+        "mechanic": "Phonological Persuasion"
+    },
+    {
+        "synapse_id": 79,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Clockwork Narrative",
+        "human_role": "The Second-Hand Narrator (Tells a story where each sentence must represent exactly 5 seconds of real-time).",
+        "ai_role": "The Temporal Auditor (Flags sentences that compress or dilate time too much).",
+        "human_expansion": "Internalizing the relationship between narrative pace and actual time.",
+        "mechanic": "Real-Time Mapping"
+    },
+    {
+        "synapse_id": 80,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Melodic Stress",
+        "human_role": "The Accent Shifter (Writes the same sentence three times, indicating a different word for emphasis each time).",
+        "ai_role": "The Intent Decoder (Explains how the three different stresses change the social meaning).",
+        "human_expansion": "Isolating the role of prosody in semantic meaning.",
+        "mechanic": "Prosodic Stress Testing"
+    },
+    {
+        "synapse_id": 81,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Polyrhythmic Debate",
+        "human_role": "The Counterpoint Speaker (Offers an argument while maintaining a secondary, rhythmic sub-narrative).",
+        "ai_role": "The Frequency Analyzer (Separates the 'signal' of the argument from the 'noise' of the rhythm).",
+        "human_expansion": "Managing multiple layers of rhythmic and conceptual data simultaneously.",
+        "mechanic": "Multi-Layered Cadence"
+    },
+    {
+        "synapse_id": 82,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Breath Meter",
+        "human_role": "The Oxygen Controller (Describes an underwater scene using sentences that get shorter as their 'breath' runs out).",
+        "ai_role": "The Deprivation Monitor (Predicts the psychological state of the narrator based on sentence decay).",
+        "human_expansion": "Mapping physical limitations (breath) to syntactic structure.",
+        "mechanic": "Syntactic Decay Modeling"
+    },
+    {
+        "synapse_id": 83,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Eternal Return",
+        "human_role": "The Circular Rhythmist (Starts and ends a paragraph with the same rhythmic pattern, but different words).",
+        "ai_role": "The Structural Verifier (Confirms the rhythmic identity of the beginning and end).",
+        "human_expansion": "Recognizing structural patterns independent of lexical content.",
+        "mechanic": "Structural Rhythmic Symmetry"
+    },
+    {
+        "synapse_id": 84,
+        "module": "Rhythmic & Temporal Language",
+        "game": "The Time Dilation",
+        "human_role": "The Slow-Motion Narrator (Describes a 1-second event—like a blink—in 500 words).",
+        "ai_role": "The Micro-Detail Extractor (Identifies the sensory layers revealed by the dilation).",
+        "human_expansion": "Expanding the 'resolution' of temporal perception through exhaustive description.",
+        "mechanic": "Temporal Granularity Scaling"
+    }
+]
