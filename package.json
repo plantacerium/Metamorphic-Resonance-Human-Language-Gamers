@@ -28,5 +28,12 @@
     "@tauri-apps/plugin-fs": "^2.4.5",
     "@tauri-apps/plugin-http": "^2.5.7",
     "@tauri-apps/plugin-opener": "^2.5.3"
+  },
+  "pnpm": {
+    "approvedBuilds": [
+      "esbuild",
+      "onnxruntime-node",
+      "protobufjs"
+    ]
   }
 }
