@@ -10,7 +10,7 @@ import * as ollama from '../services/ollama.js';
 import * as storage from '../services/storage.js';
 import { renderMarkdown } from '../services/markdown.js';
 import { startSession, endSession } from '../services/timetracker.js';
-import { storeVector, retrieveRelevantMemories } from '../services/vector-memory.js';
+import { storeGraphMemory as storeVector, retrieveRelevantMemories } from '../services/graph-memory.js';
 
 let currentConversation = null;
 let isStreaming = false;
@@ -161,7 +161,7 @@ export function renderChat(container, gameId, gameType, onBack) {
         storeVector(text, userEmbedding, 'user', currentConversation.id);
 
         // 4. Retrieve resonant past memories (RAG logic)
-        const resonantMemories = retrieveRelevantMemories(userEmbedding, currentConversation.id, 15); // Get top 2
+        const resonantMemories = await retrieveRelevantMemories(userEmbedding, currentConversation.id, 15); // Get top 2
 
         // 5. Build context if memories are found (Threshold > 0.6 means they are quite similar)
         const highResonanceMemories = resonantMemories.filter(m => m.score > 0.6);
