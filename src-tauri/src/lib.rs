@@ -73,6 +73,8 @@ async fn ask_ollama(prompt: String) -> Result<String, String> {
     Ok(res["response"].as_str().unwrap_or("No response").to_string())
 }
 
+mod graphdb;
+
 #[cfg_attr(mobile, tauri::mobile_entry_point)]
 pub fn run() {
   tauri::Builder::default()
@@ -84,6 +86,14 @@ pub fn run() {
             .build(),
         )?;
       }
+      
+      let handle = app.handle().clone();
+      tauri::async_runtime::spawn(async move {
+          if let Err(e) = graphdb::init_graphdb(&handle).await {
+              eprintln!("Failed to initialize GraphDB: {}", e);
+          }
+      });
+
       Ok(())
     })
     .plugin(tauri_plugin_opener::init())
@@ -93,7 +103,11 @@ pub fn run() {
     .invoke_handler(tauri::generate_handler![
       ask_ollama, 
       ollama_proxy, 
-      ollama_stream_proxy
+      ollama_stream_proxy,
+      graphdb::graph_store_memory,
+      graphdb::graph_search_memory,
+      graphdb::graph_delete_game,
+      graphdb::graph_export_brain
     ])
     .run(tauri::generate_context!())
     .expect("error while running tauri application");
