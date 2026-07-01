@@ -12,6 +12,7 @@ import { renderMenu } from './screens/chronicles.js';
 import { renderChat } from './screens/chat.js';
 import { renderReader } from './screens/reader.js';
 import { renderSovereign } from './screens/sovereign.js';
+import { renderBrystal } from './screens/brystal.js';
 import { initProfile, getProfile } from './services/storage.js';
 import { THEMES, getTheme, setTheme, initTheme, getAllThemes, addCustomTheme, deleteCustomTheme } from './services/theme.js';
 import { setEmbeddingModel, getEmbeddingModel, checkConnection, getSettings } from './services/ollama.js';
@@ -101,6 +102,7 @@ function renderNav() {
     <div class="nav-title">⊛ Metamorphic Resonance Human Language Gamers</div>
     <ul class="nav-links">
       <li><a class="nav-link ${route.path === 'chronicles' ? 'active' : ''}" data-route="chronicles">Chronicle</a></li>
+      <li><a class="nav-link ${route.path === 'brystal' ? 'active' : ''}" data-route="brystal">Brystal</a></li>
       <li><a class="nav-link ${route.path === 'meditations' ? 'active' : ''}" data-route="meditations">Meditations</a></li>
       <li><a class="nav-link ${route.path === 'system' ? 'active' : ''}" data-route="system">System</a></li>
       <li>
@@ -501,6 +503,10 @@ function route() {
       renderMenu(content, (gameId, gameType) => {
         navigate(`chat/${gameType}_${gameId}`);
       });
+      break;
+
+    case 'brystal':
+      renderBrystal(content);
       break;
 
     case 'chat': {
