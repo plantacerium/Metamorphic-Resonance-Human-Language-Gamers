@@ -1,10 +1,10 @@
 [package]
-name = "Metamorphic-Resonance-Human-Language-Gamers"
+name = "metamorphic-resonance-human-language-gamers"
 version = "0.2.0"
 description = "Change the Word Change the World"
 authors = ["Plantacerium"]
 license = ""
-repository = ""
+repository = "https://github.com/plantacerium/Metamorphic-Resonance-Human-Language-Gamers"
 edition = "2021"
 rust-version = "1.77.2"
 
