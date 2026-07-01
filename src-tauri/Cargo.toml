@@ -1,8 +1,8 @@
 [package]
-name = "app"
-version = "0.1.0"
-description = "A Tauri App"
-authors = ["you"]
+name = "Metamorphic-Resonance-Human-Language-Gamers"
+version = "0.2.0"
+description = "Change the Word Change the World"
+authors = ["Plantacerium"]
 license = ""
 repository = ""
 edition = "2021"
