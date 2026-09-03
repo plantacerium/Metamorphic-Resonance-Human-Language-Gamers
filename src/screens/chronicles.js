@@ -318,7 +318,7 @@ function renderModuleCard(mod) {
   return `
     <div class="parchment-card module-card" data-module="${mod.id}">
       <div class="module-card-header">
-        <div class="wax-seal">${mod.icon}</div>
+        <div class="wax-seal wax-seal--gold">${mod.icon}</div>
         <div>
           <div class="module-card-title">${mod.name}</div>
           <div class="module-card-meta">${mod.gameCount} quests available</div>

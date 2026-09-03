@@ -743,7 +743,7 @@ h3 {
 .dialogue-human {
   background: linear-gradient(135deg, #f2e6c9 0%, #e8d5a3 100%);
   border: 1.5px solid var(--parchment-edge);
-  text-align: right;
+  text-align: left;
 }
 
 .dialogue-ai {

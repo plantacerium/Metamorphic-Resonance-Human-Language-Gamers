@@ -47,7 +47,7 @@ function renderDialogueList(container, conversations, onBack, onNavigate) {
         <ul class="dialogue-list" id="dialogue-list">
           ${conversations.map(conv => `
             <li class="dialogue-list-item" data-conv-id="${conv.id}">
-              <div class="wax-seal ${conv.gameType !== 'synapse' ? 'wax-seal--gold' : ''}" style="width:40px;height:40px;font-size:1rem;">
+              <div class="wax-seal wax-seal--gold" style="width:40px;height:40px;font-size:1rem;">
                 ${conv.icon || (conv.gameType === 'linguistic' ? getLayerEmoji(conv.module) : (getGameById(conv.gameId)?.icon || '🔮'))}
               </div>
               <div style="flex:1;">
@@ -195,7 +195,7 @@ function renderDialogueView(container, dialogueId, onBack, onNavigate) {
       <!-- Module Header -->
       <div class="module-section">
         <div class="module-section-header">
-          <div class="wax-seal ${conv.gameType !== 'synapse' ? 'wax-seal--gold' : ''}" style="width:44px;height:44px;">
+          <div class="wax-seal wax-seal--gold" style="width:44px;height:44px;">
             ${conv.icon || (conv.gameType === 'linguistic' ? getLayerEmoji(conv.module) : (getGameById(conv.gameId)?.icon || '🔮'))}
           </div>
           <div>

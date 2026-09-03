@@ -94,6 +94,16 @@ export const allV5Games = [...GROUNDED_PRACTICES, ...PROFESSION_SCENARIOS, ...DO
 
 // ─── Lookups ───
 
+export function getSynapseGameById(id) {
+  const numericId = parseInt(id);
+  const synapseMatch = allSynapseGames.find(g => g.synapse_id === numericId);
+  if (synapseMatch) {
+    const mod = MODULES.find(m => m.name === synapseMatch.module);
+    return { ...synapseMatch, icon: mod ? mod.icon : '🔮', title: synapseMatch.game };
+  }
+  return null;
+}
+
 export function getGameById(id) {
   // 1. Check V5 string ID
   const v5Match = getV5GameById(id);
@@ -103,21 +113,18 @@ export function getGameById(id) {
   const sovMatch = getSovereignGameById(id);
   if (sovMatch) return sovMatch;
 
-  // 3. Check BHHCS games
+  // 3. Synapse (numeric legacy ID) - Check this FIRST to prioritize original games
+  const synapseMatch = getSynapseGameById(id);
+  if (synapseMatch) return synapseMatch;
+
+  // 4. Check BHHCS games
   const bhhcsMatch = allBhhcsGames.find(g => String(g.synapse_id) === String(id));
   if (bhhcsMatch) return { ...bhhcsMatch, icon: '🧬', title: bhhcsMatch.game, layer: 'BHHCS' };
 
-  // 4. Check Roots games
+  // 5. Check Roots games
   const rootsMatch = allRootsGames.find(g => String(g.synapse_id) === String(id));
   if (rootsMatch) return { ...rootsMatch, icon: '🌱', title: rootsMatch.game, layer: 'ROOTS' };
 
-  // 5. Synapse (numeric legacy ID)
-  const numericId = parseInt(id);
-  const synapseMatch = allSynapseGames.find(g => g.synapse_id === numericId);
-  if (synapseMatch) {
-    const mod = MODULES.find(m => m.name === synapseMatch.module);
-    return { ...synapseMatch, icon: mod ? mod.icon : '🔮', title: synapseMatch.game };
-  }
   return null;
 }
 

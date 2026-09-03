@@ -290,7 +290,7 @@ export async function askOllama(prompt) {
 export async function generateEmbedding(text, model) {
     const embeddingModel = model || getEmbeddingModel();
     try {
-        const response = await fetch(`${getBaseUrl()}/api/embeddings`, {
+        const response = await apiFetch(`${getBaseUrl()}/api/embeddings`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

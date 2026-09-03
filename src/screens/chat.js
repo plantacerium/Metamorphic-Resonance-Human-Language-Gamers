@@ -11,6 +11,7 @@ import * as storage from '../services/storage.js';
 import { renderMarkdown } from '../services/markdown.js';
 import { startSession, endSession } from '../services/timetracker.js';
 import { storeGraphMemory as storeVector, retrieveRelevantMemories } from '../services/graph-memory.js';
+import { extractAndStoreConcepts } from '../services/concept-extractor.js';
 
 let currentConversation = null;
 let isStreaming = false;
@@ -44,6 +45,7 @@ export function renderChat(container, gameId, gameType, onBack) {
   const displaySubtitle = gameType === 'linguistic'
     ? `${game.layer} · ${game.legacy_spanish_word} → ${game.new_kernel_concept}`
     : `${game.module || game.layer} · ${game.mechanic}`;
+  const persistentGameId = String(game.synapse_id || game.id || gameId);
 
   // Time Tracking: Start session
   startSession(gameId, displayTitle, game.module || game.layer || gameType);
@@ -158,10 +160,10 @@ export function renderChat(container, gameId, gameType, onBack) {
 
       if (userEmbedding) {
         // 3. Store the thought in the Akashic Record
-        storeVector(text, userEmbedding, 'user', currentConversation.id);
+        storeVector(text, userEmbedding, 'user', persistentGameId);
 
         // 4. Retrieve resonant past memories (RAG logic)
-        const resonantMemories = await retrieveRelevantMemories(userEmbedding, currentConversation.id, 15); // Get top 2
+        const resonantMemories = await retrieveRelevantMemories(userEmbedding, persistentGameId, 15); // Get top 2
 
         // 5. Build context if memories are found (Threshold > 0.6 means they are quite similar)
         const highResonanceMemories = resonantMemories.filter(m => m.score > 0.6);
@@ -182,8 +184,11 @@ export function renderChat(container, gameId, gameType, onBack) {
       const aiResponseText = currentConversation.messages[currentConversation.messages.length - 1].content;
       const aiEmbedding = await ollama.generateEmbedding(aiResponseText);
       if (aiEmbedding) {
-        storeVector(aiResponseText, aiEmbedding, 'ai', currentConversation.id);
+        storeVector(aiResponseText, aiEmbedding, 'ai', persistentGameId);
       }
+
+      // Extract concepts asynchronously (doesn't block the UI)
+      extractAndStoreConcepts(text, aiResponseText, 'latest');
     } catch (error) {
       console.error(error);
       if (contentEl) {

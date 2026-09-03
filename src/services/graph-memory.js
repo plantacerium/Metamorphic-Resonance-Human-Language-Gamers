@@ -57,3 +57,31 @@ export async function deleteGameMemories(gameId) {
         }
     }
 }
+
+export async function retrieveGlobalMemories(currentEmbedding, topK = 3) {
+    if (!useTauri) {
+        // Fallback: search all records without game filter
+        const { akashicRecords, cosineSimilarity } = await import('./vector-memory.js');
+        if (akashicRecords.length === 0) return [];
+        const scored = akashicRecords.map(r => ({
+            ...r,
+            score: cosineSimilarity(currentEmbedding, r.embedding)
+        }));
+        return scored.sort((a, b) => b.score - a.score).slice(0, topK);
+    }
+    try {
+        const results = await invoke('graph_search_global', {
+            embedding: currentEmbedding,
+            topK
+        });
+        return results.map(r => ({
+            id: r.id,
+            text: r.text,
+            role: r.role,
+            score: r.score
+        }));
+    } catch (e) {
+        console.error("Failed to search global memory:", e);
+        return [];
+    }
+}

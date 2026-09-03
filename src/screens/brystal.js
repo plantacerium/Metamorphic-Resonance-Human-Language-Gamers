@@ -89,10 +89,13 @@ export async function renderBrystal(container) {
       // Evitar aristas duplicadas o referencias a nodos inexistentes
       if (graph.hasNode(e.source) && graph.hasNode(e.target)) {
         if (!graph.hasEdge(e.source, e.target)) {
+          const edgeColor = e.rel_type === 'mentions' 
+            ? 'rgba(201, 168, 76, 0.5)' // Gold for memory->concept
+            : 'rgba(26, 58, 92, 0.5)';   // Sapphire for concept->concept
           graph.addEdge(e.source, e.target, {
             type: 'line',
-            size: e.size || 1,
-            color: e.color || 'rgba(255, 255, 255, 0.2)'
+            size: e.rel_type === 'mentions' ? 1.5 : 2,
+            color: edgeColor
           });
         }
       }
