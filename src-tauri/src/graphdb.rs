@@ -152,16 +152,16 @@ pub async fn graph_search_memory(
 ) -> Result<Vec<QueryResult>, String> {
     // Vector search in SurrealDB
     // We use the <|K, COSINE|> operator
-    let query = r#"
+    let query = format!(r#"
         SELECT id, text, role, vector::similarity::cosine(embedding, $query_vec) AS score
         FROM memory
-        WHERE game_id = $game_id AND embedding <|10, COSINE|> $query_vec
+        WHERE game_id = $game_id AND embedding <|{}, COSINE|> $query_vec
         ORDER BY score DESC
         LIMIT $limit;
-    "#;
+    "#, top_k);
 
     let mut response = state.db
-        .query(query)
+        .query(&query)
         .bind(("query_vec", embedding))
         .bind(("game_id", game_id))
         .bind(("limit", top_k))
@@ -241,4 +241,102 @@ pub async fn graph_export_brain(state: State<'_, GraphDbState>) -> Result<BrainG
     }
 
     Ok(BrainGraph { nodes, edges })
+}
+
+#[derive(Debug, Deserialize)]
+pub struct ConceptInput {
+    pub name: String,
+    pub description: String,
+}
+
+#[derive(Debug, Deserialize)]
+pub struct RelationInput {
+    pub from: String,
+    pub to: String,
+    pub strength: f64,
+}
+
+#[tauri::command]
+pub async fn graph_store_concepts(
+    memory_id: String,
+    concepts: Vec<ConceptInput>,
+    relations: Vec<RelationInput>,
+    state: State<'_, GraphDbState>,
+) -> Result<(), String> {
+    // Upsert each concept
+    for concept in &concepts {
+        let query = r#"
+            INSERT INTO concept (name, description) VALUES ($name, $desc)
+                ON DUPLICATE KEY UPDATE description = $desc;
+        "#;
+        state.db
+            .query(query)
+            .bind(("name", concept.name.clone()))
+            .bind(("desc", concept.description.clone()))
+            .await
+            .map_err(|e| e.to_string())?;
+    }
+
+    // Create mentions relations (memory -> concept)
+    for concept in &concepts {
+        let query = r#"
+            LET $mem = type::thing("memory", $memory_id);
+            LET $con = (SELECT id FROM concept WHERE name = $concept_name LIMIT 1);
+            IF $con[0] {
+                RELATE $mem -> mentions -> $con[0].id SET confidence = 1.0;
+            };
+        "#;
+        state.db
+            .query(query)
+            .bind(("memory_id", memory_id.clone()))
+            .bind(("concept_name", concept.name.clone()))
+            .await
+            .map_err(|e| e.to_string())?;
+    }
+
+    // Create related_to relations (concept -> concept)
+    for rel in &relations {
+        let query = r#"
+            LET $from = (SELECT id FROM concept WHERE name = $from_name LIMIT 1);
+            LET $to = (SELECT id FROM concept WHERE name = $to_name LIMIT 1);
+            IF $from[0] AND $to[0] {
+                RELATE $from[0].id -> related_to -> $to[0].id SET strength = $strength;
+            };
+        "#;
+        state.db
+            .query(query)
+            .bind(("from_name", rel.from.clone()))
+            .bind(("to_name", rel.to.clone()))
+            .bind(("strength", rel.strength))
+            .await
+            .map_err(|e| e.to_string())?;
+    }
+
+    println!("🧠 Stored {} concepts and {} relations", concepts.len(), relations.len());
+    Ok(())
+}
+
+#[tauri::command]
+pub async fn graph_search_global(
+    embedding: Vec<f32>,
+    top_k: u32,
+    state: State<'_, GraphDbState>,
+) -> Result<Vec<QueryResult>, String> {
+    let query = format!(r#"
+        SELECT id, text, role, vector::similarity::cosine(embedding, $query_vec) AS score
+        FROM memory
+        WHERE embedding <|{}, COSINE|> $query_vec
+        ORDER BY score DESC
+        LIMIT $limit;
+    "#, top_k);
+
+    let mut response = state.db
+        .query(&query)
+        .bind(("query_vec", embedding))
+        .bind(("limit", top_k))
+        .await
+        .map_err(|e| e.to_string())?;
+
+    let results: Vec<QueryResult> = response.take(0).map_err(|e| e.to_string())?;
+    Ok(results)
 }

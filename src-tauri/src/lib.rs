@@ -15,16 +15,29 @@ async fn ollama_stream_proxy(
         .map_err(|e| e.to_string())?;
 
     let mut stream = res.bytes_stream();
+    let mut buffer = String::new();
 
     while let Some(chunk_result) = stream.next().await {
         let chunk = chunk_result.map_err(|e| e.to_string())?;
-        let text = String::from_utf8_lossy(&chunk);
+        buffer.push_str(&String::from_utf8_lossy(&chunk));
         
-        // Ollama sends JSON objects line by line
-        for line in text.lines() {
-            if let Ok(json) = serde_json::from_str::<serde_json::Value>(line) {
-                on_event.send(json).map_err(|e| e.to_string())?;
+        // Process all complete lines in the buffer
+        while let Some(newline_pos) = buffer.find('\n') {
+            let line: String = buffer.drain(..=newline_pos).collect();
+            let line = line.trim();
+            if !line.is_empty() {
+                if let Ok(json) = serde_json::from_str::<serde_json::Value>(line) {
+                    on_event.send(json).map_err(|e| e.to_string())?;
+                }
             }
+        }
+    }
+    
+    // Process any remaining data in the buffer
+    let remaining = buffer.trim();
+    if !remaining.is_empty() {
+        if let Ok(json) = serde_json::from_str::<serde_json::Value>(remaining) {
+            on_event.send(json).map_err(|e| e.to_string())?;
         }
     }
 
@@ -106,6 +119,8 @@ pub fn run() {
       ollama_stream_proxy,
       graphdb::graph_store_memory,
       graphdb::graph_search_memory,
+      graphdb::graph_search_global,
+      graphdb::graph_store_concepts,
       graphdb::graph_delete_game,
       graphdb::graph_export_brain
     ])
