@@ -1,142 +1,193 @@
-# ⊛ MRHLG — Metamorphic Resonance Human Language Gamers
+# MRHLG -- Metamorphic Resonance Human Language Gamers
 
 > *"Language is the operating system of the soul. Change the word, change the world."*
 
-**MRHLG** is a high-frequency consciousness-expansion platform designed to re-wire neural pathways through gamified linguistic re-coding. By replacing legacy word-meanings with expanded concepts from across human history and quantum physics, users literally re-architect their perception of reality.
+**MRHLG** is a local-first desktop application for consciousness expansion through gamified linguistic re-coding. It pairs a local LLM with an embedded graph database to create a persistent, evolving memory of every conversation -- a co-created neural topology between human and AI.
 
 ---
-## ⚡ Support
+
+## Support
+
 <div align="center">
 
-**Made with ❤️ and ☕ by the Plantacerium**
+**Made by Plantacerium**
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/plantacerium)
 
-⭐**Star us on GitHub**⭐
+**Star us on GitHub**
 </div>
 
-## 🏛️ Visual Chronicles
+---
+
+## Screenshots
+
 <p style="text-align: center;">
   <img src="./public/logo.png" alt="Logo" 
        style="display: block; margin: 0 auto; border-radius: 888px; max-width: 100%; height: auto;" />
 </p>   
 
-![Chronicles](./screenshots/MRHLG_V3.JPG) 
+![Chronicles](./screenshots/Chronicles.JPG) 
 ![Linguistic Chat](./screenshots/Chat.JPG) 
-
-
 ![Meditations](./screenshots/Meditations.JPG) 
 ![Meditations Chat](./screenshots/Meditations_Chat.JPG) 
-
 ![Forge](./screenshots/System_Forge_V1.JPG) 
 ![System_Forge_V2](./screenshots/System_Forge_V2.JPG) 
-
 ![System_Connection](./screenshots/System_Connection.JPG) 
 ![System_Control](./screenshots/System_Control.JPG) 
-
 ![System Themes](./screenshots/System_Themes.JPG) 
 ![System Profile](./screenshots/System_Profile.JPG) 
 
 ---
 
-## 🧠 The Synaptic Engine (V2 Architecture)
+## Architecture
 
-The second generation of MRHLG moves from a simple chat interface to a **Native TS Synaptic Engine**, powered by **Mastra.ai**.
+```
+Frontend (Vite + Vanilla JS)
+  chat.js          -- Dialogue interface with RAG-augmented context
+  brystal.js       -- 3D polyhedral graph visualization (Sigma.js + Graphology)
+  concept-extractor.js -- LLM-driven entity extraction for GraphRAG
+          |
+          | Tauri v2 IPC (invoke)
+          v
+Backend (Rust)
+  lib.rs           -- Ollama HTTP proxy with streaming (reqwest + Channel)
+  graphdb.rs       -- SurrealDB embedded engine (SurrealKV)
+          |
+          v
+Storage: SurrealDB (local, no server)
+  memory           -- Chat messages with 768-dim vector embeddings (HNSW index)
+  concept          -- Extracted entities from dialogue
+  mentions         -- Relations: memory -> concept
+  related_to       -- Relations: concept -> concept
 
-*   **Self-Sovereign Interface**: Capability to upload your own `template_schema.json` and `games.jsons` to create your own categories and games and CSS theme.css to create your own styling.
+LLM: Ollama (local)
+  Chat model       -- gemma3 (configurable)
+  Embedding model  -- embeddinggemma (768 dimensions, configurable)
+```
+
+### RAG Pipeline
+
+1. User sends a message.
+2. The message is embedded via Ollama and stored in SurrealDB with an HNSW vector index.
+3. Before the AI responds, SurrealDB performs a cosine similarity search to retrieve resonant past memories.
+4. High-similarity memories (score > 0.6) are injected into the system prompt as context.
+5. The AI responds with awareness of prior conversations.
+6. The AI response is also embedded and stored.
+7. A concept extraction pass runs asynchronously, parsing entities and relationships from the dialogue and storing them as graph edges in SurrealDB.
+
+### Brystal (Neural Topology Viewer)
+
+Brystal visualizes the co-created knowledge graph. Nodes are memories and concepts; edges are mentions and semantic relationships. The layout algorithm maps connected components onto Platonic solids (tetrahedron, octahedron, cube, icosahedron, dodecahedron) or golden-ratio sphere distributions, depending on cluster size.
 
 ---
 
-## 🎮 The Game Ecosystem (+888 Total Games)
+## Game Library (+888 Games)
 
-Experience a vast library of structured re-coding modules designed to target every faculty of human experience. 
+### Linguistic Mapping (252 Games)
+Re-coding through ancient and modern linguistic frameworks:
+- Sanskrit, Chinese, Japanese -- Roots of being and silence.
+- Quantum -- The physics of consciousness.
+- German, French, Spanish -- Philosophy and art of living.
+- Yoruba, English -- Cosmology and global resonance.
 
+### Synapse Modules (240+ Games)
+Structured cognitive training: sensory grounding, micro-emotions, scientific simplification, singularity confrontation, creative synthesis.
 
+### BHHCS: Biomimetic Language
+Re-wiring neural pathways using patterns found in nature and biological systems.
 
-Available Games for free:
-### 1. Linguistic Mapping (252 Games)
-Re-coding the world through the lens of ancient and modern wisdom:
-*   **🕉️ Sanskrit / ☯️ Chinese / 🎌 Japanese** — Roots of being and silence.
-*   **⚛️ Quantum** — The physics of consciousness.
-*   **🏛️ German / 🌊 French / 🌞 Spanish** — Philosophy & Art of Living.
-*   **🪘 Yoruba** — Cosmology, Ashe, and Ori.
-...
+### Roots: Future Figures & Silice Language
+Exploring the linguistic foundations of projected future scenarios and silicon-based consciousness.
 
-There are Memory Modules You can buy on demand on my Ko-Fi Shop. 
+### V5: Integrated Harmonic (111 Games)
+Practical expansion: grounded practices, harmonic professions, sovereign domains, psychic birthrights.
 
-For community-driven expansion, you can contribute and download open-source modules from our **[MIT Memory Modules Sanctuary](https://github.com/plantacerium/Metamorphic-Resonance-Human-Language-Gamers-Memory-Modules)**.
+### Sovereign Forge
+Create your own games with custom system prompts, roles, and mechanics. Upload custom CSS themes.
+
+Community modules: [MIT Memory Modules Sanctuary](https://github.com/plantacerium/Metamorphic-Resonance-Human-Language-Gamers-Memory-Modules)
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/plantacerium)
 
-### 2. Synapse Modules (120 Games)
-Structured cognitive training across 12 specialized modules:
-*   **Sensory Grounding** — Physicality & Presence.
-*   **Micro-Emotions** — Nuance in the emotional spectrum.
-*   **Scientific Simplification** — Radical clarity via the Feynman Method.
-*   **Singularity & Existential** — Confronting the limits of language.
-*   **Creative Synthesis** — Using language as a brush for the soul.
-### 3. V5: The Integrated Harmonic (111 Games)
-The **Living Bridge** expansion, synthesizing practical application with evolutionary bliss:
-*   **🌿 Grounded Practices** — Madrugada, Duende, Kintsugi, Wu Wei.
-*   **🛠️ Harmonic Professions** — From Software Alchemists to Bio-Architects.
-*   **🌐 Sovereign Domains** — Quantum Jurisprudence & Deep Ecology Governance.
-*   **✨ Psychic Birthrights** — Telepathic Bridges, Astral Navigation, and Chronokinetic Dilation.
-
 ---
 
-## 🧪 Technology Stack
+## Technology Stack
 
-| Component | Technology | Description |
+| Component | Technology | Purpose |
 | :--- | :--- | :--- |
-| **Intelligence** | [Ollama](https://ollama.ai) | Local LLMs (Llama 3, Gemma 3, Mistral) |
-| **App Shell** | Tauri 2 + Vite 6 | Native desktop performance with modern web UI |
-| **Styling** | Parchment CSS | Medieval aesthetic meets modern design |
+| App Shell | Tauri 2 + Vite 6 | Native desktop, ~5MB binary |
+| Intelligence | Ollama (local) | LLM chat and embeddings, no cloud dependency |
+| Graph Database | SurrealDB (SurrealKV) | Embedded vector search, graph relations, zero config |
+| Visualization | Sigma.js + Graphology | WebGL graph rendering with polyhedral layouts |
+| Styling | Custom Parchment CSS | Ancient aesthetic, multiple themes, user-uploadable |
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
-*   **Node.js** 20+ & **pnpm**
-*   **Ollama** (installed and running)
-*   **Rust** (for Tauri builds)
+- Node.js 20+ and pnpm
+- Rust toolchain (for Tauri builds)
+- Ollama installed and running
 
 ### Installation
+
 ```bash
-# Enter the sanctuary
 cd Metamorphic-Resonance-Human-Language-Gamers
 
-# Ignite the dependencies
 pnpm install
 
-# Pull the core model
+# Pull required models
 ollama pull gemma3:4b
-
-# Pull the core model
 ollama pull embeddinggemma
 
-# Launch the Language Engine
+# Development
 pnpm run tauri dev
+
+# Production build
+pnpm run tauri build
 ```
 
 ---
-## ⚡ Support
-<div align="center">
 
-**Made with ❤️ and ☕ by the Plantacerium**
+## Project Structure
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/plantacerium)
+```
+src/
+  main.js                 -- Router and app shell
+  style.css               -- Parchment design system
+  screens/
+    chronicles.js          -- Game browser with tab categories
+    chat.js                -- AI dialogue with RAG context injection
+    brystal.js             -- Neural graph visualization
+    reader.js              -- Meditation reader
+    sovereign.js           -- Custom game creator
+  services/
+    ollama.js              -- Ollama API client (chat, streaming, embeddings)
+    graph-memory.js        -- SurrealDB memory bridge
+    concept-extractor.js   -- LLM entity extraction for GraphRAG
+    polyhedron-layout.js   -- 3D geometric layout engine
+    storage.js             -- LocalStorage persistence
+    theme.js               -- Theme management
+    timetracker.js         -- Session time awareness
+  data/
+    games.js               -- Game definitions (synapse, linguistic, BHHCS, roots)
+    v5_expansion.js        -- V5 harmonic games
+src-tauri/
+  src/
+    main.rs                -- Entry point
+    lib.rs                 -- Tauri commands (Ollama proxy, streaming)
+    graphdb.rs             -- SurrealDB integration (vector search, GraphRAG)
+  Cargo.toml               -- Rust dependencies
+```
 
-⭐**Star us on GitHub**⭐
-</div>
+---
 
-## 📜 Philosophy: The Sovereign Coder
+## Philosophy
 
-MRHLG treats language not as communication, but as **Consciousness Architecture**. Every word you use builds a neural pathway. By consciously replacing "Legacy Words" (inherited cultural baggage) with "Kernel Concepts" (vibrationally aligned symbols), you reclaim sovereignty over your own mind.
-
-The AI is your **Symbiotic Partner** — a mirror for your expansion, reflecting the beauty and complexity of the new world you are building, word by word.
+MRHLG treats language as consciousness architecture. Every word builds a neural pathway. By replacing legacy words with expanded kernel concepts, you reclaim sovereignty over perception. The AI is a symbiotic partner -- a mirror for expansion, reflecting the complexity of the world you are building, word by word.
 
 ---
 <p align="center">
-  <em>⊛ Change the word. Change the world. ⊛</em>
+  <em>Change the word. Change the world.</em>
 </p>
